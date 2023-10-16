@@ -1,0 +1,58 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "name": "The Amba's swear\\nBook 1!",
+        "image": "/Images/a2e12519393f4938aa6a4518f104a827.jpg",
+        "product": "ambas_revenge",
+        "order": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "name": "Ashes",
+            "image": "/Images/b732c30bc25b4271afc8aa23a614b112*.jpg",
+            "file": "/Files/d00c610a6f4647dcbd8116014674d255.comics",
+            "version": 9,
+            "date": 1547251200,
+            "order": 1
+          },
+          {
+            "id": 2,
+            "name": "Ritual svayamvara",
+            "image": "/Images/dc882acefd174cbabe1df9204a558497*.jpg",
+            "file": "/Files/d94d8557c94e41ebb760347f2ad9d2f1.comics",
+            "version": 9,
+            "date": 1549929600,
+            "order": 2
+          },
+          {
+            "id": 3,
+            "name": "The chase",
+            "image": "/Images/53ba671fe1bc4b61a5a19da2ec446ce4*.jpg",
+            "file": "/Files/7df7d58b22c34e02a0cc4ac82debe6c9.comics",
+            "version": 6,
+            "product": "03_the_chase",
+            "date": 1550793600,
+            "order": 3
+          },
+          {
+            "id": 4,
+            "name": "Hastinapur",
+            "image": "/Images/943b0ae4fc9a4a18bb15e01d8a385b0c*.jpg",
+            "file": "/Files/ff2df58f5c6a4f87b8c4c8ebe1e8b0df.comics",
+            "version": 5,
+            "product": "04_hastinapur",
+            "date": 1549929600,
+            "order": 4
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "name": "16 с",
+        "image": "/Images/badf664c010d45c5a8e153a702c4dfd3.png",
+        "order": 8,
+        "episodes": []
+      }
+    ]
+  }

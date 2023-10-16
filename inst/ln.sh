@@ -1,3 +1,8 @@
+cd /etc/nginx/sites-enabled
+sudo ln -s /home/anton/proj/mbharata_server/nginx/etc/nginx/mbharata_sites.conf
+
+
+exit 0
 
 cd /etc/systemd/system
 ln -s /home/anton/proj/mbharata_server/varnish/etc/systemd/system/varnish@mbharata.service
@@ -18,7 +23,6 @@ sudo systemctl enable cloudflared@th.service
 
 
 
-#anton@ru1:/etc/nginx/sites-enabled$ sudo ln -s /home/anton/proj/mbharata_server/nginx/etc/nginx/mbharata.conf
 
 sudo systemctl start varnish@mbharata.service
 

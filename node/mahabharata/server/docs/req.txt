@@ -1,0 +1,43 @@
+Server is running on port 10802
+Received a request:
+HTTP Method: POST
+Endpoint: /api/Auth/UpdateDevice
+Headers: {
+  host: 'app.mbharata.com',
+  'cf-ipcountry': 'TH',
+  'accept-encoding': 'gzip',
+  'x-forwarded-for': '2001:fb1:10f:179:3c0f:aa68:4661:7c39',
+  'cf-ray': '80887ec528a745ca-BKK',
+  'cf-connecting-ip': '2001:fb1:10f:179:3c0f:aa68:4661:7c39',
+  'cdn-loop': 'cloudflare',
+  'content-length': '54',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (M2102J20SG; Android 12)',
+  'accept-language': 'en'
+}
+Request Body: { localTime: 1695028639, deviceId: '072e8c7af066a574' }
+
+
+Received a request:
+HTTP Method: POST
+Endpoint: /api/Auth/UpdatePushToken
+Headers: {
+  host: 'app.mbharata.com',
+  'cf-ipcountry': 'TH',
+  'accept-encoding': 'gzip',
+  'x-forwarded-for': '2001:fb1:10f:179:3c0f:aa68:4661:7c39',
+  'cf-ray': '80887ed60d4345ca-BKK',
+  'cf-connecting-ip': '2001:fb1:10f:179:3c0f:aa68:4661:7c39',
+  'cdn-loop': 'cloudflare',
+  'content-length': '175',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (M2102J20SG; Android 12)',
+  'accept-language': 'en'
+}
+Request Body: {
+  token: 'caWWnTopToe6269nbAbFsr:APA91bGfcDCnTI7ArmI4CtQn5NbJwTFHa0N74qAMrvLnY61cFSuMYzEtMNeRav7gplW5vuJPio89GJbR5uN-To_JhrEX0PTyeTMN35fcn2iJyjZcackDdY97FHlOrlW8R0r_nLXYbiIj'
+}

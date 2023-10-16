@@ -1,0 +1,1 @@
+perl -pi -e 's:/etc/hosts:/etc/ho.in:g' libc.so.6.in

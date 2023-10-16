@@ -14,7 +14,7 @@ LimitNOFILE=131072
 # unit is bytes
 LimitMEMLOCK=85983232
 
-ExecStartPre=sleep 3 ; sudo rm /var/lib/varnish/sin1//_.pid ; true
+#ExecStartPre=sleep 3 ; sudo rm /var/lib/varnish/sin1//_.pid ; true
 ExecStart=/usr/sbin/varnishd \
           -P /run/varnish@mbharata.pid \
           -j unix,user=vcache \

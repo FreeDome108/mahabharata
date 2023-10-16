@@ -1,0 +1,12 @@
+tunnel: eeeb05f4-a3e2-411b-9918-17411323e701
+credentials-file: /etc/cloudflared/eeeb05f4-a3e2-411b-9918-17411323e701.json
+metrics: 0.0.0.0:4902
+loglevel: debug
+logfile: /var/log/cloudflared-us.log
+region: us
+ingress:
+  - hostname: "hello-app-us.mbharata.com"
+    service: hello_world
+  - service: http://localhost:80
+
+

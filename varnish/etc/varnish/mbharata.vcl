@@ -3,8 +3,8 @@ vcl 4.1;
 import std;
 
 backend default {
-    .host = "localhost";
-    .port = "10803";
+    .host = "app.mbharata.com";
+    .port = "10802";
 }
 
 # Add hostnames, IP addresses and subnets that are allowed to purge content

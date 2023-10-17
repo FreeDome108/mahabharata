@@ -6,7 +6,7 @@ const fetch = require('node-fetch'); // Импортируем node-fetch
 
 // Создайте экземпляр Express
 const app = express();
-const port = 80;
+const port = 10811;
 
 const translationRuData = require('./i18n/ru.json');
 const translationHiData = require('./i18n/hi.json');

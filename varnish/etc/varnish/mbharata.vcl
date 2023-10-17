@@ -3,7 +3,7 @@ vcl 4.1;
 import std;
 
 backend default {
-    .host = "app.mbharata.com";
+    .host = "app";
     .port = "10802";
 }
 

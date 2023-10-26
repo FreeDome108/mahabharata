@@ -1909,3 +1909,1419 @@ Headers: {
 }
 Request Body: {}
 sudo: unable to execute /usr/bin/node: Broken pipe
+season_id 1
+original The Amba's swear\nBook 1
+translated Проклятие Амбы
+Книга 1
+--episode_id 1
+--original Ashes
+--translated Тлен
+--episode_id 2
+--original Ritual svayamvara
+--translated Обряд сваямвара
+--episode_id 3
+--original The chase
+--translated Погоня
+--episode_id 4
+--original Hastinapur
+--translated Хастинапур
+--episode_id 5
+--original The valley of saints
+--translated Долина святых
+--episode_id 6
+--original Ram of the axe
+--translated Рама с топором
+--episode_id 7
+--original Calling for the gods
+--translated Взывая к богам
+--episode_id 8
+--original King Arjun Kartavirya
+--translated Король Арджуна Картавирья
+--episode_id 9
+--original Magic cow Kamadhenu. The curse of Rama
+--translated Волшебная корова Камадхену. Проклятие Рамы
+--episode_id 10
+--original The brahmanas do not have to fight!
+--translated Брахманы не должны сражаться!
+--episode_id 11
+--original Sneaky revenge
+--translated Подлая месть
+--episode_id 12
+--original Defy the kshatriyas
+--translated Вызов кшатриям
+--episode_id 13
+--original Kshatriyas extermination
+--translated Истребление кшатриев
+--episode_id 14
+--original The last surviving kshatriyas 
+--translated Последние из кшатриев
+--episode_id 15
+--original Insomnia
+--translated Бессонница
+--episode_id 16
+--original Ram vs. Ram
+--translated Рама против Рамы
+--episode_id 17
+--original Inner Peace
+--translated Внутренний мир
+--episode_id 18
+--original Dattatreya’s Ashram
+--translated Ашрам Даттатреи
+--episode_id 19
+--original The Blood Curse and the three-headed sage
+--translated Кровавое проклятие и трехголовый мудрец
+--episode_id 20
+--original Thus Spoke Dattatreya
+--translated Так говорил Даттатрея
+--episode_id 21
+--original Amba's Plea
+--translated Просьба Амбы
+--episode_id 22
+--original The Duel of the Century
+--translated Дуэль века
+season_id 2
+original The Amba's swear\nBook 2
+translated Проклятие Амбы
+Книга 2
+season_id 3
+original The Amba's swear\nBook 3
+translated Проклятие Амбы
+Книга 3
+season_id 5
+original Little Krishna and Demons\nBook 1
+translated Маленький кришна и Демоны
+--episode_id 35
+--episode_id 36
+--episode_id 38
+--episode_id 39
+season_id 6
+original Short stories from the Mahabharata
+translated Короткие рассказы из Махабхараты
+--episode_id 37
+season_id 1
+original The Amba's swear\nBook 1
+translated คำสาบานของอัมบา
+เล่ม 1
+--episode_id 1
+--original Ashes
+--translated ขี้เถ้า
+--episode_id 2
+--original Ritual svayamvara
+--translated พิธีกรรม svayamvara
+--episode_id 3
+--original The chase
+--translated การไล่ล่า
+--episode_id 4
+--original Hastinapur
+--translated ฮาสตินาปูร์
+--episode_id 5
+--original The valley of saints
+--translated หุบเขานักบุญ
+--episode_id 6
+--original Ram of the axe
+--translated 
+--episode_id 7
+--original Calling for the gods
+--translated เรียกหาพระเจ้า
+--episode_id 8
+--original King Arjun Kartavirya
+--translated พระเจ้าอรชุน กรตวิริยะ
+--episode_id 9
+--original Magic cow Kamadhenu. The curse of Rama
+--translated วัววิเศษ กามเธณ คำสาปพระราม
+--episode_id 10
+--original The brahmanas do not have to fight!
+--translated พราหมณ์ไม่ต้องต่อสู้
+--episode_id 11
+--original Sneaky revenge
+--translated แก้แค้นแบบลับๆ
+--episode_id 12
+--original Defy the kshatriyas
+--translated ต่อต้าน kshatriyas
+--episode_id 13
+--original Kshatriyas extermination
+--translated Kshatriyas การกำจัด
+--episode_id 14
+--original The last surviving kshatriyas 
+--translated kshatriyas ที่รอดชีวิตคนสุดท้าย
+--episode_id 15
+--original Insomnia
+--translated นอนไม่หลับ
+--episode_id 16
+--original Ram vs. Ram
+--translated ราม vs. ราม
+--episode_id 17
+--original Inner Peace
+--translated ความสงบภายใน
+--episode_id 18
+--original Dattatreya’s Ashram
+--translated อาศรมของทัตเตรยะ
+--episode_id 19
+--original The Blood Curse and the three-headed sage
+--translated คำสาปโลหิตและปราชญ์สามหัว
+--episode_id 20
+--original Thus Spoke Dattatreya
+--translated ทัตตะเตยะ ตรัสดังนี้
+--episode_id 21
+--original Amba's Plea
+--translated คำวิงวอนของอัมบา
+--episode_id 22
+--original The Duel of the Century
+--translated การต่อสู้แห่งศตวรรษ
+season_id 2
+original The Amba's swear\nBook 2
+translated คำสาบานของอัมบา
+เล่ม 2
+season_id 3
+original The Amba's swear\nBook 3
+translated คำสาบานของอัมบา
+เล่ม 3
+season_id 5
+original Little Krishna and Demons\nBook 1
+translated กฤษณะน้อยและปีศาจ
+--episode_id 35
+--episode_id 36
+--episode_id 38
+--episode_id 39
+season_id 6
+original Short stories from the Mahabharata
+translated เรื่องสั้นจากมหาภารตะ
+--episode_id 37
+season_id 1
+original The Amba's swear\nBook 1
+translated अंबा की कसम
+पुस्तक 1
+--episode_id 1
+--original Ashes
+--translated राख
+--episode_id 2
+--original Ritual svayamvara
+--translated अनुष्ठान स्वयंवर:
+--episode_id 3
+--original The chase
+--translated अनुसरण
+--episode_id 4
+--original Hastinapur
+--translated हस्तिनापुर
+--episode_id 5
+--original The valley of saints
+--translated संतों की घाटी
+--episode_id 6
+--original Ram of the axe
+--translated कुल्हाड़ी का राम
+--episode_id 7
+--original Calling for the gods
+--translated देवताओं के लिए बुला रहा है
+--episode_id 8
+--original King Arjun Kartavirya
+--translated राजा अर्जुन कार्तवीर्य
+--episode_id 9
+--original Magic cow Kamadhenu. The curse of Rama
+--translated जादू गाय कामधेनु राम का श्राप
+--episode_id 10
+--original The brahmanas do not have to fight!
+--translated ब्राह्मणों को उड़ने की जरूरत नहीं है
+--episode_id 11
+--original Sneaky revenge
+--translated डरपोक बदला
+--episode_id 12
+--original Defy the kshatriyas
+--translated क्षत्रियों की अवहेलना करें
+--episode_id 13
+--original Kshatriyas extermination
+--translated क्षत्रियों का संहार
+--episode_id 14
+--original The last surviving kshatriyas 
+--translated अंतिम जीवित क्षत्रिय
+--episode_id 15
+--original Insomnia
+--translated अनिद्रा
+--episode_id 16
+--original Ram vs. Ram
+--translated राम बनाम रामी
+--episode_id 17
+--original Inner Peace
+--translated आत्मिक शांति
+--episode_id 18
+--original Dattatreya’s Ashram
+--translated दत्तात्रेय का आश्रम
+--episode_id 19
+--original The Blood Curse and the three-headed sage
+--translated रक्त अभिशाप और तीन सिर वाले ऋषि
+--episode_id 20
+--original Thus Spoke Dattatreya
+--translated इस प्रकार बोले दत्तात्रेय
+--episode_id 21
+--original Amba's Plea
+--translated अंबा की दलील
+--episode_id 22
+--original The Duel of the Century
+--translated सदी का द्वंद्व
+season_id 2
+original The Amba's swear\nBook 2
+translated अंबा की कसम
+पुस्तक 2
+season_id 3
+original The Amba's swear\nBook 3
+translated अंबा की कसम
+पुस्तक 3
+season_id 5
+original Little Krishna and Demons\nBook 1
+translated छोटे कृष्ण और दानव
+--episode_id 35
+--episode_id 36
+--episode_id 38
+--episode_id 39
+season_id 6
+original Short stories from the Mahabharata
+translated महाभारत की लघु कथाएँ
+--episode_id 37
+{ port: 10811, debug: true, proxyApiURL: false }
+Server is running on port 10811
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '79.117.11.59, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (sdk_gphone_x86_64_arm64; Android 11)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 15ab6f7cb6284220b1d7e9bcf34d9806',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '79.117.11.59',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81aa0b082ccb5ced-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698064767, deviceId: '7915062b7738a3a0' }
+15ab6f7cb6284220b1d7e9bcf34d9806
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '79.117.11.59, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (sdk_gphone_x86_64_arm64; Android 11)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 15ab6f7cb6284220b1d7e9bcf34d9806',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '79.117.11.59',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81aa0b11ea2e5ced-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '79.117.11.59, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (sdk_gphone_x86_64_arm64; Android 11)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 15ab6f7cb6284220b1d7e9bcf34d9806',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '79.117.11.59',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81aa0cdb3d2e69e8-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698064842, deviceId: '7915062b7738a3a0' }
+15ab6f7cb6284220b1d7e9bcf34d9806
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '79.117.11.59, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (sdk_gphone_x86_64_arm64; Android 11)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 15ab6f7cb6284220b1d7e9bcf34d9806',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '79.117.11.59',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81aa0ce7bbe269e8-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '58.10.0.56, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-T830; Android 10)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '58.10.0.56',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81aa34363d804b8f-BKK',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698066460, deviceId: '052bd12f515ab2a4' }
+(node:1417) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'match' of undefined
+    at Object.authUpdateDevice (/home/anton/proj/mbharata_server/node/mahabharata/server/src/api.js:9:39)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:39:15
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:280:10)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:25:5
+(node:1417) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 2)
+(node:1417) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '58.10.0.56, ::1',
+  connection: 'close',
+  'content-length': '175',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-T830; Android 10)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '58.10.0.56',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81aa3447ccc045b2-BKK',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'dYvRwPAlSGGZVS3vWwemPH:APA91bE4zg8uDhtolVJOdH-vOrKrKRUbZm4bFdkgagxa2sRm6pxFkOtgV5RKulA6-cVGHFQngIwdfkgzBzqq8VVOzylixtGckALe9deH3UW7zXSFMbW9s4zgCP1Zqob8_YGUCyOiGF_t'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '58.10.0.56, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-T830; Android 10)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '58.10.0.56',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81aa362d2d7a45b3-BKK',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698066540, deviceId: '052bd12f515ab2a4' }
+(node:1417) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'match' of undefined
+    at Object.authUpdateDevice (/home/anton/proj/mbharata_server/node/mahabharata/server/src/api.js:9:39)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:39:15
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:280:10)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:25:5
+(node:1417) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 4)
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '58.10.0.56, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-T830; Android 10)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '58.10.0.56',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81aa36d3b95845d0-BKK',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698066567, deviceId: '052bd12f515ab2a4' }
+(node:1417) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'match' of undefined
+    at Object.authUpdateDevice (/home/anton/proj/mbharata_server/node/mahabharata/server/src/api.js:9:39)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:39:15
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:280:10)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:25:5
+(node:1417) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 6)
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '58.10.0.56, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-T830; Android 10)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '58.10.0.56',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81aa379bee5445c9-BKK',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698066599, deviceId: '052bd12f515ab2a4' }
+(node:1417) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'match' of undefined
+    at Object.authUpdateDevice (/home/anton/proj/mbharata_server/node/mahabharata/server/src/api.js:9:39)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:39:15
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:280:10)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:25:5
+(node:1417) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 8)
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '58.10.0.56, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-T830; Android 10)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '58.10.0.56',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81aa38ae6d7d45bf-BKK',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698066643, deviceId: '052bd12f515ab2a4' }
+(node:1417) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'match' of undefined
+    at Object.authUpdateDevice (/home/anton/proj/mbharata_server/node/mahabharata/server/src/api.js:9:39)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:39:15
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:280:10)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:25:5
+(node:1417) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 10)
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '58.10.0.56, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-T830; Android 10)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '58.10.0.56',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81aa39a00a60c8db-BKK',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698066681, deviceId: '052bd12f515ab2a4' }
+(node:1417) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'match' of undefined
+    at Object.authUpdateDevice (/home/anton/proj/mbharata_server/node/mahabharata/server/src/api.js:9:39)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:39:15
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:280:10)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:25:5
+(node:1417) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 12)
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '58.10.0.56, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-T830; Android 10)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '58.10.0.56',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81aa39c40bce4b95-BKK',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698066687, deviceId: '052bd12f515ab2a4' }
+(node:1417) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'match' of undefined
+    at Object.authUpdateDevice (/home/anton/proj/mbharata_server/node/mahabharata/server/src/api.js:9:39)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:39:15
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:280:10)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:25:5
+(node:1417) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 14)
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '58.10.0.56, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-T830; Android 10)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '58.10.0.56',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81aa3ab1ab8b4b95-BKK',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698066725, deviceId: '052bd12f515ab2a4' }
+(node:1417) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'match' of undefined
+    at Object.authUpdateDevice (/home/anton/proj/mbharata_server/node/mahabharata/server/src/api.js:9:39)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:39:15
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:144:13)
+    at Route.dispatch (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/route.js:114:3)
+    at Layer.handle [as handle_request] (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/layer.js:95:5)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:284:15
+    at Function.process_params (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/anton/proj/mbharata_server/node/mahabharata/server/node_modules/express/lib/router/index.js:280:10)
+    at /home/anton/proj/mbharata_server/node/mahabharata/server/index.js:25:5
+(node:1417) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 16)
+season_id 1
+original The Amba's swear\nBook 1
+translated Проклятие Амбы
+Книга 1
+--episode_id 1
+--original Ashes
+--translated Тлен
+--episode_id 2
+--original Ritual svayamvara
+--translated Обряд сваямвара
+--episode_id 3
+--original The chase
+--translated Погоня
+--episode_id 4
+--original Hastinapur
+--translated Хастинапур
+--episode_id 5
+--original The valley of saints
+--translated Долина святых
+--episode_id 6
+--original Ram of the axe
+--translated Рама с топором
+--episode_id 7
+--original Calling for the gods
+--translated Взывая к богам
+--episode_id 8
+--original King Arjun Kartavirya
+--translated Король Арджуна Картавирья
+--episode_id 9
+--original Magic cow Kamadhenu. The curse of Rama
+--translated Волшебная корова Камадхену. Проклятие Рамы
+--episode_id 10
+--original The brahmanas do not have to fight!
+--translated Брахманы не должны сражаться!
+--episode_id 11
+--original Sneaky revenge
+--translated Подлая месть
+--episode_id 12
+--original Defy the kshatriyas
+--translated Вызов кшатриям
+--episode_id 13
+--original Kshatriyas extermination
+--translated Истребление кшатриев
+--episode_id 14
+--original The last surviving kshatriyas 
+--translated Последние из кшатриев
+--episode_id 15
+--original Insomnia
+--translated Бессонница
+--episode_id 16
+--original Ram vs. Ram
+--translated Рама против Рамы
+--episode_id 17
+--original Inner Peace
+--translated Внутренний мир
+--episode_id 18
+--original Dattatreya’s Ashram
+--translated Ашрам Даттатреи
+--episode_id 19
+--original The Blood Curse and the three-headed sage
+--translated Кровавое проклятие и трехголовый мудрец
+--episode_id 20
+--original Thus Spoke Dattatreya
+--translated Так говорил Даттатрея
+--episode_id 21
+--original Amba's Plea
+--translated Просьба Амбы
+--episode_id 22
+--original The Duel of the Century
+--translated Дуэль века
+season_id 2
+original The Amba's swear\nBook 2
+translated Проклятие Амбы
+Книга 2
+season_id 3
+original The Amba's swear\nBook 3
+translated Проклятие Амбы
+Книга 3
+season_id 5
+original Little Krishna and Demons\nBook 1
+translated Маленький кришна и Демоны
+--episode_id 35
+--episode_id 36
+--episode_id 38
+--episode_id 39
+season_id 6
+original Short stories from the Mahabharata
+translated Короткие рассказы из Махабхараты
+--episode_id 37
+season_id 1
+original The Amba's swear\nBook 1
+translated คำสาบานของอัมบา
+เล่ม 1
+--episode_id 1
+--original Ashes
+--translated ขี้เถ้า
+--episode_id 2
+--original Ritual svayamvara
+--translated พิธีกรรม svayamvara
+--episode_id 3
+--original The chase
+--translated การไล่ล่า
+--episode_id 4
+--original Hastinapur
+--translated ฮาสตินาปูร์
+--episode_id 5
+--original The valley of saints
+--translated หุบเขานักบุญ
+--episode_id 6
+--original Ram of the axe
+--translated 
+--episode_id 7
+--original Calling for the gods
+--translated เรียกหาพระเจ้า
+--episode_id 8
+--original King Arjun Kartavirya
+--translated พระเจ้าอรชุน กรตวิริยะ
+--episode_id 9
+--original Magic cow Kamadhenu. The curse of Rama
+--translated วัววิเศษ กามเธณ คำสาปพระราม
+--episode_id 10
+--original The brahmanas do not have to fight!
+--translated พราหมณ์ไม่ต้องต่อสู้
+--episode_id 11
+--original Sneaky revenge
+--translated แก้แค้นแบบลับๆ
+--episode_id 12
+--original Defy the kshatriyas
+--translated ต่อต้าน kshatriyas
+--episode_id 13
+--original Kshatriyas extermination
+--translated Kshatriyas การกำจัด
+--episode_id 14
+--original The last surviving kshatriyas 
+--translated kshatriyas ที่รอดชีวิตคนสุดท้าย
+--episode_id 15
+--original Insomnia
+--translated นอนไม่หลับ
+--episode_id 16
+--original Ram vs. Ram
+--translated ราม vs. ราม
+--episode_id 17
+--original Inner Peace
+--translated ความสงบภายใน
+--episode_id 18
+--original Dattatreya’s Ashram
+--translated อาศรมของทัตเตรยะ
+--episode_id 19
+--original The Blood Curse and the three-headed sage
+--translated คำสาปโลหิตและปราชญ์สามหัว
+--episode_id 20
+--original Thus Spoke Dattatreya
+--translated ทัตตะเตยะ ตรัสดังนี้
+--episode_id 21
+--original Amba's Plea
+--translated คำวิงวอนของอัมบา
+--episode_id 22
+--original The Duel of the Century
+--translated การต่อสู้แห่งศตวรรษ
+season_id 2
+original The Amba's swear\nBook 2
+translated คำสาบานของอัมบา
+เล่ม 2
+season_id 3
+original The Amba's swear\nBook 3
+translated คำสาบานของอัมบา
+เล่ม 3
+season_id 5
+original Little Krishna and Demons\nBook 1
+translated กฤษณะน้อยและปีศาจ
+--episode_id 35
+--episode_id 36
+--episode_id 38
+--episode_id 39
+season_id 6
+original Short stories from the Mahabharata
+translated เรื่องสั้นจากมหาภารตะ
+--episode_id 37
+season_id 1
+original The Amba's swear\nBook 1
+translated अंबा की कसम
+पुस्तक 1
+--episode_id 1
+--original Ashes
+--translated राख
+--episode_id 2
+--original Ritual svayamvara
+--translated अनुष्ठान स्वयंवर:
+--episode_id 3
+--original The chase
+--translated अनुसरण
+--episode_id 4
+--original Hastinapur
+--translated हस्तिनापुर
+--episode_id 5
+--original The valley of saints
+--translated संतों की घाटी
+--episode_id 6
+--original Ram of the axe
+--translated कुल्हाड़ी का राम
+--episode_id 7
+--original Calling for the gods
+--translated देवताओं के लिए बुला रहा है
+--episode_id 8
+--original King Arjun Kartavirya
+--translated राजा अर्जुन कार्तवीर्य
+--episode_id 9
+--original Magic cow Kamadhenu. The curse of Rama
+--translated जादू गाय कामधेनु राम का श्राप
+--episode_id 10
+--original The brahmanas do not have to fight!
+--translated ब्राह्मणों को उड़ने की जरूरत नहीं है
+--episode_id 11
+--original Sneaky revenge
+--translated डरपोक बदला
+--episode_id 12
+--original Defy the kshatriyas
+--translated क्षत्रियों की अवहेलना करें
+--episode_id 13
+--original Kshatriyas extermination
+--translated क्षत्रियों का संहार
+--episode_id 14
+--original The last surviving kshatriyas 
+--translated अंतिम जीवित क्षत्रिय
+--episode_id 15
+--original Insomnia
+--translated अनिद्रा
+--episode_id 16
+--original Ram vs. Ram
+--translated राम बनाम रामी
+--episode_id 17
+--original Inner Peace
+--translated आत्मिक शांति
+--episode_id 18
+--original Dattatreya’s Ashram
+--translated दत्तात्रेय का आश्रम
+--episode_id 19
+--original The Blood Curse and the three-headed sage
+--translated रक्त अभिशाप और तीन सिर वाले ऋषि
+--episode_id 20
+--original Thus Spoke Dattatreya
+--translated इस प्रकार बोले दत्तात्रेय
+--episode_id 21
+--original Amba's Plea
+--translated अंबा की दलील
+--episode_id 22
+--original The Duel of the Century
+--translated सदी का द्वंद्व
+season_id 2
+original The Amba's swear\nBook 2
+translated अंबा की कसम
+पुस्तक 2
+season_id 3
+original The Amba's swear\nBook 3
+translated अंबा की कसम
+पुस्तक 3
+season_id 5
+original Little Krishna and Demons\nBook 1
+translated छोटे कृष्ण और दानव
+--episode_id 35
+--episode_id 36
+--episode_id 38
+--episode_id 39
+season_id 6
+original Short stories from the Mahabharata
+translated महाभारत की लघु कथाएँ
+--episode_id 37
+{ port: 10811, debug: true, proxyApiURL: false }
+Server is running on port 10811
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '193.233.158.214, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (ABR-LX9; Android 12)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '193.233.158.214',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81bb60e16b400ae3-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698246542, deviceId: '7a144c5695cbd750' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '193.233.158.214, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (ABR-LX9; Android 12)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 7a144c5695cbd750',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '193.233.158.214',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81bb60e77c6c0ae3-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '193.233.158.214, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (ABR-LX9; Android 12)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 7a144c5695cbd750',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '193.233.158.214',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81bb660aacc9b8e2-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698246753, deviceId: '7a144c5695cbd750' }
+7a144c5695cbd750
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '193.233.158.214, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (ABR-LX9; Android 12)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 7a144c5695cbd750',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '193.233.158.214',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81bb660fd865b8e2-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '193.233.158.214, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (ABR-LX9; Android 12)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '193.233.158.214',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81bb66c12b4f660a-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698246783, deviceId: '7a144c5695cbd750' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '193.233.158.214, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (ABR-LX9; Android 12)',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 7a144c5695cbd750',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '193.233.158.214',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81bb66c62a3f660a-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '46.6.232.95, ::1',
+  connection: 'close',
+  'content-length': '79',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.232.95',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1d29328456669-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: '16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  localTime: 1698314114.4645
+}
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '46.6.232.95, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.232.95',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1d299fdf26669-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '46.6.232.95, ::1',
+  connection: 'close',
+  'content-length': '76',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.232.95',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1d2b87f11217e-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'ce99bbff19e7ebe1fddb876cd39063236d4b8f9d252aa5efdf87861554250e08'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '79.117.11.59, ::1',
+  connection: 'close',
+  'content-length': '81',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 16.4.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '79.117.11.59',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1e617fc8686c0-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: '6B6487CB-6DA0-46E7-A84C-E3FFF3203892',
+  localTime: 1698314913.719367
+}
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '79.117.11.59, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 16.4.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 6B6487CB-6DA0-46E7-A84C-E3FFF3203892',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '79.117.11.59',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1e623dba986c0-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '79.117.11.59, ::1',
+  connection: 'close',
+  'content-length': '82',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 16.4.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 6B6487CB-6DA0-46E7-A84C-E3FFF3203892',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '79.117.11.59',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1ed8ae9865e1e-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: '6B6487CB-6DA0-46E7-A84C-E3FFF3203892',
+  localTime: 1698315219.390685
+}
+6B6487CB
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '79.117.11.59, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 16.4.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 6B6487CB-6DA0-46E7-A84C-E3FFF3203892',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '79.117.11.59',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1ed8bece06605-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '46.6.232.95, ::1',
+  connection: 'close',
+  'content-length': '81',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.232.95',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1f4471c302147-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: '16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  localTime: 1698315495.253978
+}
+16D46EB9
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '46.6.232.95, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.232.95',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1f447ff1f3851-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '46.6.232.95, ::1',
+  connection: 'close',
+  'content-length': '76',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.232.95',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1f44ca8862147-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'ce99bbff19e7ebe1fddb876cd39063236d4b8f9d252aa5efdf87861554250e08'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '46.6.232.95, ::1',
+  connection: 'close',
+  'content-length': '80',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.232.95',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1f4c9ea6165fa-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: '16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  localTime: 1698315516.08638
+}
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '46.6.232.95, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.232.95',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1f4cffd6965fa-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'dev.mbharata.com',
+  'x-forwarded-host': 'dev.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '46.6.232.95, ::1',
+  connection: 'close',
+  'content-length': '76',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.232.95',
+  'cf-ipcountry': 'ES',
+  'cf-ray': '81c1f4e43d28867e-MAD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'cbdf1c1ad3e9e90fdcfa9a0a98a3592f8c845b5730a3d14f73e474c28898e0f2'
+}

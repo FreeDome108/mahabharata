@@ -6,9 +6,10 @@ authUpdateDevice = async (req, res) => {
     //console.log(req.body.deviceId)
 
     const authorizationHeader = req.headers.authorization;
-    const token = authorizationHeader.match(/Mahabharata\s+(\w+)/);
+    
     //console.log(token);
-    if (token) {
+    if (authorizationHeader) {
+        const token = authorizationHeader.match(/Mahabharata\s+(\w+)/) ;
         const extractedToken = token[1]; // Здесь будет ваш токен
         console.log(extractedToken);
 

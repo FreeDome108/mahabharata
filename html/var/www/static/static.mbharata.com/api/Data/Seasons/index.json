@@ -1,0 +1,22 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "name": "Test HINDI\\nBook 1",
+        "image": "/Images/test.png",
+        "product": "ambas_revenge",
+        "order": 1,
+        "episodes": [
+          {
+            "id": 1,
+            "name": "Ashes",
+            "image": "/Images/test.png",
+            "file": "/Files/Ch1_Book01.comics",
+            "version": 9,
+            "date": 1547251200,
+            "order": 1
+          }
+        ]
+      }
+    ]
+  }

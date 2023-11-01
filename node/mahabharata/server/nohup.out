@@ -3888,3 +3888,3557 @@ Headers: {
 Request Body: {
   token: '65a4ee4d494e7fb1e57bcffd43cde7e7dec3d6608c44d59622abda4f35401c9a'
 }
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.64.236.42',
+  'x-forwarded-for': '46.6.169.191, 172.64.236.42',
+  connection: 'close',
+  'content-length': '81',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea01ad3e132f80-MAD',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  'cache-control': 'no-cache',
+  accept: '*/*',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.169.191',
+  'cf-ipcountry': 'ES'
+}
+Request Body: {
+  deviceId: '16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  localTime: 1698735473.572192
+}
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.64.236.42',
+  'x-forwarded-for': '46.6.169.191, 172.64.236.42',
+  connection: 'close',
+  'content-length': '2',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea01b0e99a2f80-MAD',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.169.191',
+  'cf-ipcountry': 'ES'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.64.236.20',
+  'x-forwarded-for': '46.6.169.191, 172.64.236.20',
+  connection: 'close',
+  'content-length': '76',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea01c60eab6659-MAD',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.169.191',
+  'cf-ipcountry': 'ES'
+}
+Request Body: {
+  token: '038347f6badac79fe59bbc20826912320dcdcd2639f869c7f11ca734a2faddb3'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.64.238.65',
+  'x-forwarded-for': '46.6.169.191, 172.64.238.65',
+  connection: 'close',
+  'content-length': '81',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea049eb8b33849-MAD',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  'cache-control': 'no-cache',
+  accept: '*/*',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.169.191',
+  'cf-ipcountry': 'ES'
+}
+Request Body: {
+  deviceId: '16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  localTime: 1698735594.384033
+}
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.64.238.65',
+  'x-forwarded-for': '46.6.169.191, 172.64.238.65',
+  connection: 'close',
+  'content-length': '2',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea04a25d5d3849-MAD',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.169.191',
+  'cf-ipcountry': 'ES'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.64.238.65',
+  'x-forwarded-for': '46.6.169.191, 172.64.238.65',
+  connection: 'close',
+  'content-length': '76',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea04aabf6c3849-MAD',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.169.191',
+  'cf-ipcountry': 'ES'
+}
+Request Body: {
+  token: '2d969cf7d499abee8dc12998803cfbbeef02e34244541b7e345f2226ede156e4'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.70.143.61',
+  'x-forwarded-for': '183.88.161.171, 172.70.143.61',
+  connection: 'close',
+  'content-length': '82',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea2f9589b06008-SIN',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH'
+}
+Request Body: {
+  deviceId: '3FE9E647-6E0B-4661-9858-D417F35EF4F1',
+  localTime: 1698737354.8196301
+}
+2390f8a86f9b4d7089f29425c4aefdba
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.70.142.46',
+  'x-forwarded-for': '183.88.161.171, 172.70.142.46',
+  connection: 'close',
+  'content-length': '2',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea2f964d9d6041-SIN',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.70.143.67',
+  'x-forwarded-for': '183.88.161.171, 172.70.143.67',
+  connection: 'close',
+  'content-length': '80',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea364d2d7f4a65-SIN',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH'
+}
+Request Body: {
+  localTime: 1698737630.08922,
+  deviceId: '3FE9E647-6E0B-4661-9858-D417F35EF4F1'
+}
+2390f8a86f9b4d7089f29425c4aefdba
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.70.142.251',
+  'x-forwarded-for': '183.88.161.171, 172.70.142.251',
+  connection: 'close',
+  'content-length': '2',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea364dd9be48dc-SIN',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.70.142.34',
+  'x-forwarded-for': '183.88.161.171, 172.70.142.34',
+  connection: 'close',
+  'content-length': '81',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea3a06bb0249cc-SIN',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH'
+}
+Request Body: {
+  localTime: 1698737782.667309,
+  deviceId: '3FE9E647-6E0B-4661-9858-D417F35EF4F1'
+}
+2390f8a86f9b4d7089f29425c4aefdba
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.70.143.38',
+  'x-forwarded-for': '183.88.161.171, 172.70.143.38',
+  connection: 'close',
+  'content-length': '2',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea3a074aee4a23-SIN',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.64.238.64',
+  'x-forwarded-for': '46.6.231.3, 172.64.238.64',
+  connection: 'close',
+  'content-length': '82',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea3a3deace2fb7-MAD',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  authorization: 'Mahabharata 16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.231.3',
+  'cf-ipcountry': 'ES'
+}
+Request Body: {
+  localTime: 1698737791.162156,
+  deviceId: '16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F'
+}
+16D46EB9
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.64.236.51',
+  'x-forwarded-for': '46.6.231.3, 172.64.236.51',
+  connection: 'close',
+  'content-length': '2',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea3a3eeb203676-MAD',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  authorization: 'Mahabharata 16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.231.3',
+  'cf-ipcountry': 'ES'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.64.238.64',
+  'x-forwarded-for': '46.6.231.3, 172.64.238.64',
+  connection: 'close',
+  'content-length': '76',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea3a4158162fb7-MAD',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.231.3',
+  'cf-ipcountry': 'ES'
+}
+Request Body: {
+  token: '2d969cf7d499abee8dc12998803cfbbeef02e34244541b7e345f2226ede156e4'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.68.134.9',
+  'x-forwarded-for': '46.6.231.3, 172.68.134.9',
+  connection: 'close',
+  'content-length': '80',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea43150c732184-MAD',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.231.3',
+  'cf-ipcountry': 'ES'
+}
+Request Body: {
+  localTime: 1698738153.29386,
+  deviceId: '16D46EB9-A06A-4FB4-B7FE-E4FC3B1BAA2F'
+}
+16D46EB9
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.64.238.64',
+  'x-forwarded-for': '46.6.231.3, 172.64.238.64',
+  connection: 'close',
+  'content-length': '2',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea4316094b2fa5-MAD',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.231.3',
+  'cf-ipcountry': 'ES'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'new.mbharata.com',
+  'x-forwarded-host': 'new.mbharata.com',
+  'x-real-ip': '172.68.134.9',
+  'x-forwarded-for': '46.6.231.3, 172.68.134.9',
+  connection: 'close',
+  'content-length': '76',
+  'accept-encoding': 'gzip',
+  'cf-ray': '81ea4318794f2184-MAD',
+  'x-forwarded-proto': 'https',
+  'cf-visitor': '{"scheme":"https"}',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'cache-control': 'no-cache',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (Unknown device; iOS 17.0.3)',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 16D46EB9',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '46.6.231.3',
+  'cf-ipcountry': 'ES'
+}
+Request Body: {
+  token: '2d969cf7d499abee8dc12998803cfbbeef02e34244541b7e345f2226ede156e4'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '1.46.13.225, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (M2102J20SG; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 40704a648075469886d92990ae67cda6',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '1.46.13.225',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea5a0cdacf98e2-BKK',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698739094, deviceId: '072e8c7af066a574' }
+40704a648075469886d92990ae67cda6
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '1.46.13.225, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (M2102J20SG; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 40704a648075469886d92990ae67cda6',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '1.46.13.225',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea5a12786198e2-BKK',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi Note 7; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea60880a376005-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698739358, deviceId: '7d99bf557423bb53' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi Note 7; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 7d99bf557423bb53',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea608e8dd3604c-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '175',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi Note 7; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 7d99bf557423bb53',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea60972aa6604e-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'cG2YWR8dQkCoXtb0ByUHN2:APA91bG-w1ys-7aWfVC_-awIdFuzQ2Mfg7u8ds9xS53kpojC-oDX3bWvKlnDPZRIt4MWfdzx0Ui3NsUocEhV_URC1BPJuPMShoW8Ap7gr7-IWt2eXv6sexuhp_7m4zVkm5OvISOBc1uG'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi Note 7; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 7d99bf557423bb53',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea61150e1f6021-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698739381, deviceId: '7d99bf557423bb53' }
+7d99bf557423bb53
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi Note 7; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 7d99bf557423bb53',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea611b0f5e6021-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi Note 7; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 7d99bf557423bb53',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea62265bb45fdf-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698739425, deviceId: '7d99bf557423bb53' }
+7d99bf557423bb53
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi Note 7; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 7d99bf557423bb53',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea622c2e175fdf-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea632e29dc497b-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '81',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea632d68e0600f-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: '3FE9E647-6E0B-4661-9858-D417F35EF4F1',
+  localTime: 1698739468.179106
+}
+2390f8a86f9b4d7089f29425c4aefdba
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '81',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea64f28d8d602f-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: '3FE9E647-6E0B-4661-9858-D417F35EF4F1',
+  localTime: 1698739540.700598
+}
+2390f8a86f9b4d7089f29425c4aefdba
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea64f31e8a5fec-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea6a2bca8949a8-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '82',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea6a2b396748d6-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: '3FE9E647-6E0B-4661-9858-D417F35EF4F1',
+  localTime: 1698739754.579259
+}
+2390f8a86f9b4d7089f29425c4aefdba
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '82',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea8e24ddfc6022-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: '3FE9E647-6E0B-4661-9858-D417F35EF4F1',
+  localTime: 1698741228.071515
+}
+2390f8a86f9b4d7089f29425c4aefdba
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 2390f8a86f9b4d7089f29425c4aefdba',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea8e256ac35ff3-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '81',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea8f684ea39e3a-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  localTime: 1698741279.843153,
+  deviceId: '3FE9E647-6E0B-4661-9858-D417F35EF4F1'
+}
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 3FE9E647-6E0B-4661-9858-D417F35EF4F1',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea8f6abb019e3a-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '76',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 3FE9E647-6E0B-4661-9858-D417F35EF4F1',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea8f766dad9e3a-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: '2b7ea8b06a0f7f968b1510cf9744efe45fbf80a9df55aa080faab638640bf444'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '81',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea96812ad39e35-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  localTime: 1698741570.503197,
+  deviceId: '3FE9E647-6E0B-4661-9858-D417F35EF4F1'
+}
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 3FE9E647-6E0B-4661-9858-D417F35EF4F1',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea96838ed39e35-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '183.88.161.171, ::1',
+  connection: 'close',
+  'content-length': '76',
+  'user-agent': 'com.360art.mahabharata/1.20.0 (iPhone XS; iOS 16.1.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 3FE9E647-6E0B-4661-9858-D417F35EF4F1',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '183.88.161.171',
+  'cf-ipcountry': 'TH',
+  'cf-ray': '81ea968e08519e35-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'b560a4091ee6e0e1ef331afbdfe8aaf34711349e9da6d304abec92ef6a7643d0'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '103.172.173.186, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (M2010J19SI; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '103.172.173.186',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81eab8c93f3f8974-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698742973, deviceId: '84466aa8783fb7a9' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '103.172.173.186, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (M2010J19SI; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 84466aa8783fb7a9',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '103.172.173.186',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81eab8ce6e918974-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '223.196.198.180, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-M315F; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata b65bfceb22e24420913e315948730458',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '223.196.198.180',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81eac893ea279fdf-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698743619, deviceId: '4f01084218762601' }
+b65bfceb22e24420913e315948730458
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40d0:c:9881:8000::, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (RMX3063; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 103077a1f75f4680801e479a6bb5cb7e',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40d0:c:9881:8000::',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81eb1340afdb4104-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698746677, deviceId: 'af41ccff125b869a' }
+103077a1f75f4680801e479a6bb5cb7e
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40d0:c:9881:8000::, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (RMX3063; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 103077a1f75f4680801e479a6bb5cb7e',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40d0:c:9881:8000::',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81eb134b2b494104-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40d0:c:9881:8000::, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (RMX3063; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 103077a1f75f4680801e479a6bb5cb7e',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40d0:c:9881:8000::',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81eb193ffed240af-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '120.18.180.247, ::1',
+  connection: 'close',
+  'content-length': '82',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.6.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '120.18.180.247',
+  'cf-ipcountry': 'AU',
+  'cf-ray': '81eb6a9afcccaabb-SYD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: 'A37005AB-414D-476D-BE95-CEBEBAF97AD8',
+  localTime: 1698750258.0004811
+}
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '120.18.180.247, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.6.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata A37005AB-414D-476D-BE95-CEBEBAF97AD8',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '120.18.180.247',
+  'cf-ipcountry': 'AU',
+  'cf-ray': '81eb6aa07be0aabb-SYD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '120.18.180.247, ::1',
+  connection: 'close',
+  'content-length': '76',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.6.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata A37005AB-414D-476D-BE95-CEBEBAF97AD8',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '120.18.180.247',
+  'cf-ipcountry': 'AU',
+  'cf-ray': '81eb6ac40befaabb-SYD',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'c804b7cd46b51ad9a2f27375bb9827b5fc261b12e07871c320e6b60a7479fcdb'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:531d:7bf:9943:ccf6:37e7:ffe6, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-X706B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata d8286c285c6b44298473d917623e1b55',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:531d:7bf:9943:ccf6:37e7:ffe6',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81eb73cb18623681-FRA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698750633, deviceId: '4fe8fc9bf3ec944d' }
+d8286c285c6b44298473d917623e1b55
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:531d:7bf:9943:ccf6:37e7:ffe6, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-X706B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata d8286c285c6b44298473d917623e1b55',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:531d:7bf:9943:ccf6:37e7:ffe6',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81eb73d3d9b73681-FRA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:531d:7bf:9943:ccf6:37e7:ffe6, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-X706B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata d8286c285c6b44298473d917623e1b55',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:531d:7bf:9943:ccf6:37e7:ffe6',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ebd485d96c4084-LHR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698754595, deviceId: '4fe8fc9bf3ec944d' }
+d8286c285c6b44298473d917623e1b55
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:531d:7bf:9943:ccf6:37e7:ffe6, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-X706B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata d8286c285c6b44298473d917623e1b55',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:531d:7bf:9943:ccf6:37e7:ffe6',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ebd48bbef44084-LHR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:6345:d053:9cb7:ccff:fe77:9f6, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH2467; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:6345:d053:9cb7:ccff:fe77:9f6',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ebeb963a66694b-FRA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698755539, deviceId: '263a6abea78df0e2' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:6345:d053:9cb7:ccff:fe77:9f6, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH2467; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 263a6abea78df0e2',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:6345:d053:9cb7:ccff:fe77:9f6',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ebeb9cbf96694b-FRA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:6345:d053:9cb7:ccff:fe77:9f6, ::1',
+  connection: 'close',
+  'content-length': '175',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH2467; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 263a6abea78df0e2',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:6345:d053:9cb7:ccff:fe77:9f6',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ebeba4c9315d5d-FRA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'c2EYeVGVR8Wi0ah93XbctG:APA91bEgjflYSvvD5sjpyBsqGw73En7nNEEbBOJZL5ARZKMhhxG7j4kRZaTofgQIzWoCD7NDXz1oAHnGWMe7ezuJw7Fto3g0GJyI-P3m33TYO6hUhxYwVJjZFjRw9fGj40lXdUPRBdGP'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:6345:d053:9cb7:ccff:fe77:9f6, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH2467; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 263a6abea78df0e2',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:6345:d053:9cb7:ccff:fe77:9f6',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ebebcd4eed3a94-FRA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698755549, deviceId: '263a6abea78df0e2' }
+263a6abea78df0e2
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:6345:d053:9cb7:ccff:fe77:9f6, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH2467; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 263a6abea78df0e2',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:6345:d053:9cb7:ccff:fe77:9f6',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ebebd4bda73a94-FRA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2402:8100:2863:6491:cca1:2c1:d134:a57a, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (HD1901; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 81dd11679ea74ce6a78b3bb372f11b3e',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2402:8100:2863:6491:cca1:2c1:d134:a57a',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ec41ac9b2c5f64-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698759065, deviceId: '7cb8a211235a47f0' }
+81dd11679ea74ce6a78b3bb372f11b3e
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2402:8100:2863:6491:cca1:2c1:d134:a57a, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (HD1901; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 81dd11679ea74ce6a78b3bb372f11b3e',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2402:8100:2863:6491:cca1:2c1:d134:a57a',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ec41b018ba5f64-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2604:3d08:9588:5600:71ca:16ec:4d94:660b, ::1',
+  connection: 'close',
+  'content-length': '82',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 17.1.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 932337a559744021a3df45d000a9b84c',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2604:3d08:9588:5600:71ca:16ec:4d94:660b',
+  'cf-ipcountry': 'CA',
+  'cf-ray': '81ec6b9f19ba8443-YVR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  localTime: 1698760785.606865,
+  deviceId: '2EBF7B17-91AA-4EF1-BB27-45A06B45F286'
+}
+932337a559744021a3df45d000a9b84c
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2604:3d08:9588:5600:71ca:16ec:4d94:660b, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 17.1.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 932337a559744021a3df45d000a9b84c',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2604:3d08:9588:5600:71ca:16ec:4d94:660b',
+  'cf-ipcountry': 'CA',
+  'cf-ray': '81ec6b9f68748414-YVR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:1c29:5166:7431:f759:4ffc:5cbb, ::1',
+  connection: 'close',
+  'content-length': '82',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 17.0.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 0b0c070ed4654d01999a4f01e73a5678',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:1c29:5166:7431:f759:4ffc:5cbb',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ec7b4aac814d7c-FRA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  localTime: 1698761426.886993,
+  deviceId: 'ECEEB838-C3DC-4EEA-98EE-3329D16A9DB3'
+}
+0b0c070ed4654d01999a4f01e73a5678
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:1c29:5166:7431:f759:4ffc:5cbb, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 17.0.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 0b0c070ed4654d01999a4f01e73a5678',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:1c29:5166:7431:f759:4ffc:5cbb',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ec7b4ce94b7315-LHR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4085:8517:f1af::b83:68a4, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (RMX2161; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4085:8517:f1af::b83:68a4',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ecb22eda1912b4-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698763675, deviceId: '0bd6b57c5948d17b' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4085:8517:f1af::b83:68a4, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (RMX2161; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 0bd6b57c5948d17b',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4085:8517:f1af::b83:68a4',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ecb233cbf612b4-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4085:8517:f1af::b83:68a4, ::1',
+  connection: 'close',
+  'content-length': '175',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (RMX2161; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 0bd6b57c5948d17b',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4085:8517:f1af::b83:68a4',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ecb23d8e9a1221-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'fuJp7zcNRKmoAOdhE-D4iQ:APA91bHuZdN7fG67PlVIpln3RE4PWGPy54U2vqW5eIu6kDX9ueGnNHdWqNZ1W7qjMlDU7joOyGIWHEcA1Ir3dOguS9aLtTEGenGufPJmVsi1CPtvKUkfca7wUXa8UkYLp72-Id41ZlkO'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:4832:298e::82d:3d3, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (LAVA LZX407; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 328f608af1aa42e1bcdcb061b00b11a6',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:4832:298e::82d:3d3',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ecbdb46f94b6f8-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698764145, deviceId: 'de3a6b580c6b91a3' }
+328f608af1aa42e1bcdcb061b00b11a6
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:4832:298e::82d:3d3, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (LAVA LZX407; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 328f608af1aa42e1bcdcb061b00b11a6',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:4832:298e::82d:3d3',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ecbdbc3d0ab6f8-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '117.199.86.75, ::1',
+  connection: 'close',
+  'content-length': '81',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 17.0.3)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata a802f405ac754176b566534ed7b4e8ce',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '117.199.86.75',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ecd1aa89d2a8f9-MAA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  localTime: 1698764964.970629,
+  deviceId: '32BE338A-3397-47A4-B57F-631FD3E5461B'
+}
+a802f405ac754176b566534ed7b4e8ce
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '117.199.86.75, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 17.0.3)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata a802f405ac754176b566534ed7b4e8ce',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '117.199.86.75',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ecd1abca3eb2a9-MAA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '49.37.212.163, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-S908E; Android 9)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '49.37.212.163',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed0dfcdb084745-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698767432, deviceId: '83afe2a438e2e1a7' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '49.37.212.163, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-S908E; Android 9)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 83afe2a438e2e1a7',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '49.37.212.163',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed0e01c9df4745-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '49.37.212.163, ::1',
+  connection: 'close',
+  'content-length': '175',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-S908E; Android 9)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 83afe2a438e2e1a7',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '49.37.212.163',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed0e0d180944ab-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'dRc0S8xJSMquulTCVE6Zut:APA91bF9O1ljg1pUc42i6MB7Q0aSovVi1SV-pg4Ks4k9MrjPpoDc4TjZ1j8-1A-O12J-Il9QkrUNSuIKnk4iRj2wleapK1Nu-j8BEV6h9PZh2VK8mTkAUC3DkwyL4DOIru0CdknzVoCZ'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4085:2e10:7c2d:5b89:fa3d:70ea:bf0d, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi Note 7 Pro; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 1f11e4850703475fb0040c4ded33e73c',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4085:2e10:7c2d:5b89:fa3d:70ea:bf0d',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed12212fb45f9b-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698767602, deviceId: 'e5ecfd8cf9864ebf' }
+1f11e4850703475fb0040c4ded33e73c
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4085:2e10:7c2d:5b89:fa3d:70ea:bf0d, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi Note 7 Pro; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 1f11e4850703475fb0040c4ded33e73c',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4085:2e10:7c2d:5b89:fa3d:70ea:bf0d',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed1227c9dc5f9b-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:6333:6360:bdf5:cb93:698e:c66c, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-M115F; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:6333:6360:bdf5:cb93:698e:c66c',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed1308f9f40a55-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698767638, deviceId: '1260121c1aced0d4' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:6333:6360:bdf5:cb93:698e:c66c, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-M115F; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 1260121c1aced0d4',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:6333:6360:bdf5:cb93:698e:c66c',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed130efa4b0a55-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:6333:6360:bdf5:cb93:698e:c66c, ::1',
+  connection: 'close',
+  'content-length': '175',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-M115F; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 1260121c1aced0d4',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:6333:6360:bdf5:cb93:698e:c66c',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed1316ea9e0e30-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'epcJkQUzR5y-6x-TTrWrVe:APA91bHkXuKjbU-xeaWzBB0Ilq0xM3fLxAh_Pr9IcOjZzM7SJcJCnLWb0tlggFl5QWQGs0Q48mjjknDjP3q2ayjTb2Uk1a_web3IO3NGTBJzosMmRCcDCPuINdZd0fLz9K87uV_Ti1It'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '188.170.82.99, ::1',
+  connection: 'close',
+  'content-length': '81',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (iPhone 7s; iOS 15.8.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata fb848cc33bdd424a92110ec3c91596d9',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '188.170.82.99',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81ed16922c440d2e-ARN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: '5BBB6838-64FB-4768-B26E-1AE30B386B0F',
+  localTime: 1698767787.278429
+}
+fb848cc33bdd424a92110ec3c91596d9
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '188.170.82.99, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (iPhone 7s; iOS 15.8.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata fb848cc33bdd424a92110ec3c91596d9',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '188.170.82.99',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81ed16932e5909b0-ARN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4085:2e1b:73ef::8d8a:4c15, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (21061119BI; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4085:2e1b:73ef::8d8a:4c15',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed2d1d5e8c400b-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698768666, deviceId: 'e26ca6873935940f' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4085:2e1b:73ef::8d8a:4c15, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (21061119BI; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4085:2e1b:73ef::8d8a:4c15',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed31aee8155ce9-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698768891, deviceId: 'e26ca6873935940f' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4085:2e1b:73ef::8d8a:4c15, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (21061119BI; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata e26ca6873935940f',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4085:2e1b:73ef::8d8a:4c15',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed31b42e5c5ce9-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4085:2e1b:73ef::8d8a:4c15, ::1',
+  connection: 'close',
+  'content-length': '175',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (21061119BI; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata e26ca6873935940f',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4085:2e1b:73ef::8d8a:4c15',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed31bf7afc4d4b-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'c59HlG2JSRWEiXrZvgaakU:APA91bHso-Gbi5i2lJ3VwZO3fFZ_8rUeV6Wm0f2SrQHQ8HUG9k5yKwPNMeuJ5dyaPp8yeF9EsCaOB9WOOqSSFDtu3WeuMvxWCYf9FnjRAd3DnUkVT-6sBGaSXjmBF0fP_DMJFIhBdQ4F'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '223.176.20.62, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (moto g(9); Android 11)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 23c6c24dfc114f77977f3b560e056274',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '223.176.20.62',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed3d322f10dd73-LHR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698769339, deviceId: 'cda22bcb5d0a735b' }
+23c6c24dfc114f77977f3b560e056274
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '223.176.20.62, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (moto g(9); Android 11)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 23c6c24dfc114f77977f3b560e056274',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '223.176.20.62',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed3d3fbbd1dd73-LHR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2405:201:400f:9023:8c57:7df3:4aaa:3586, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-G991B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2405:201:400f:9023:8c57:7df3:4aaa:3586',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed3e98ef220daf-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698769423, deviceId: '7abc982743f02f92' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2405:201:400f:9023:8c57:7df3:4aaa:3586, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-G991B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 7abc982743f02f92',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2405:201:400f:9023:8c57:7df3:4aaa:3586',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed3e9e49b80daf-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2405:201:400f:9023:8c57:7df3:4aaa:3586, ::1',
+  connection: 'close',
+  'content-length': '175',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-G991B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2405:201:400f:9023:8c57:7df3:4aaa:3586',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed3e9daa7a1298-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'eJK-UKbLR-iDjij6g3N4Y9:APA91bFJBdxHtzz_c5n4ciQx0RjGJnqYjwdjefbAHhkUmkrbcb0XDvJSxtBli2rqo-_43SBbY4mehPkOiXiIErglwiN8de8rKMh3kyws86tB_k5nmvQ1uQ0eVQloSTgMWaMLQCyqtrtT'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '110.235.217.160, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi K20 Pro; Android 11)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 0ab7c4d2b779454697108b0cb51d5e73',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '110.235.217.160',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed43646ceb41a5-BOM',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698769622, deviceId: '93d36271fdd42d07' }
+0ab7c4d2b779454697108b0cb51d5e73
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '110.235.217.160, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi K20 Pro; Android 11)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 0ab7c4d2b779454697108b0cb51d5e73',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '110.235.217.160',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ed4366cd5941a5-BOM',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '94.25.235.99, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Mi Note 10; Android 11)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 63f7b20595304ce496408347994aa50f',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '94.25.235.99',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81ed6b950a0e991a-ARN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698771267, deviceId: '7485f379fa993d3b' }
+63f7b20595304ce496408347994aa50f
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '94.25.235.99, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Mi Note 10; Android 11)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata 63f7b20595304ce496408347994aa50f',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '94.25.235.99',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81ed6b9acbfd991a-ARN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '188.170.200.138, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.3 (SM-S918B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '188.170.200.138',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81ed9d1e3cd79933-ARN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698773297, deviceId: 'b31b829402f0f30b' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '188.170.200.138, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.3 (SM-S918B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '188.170.200.138',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81ed9d2189ce98f1-ARN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '188.170.200.138, ::1',
+  connection: 'close',
+  'content-length': '175',
+  'user-agent': 'com.fulldome.mahabharata/1.6.3 (SM-S918B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'ru',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '188.170.200.138',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81ed9d2b0e592dfa-ARN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'eL1kPVYGSv-88bcUpYXBGO:APA91bG4oA75b5N3d4ndCW0tQ676x0oz3q_6DN6WqeSqguJJy0pGlhpatzGB8-PGHXP63I_0FlaaWeCXOSmHRzEIIA8DZAImtYijl44nOpo3DcUXcy2T2Xzi5dZ1Gv8ES6JlkF6_YGtY'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '95.26.37.89, ::1',
+  connection: 'close',
+  'content-length': '82',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.4.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata aa1fec0eff3a40f8a84477caad97f04a',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '95.26.37.89',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81eda4b12c7e6389-LHR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: 'C6633EE9-97E3-432D-850A-A3765E6F31CC',
+  localTime: 1698773608.8592582
+}
+aa1fec0eff3a40f8a84477caad97f04a
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '95.26.37.89, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.4.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'ru',
+  authorization: 'Mahabharata aa1fec0eff3a40f8a84477caad97f04a',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '95.26.37.89',
+  'cf-ipcountry': 'RU',
+  'cf-ray': '81eda4b1df000414-FRA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4053:4e96:7b1:a744:b07d:8fad:543f, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (RMX3491; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 03c91e1f276140499862351ad1fab423',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4053:4e96:7b1:a744:b07d:8fad:543f',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81edf61dfd1b5f5f-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698776942, deviceId: '7201953c53099c91' }
+03c91e1f276140499862351ad1fab423
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4053:4e96:7b1:a744:b07d:8fad:543f, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (RMX3491; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 03c91e1f276140499862351ad1fab423',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4053:4e96:7b1:a744:b07d:8fad:543f',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81edf6217fda5f5f-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2406:7400:94:1c46:73ce:c61f:c5ae:e032, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (I2201; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 5242dfe9794e434fb09f321cef4cb805',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2406:7400:94:1c46:73ce:c61f:c5ae:e032',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ee02e02ac0a8ff-MAA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698777466, deviceId: 'eb958877e71bc7bf' }
+5242dfe9794e434fb09f321cef4cb805
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2406:7400:94:1c46:73ce:c61f:c5ae:e032, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (I2201; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 5242dfe9794e434fb09f321cef4cb805',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2406:7400:94:1c46:73ce:c61f:c5ae:e032',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ee02e47f3ea8ff-MAA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '49.43.153.148, ::1',
+  connection: 'close',
+  'content-length': '82',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 15.7.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '49.43.153.148',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ee1ca99b0e0da1-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: 'F24B1057-F82B-476C-B6C8-26F02BC8861D',
+  localTime: 1698778522.333465
+}
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '49.43.153.148, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 15.7.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata F24B1057-F82B-476C-B6C8-26F02BC8861D',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '49.43.153.148',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81ee1caefe260da1-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:5d89:311:b94f:b999:6529:56b7, ::1',
+  connection: 'close',
+  'content-length': '82',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 17.1.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:5d89:311:b94f:b999:6529:56b7',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81eeba615bb966d6-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  localTime: 1698784981.973445,
+  deviceId: 'ED21C5D6-123D-45A3-887A-6A65951C9761'
+}
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:5d89:311:b94f:b999:6529:56b7, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 17.1.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata ED21C5D6-123D-45A3-887A-6A65951C9761',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:5d89:311:b94f:b999:6529:56b7',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81eeba65b9d966d6-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '14.139.94.81, ::1',
+  connection: 'close',
+  'content-length': '81',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.6.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '14.139.94.81',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81eee8fe8c8e0193-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  localTime: 1698786891.883682,
+  deviceId: '37B0D453-E1E2-45E6-A883-12431A1D9CF1'
+}
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '14.139.94.81, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.6.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 37B0D453-E1E2-45E6-A883-12431A1D9CF1',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '14.139.94.81',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81eee9008d1c0193-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '37.111.212.122, ::1',
+  connection: 'close',
+  'content-length': '81',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (iPhone 6+; iOS 12.5.7)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata abe19fdcdb8d4f4f81482d0c831d65e3',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '37.111.212.122',
+  'cf-ipcountry': 'BD',
+  'cf-ray': '81effa468bd24e9d-DAC',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  localTime: 1698797926.717411,
+  deviceId: '28C4BDD7-2C1C-4E38-A9A7-A339C16B67B7'
+}
+abe19fdcdb8d4f4f81482d0c831d65e3
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '37.111.212.122, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (iPhone 6+; iOS 12.5.7)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata abe19fdcdb8d4f4f81482d0c831d65e3',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '37.111.212.122',
+  'cf-ipcountry': 'BD',
+  'cf-ray': '81effa4709614ea0-DAC',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:1c7b:89a8:f98f:1d97:6f3a:1ad7, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (RMX3660; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 87ac2d0d43c042a9a1713503740d116e',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:1c7b:89a8:f98f:1d97:6f3a:1ad7',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81efff8e7af366fa-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698798301, deviceId: '0648bf773d4b91d2' }
+87ac2d0d43c042a9a1713503740d116e
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:1c7b:89a8:f98f:1d97:6f3a:1ad7, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (RMX3660; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 87ac2d0d43c042a9a1713503740d116e',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:1c7b:89a8:f98f:1d97:6f3a:1ad7',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81efff93feec66fa-AMS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:632d:cc53:ac50:abf6:821f:478, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-M115F; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 1260121c1aced0d4',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:632d:cc53:ac50:abf6:821f:478',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f02f736ce130e4-FRA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698800258, deviceId: '1260121c1aced0d4' }
+1260121c1aced0d4
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:632d:cc53:ac50:abf6:821f:478, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-M115F; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 1260121c1aced0d4',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:632d:cc53:ac50:abf6:821f:478',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f02f7a786330e4-FRA',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2001:56a:fec9:1100:a51c:b5b6:3f7c:17bc, ::1',
+  connection: 'close',
+  'content-length': '82',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (iPhone 5s; iOS 12.5.7)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 42a692d1c748445aaefe5f4736886d11',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2001:56a:fec9:1100:a51c:b5b6:3f7c:17bc',
+  'cf-ipcountry': 'CA',
+  'cf-ray': '81f03c43bf2d842b-YVR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: '3925FB4C-2C77-41B9-968D-1C1E8BFA0F8E',
+  localTime: 1698800788.841817
+}
+42a692d1c748445aaefe5f4736886d11
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2001:56a:fec9:1100:a51c:b5b6:3f7c:17bc, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (iPhone 5s; iOS 12.5.7)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 42a692d1c748445aaefe5f4736886d11',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2001:56a:fec9:1100:a51c:b5b6:3f7c:17bc',
+  'cf-ipcountry': 'CA',
+  'cf-ray': '81f03c451fdc2dbb-YVR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40e2:1a:3dba:3cc2:40ff:fe8f:b15f, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH2381; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40e2:1a:3dba:3cc2:40ff:fe8f:b15f',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f095630d6270ec-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698804436, deviceId: '3f9570abb8c57d0b' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40e2:1a:3dba:3cc2:40ff:fe8f:b15f, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH2381; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 3f9570abb8c57d0b',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40e2:1a:3dba:3cc2:40ff:fe8f:b15f',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f095694c4570ec-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40e2:1a:3dba:3cc2:40ff:fe8f:b15f, ::1',
+  connection: 'close',
+  'content-length': '175',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH2381; Android 12)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 3f9570abb8c57d0b',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40e2:1a:3dba:3cc2:40ff:fe8f:b15f',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f095776e860d8e-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'dH2T4fG7TJCnE2kZyimyqU:APA91bEJGbMmgxdpxuQAaGGxzZAdeO8a8qXBVnT4xWTdSqQyinZQxNMBU2QMZrKisrE2kFEJL0ZO72darIw2hoBD-6INVps_v3zsIqdriwgkLPEqQGfR022KgEqPkg4eEC_9DoYf-Dp7'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:408d:3c1c:d560::530a:e114, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH1823; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:408d:3c1c:d560::530a:e114',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f11f930b5691b3-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698810099, deviceId: '6ec9f7f08cdbb60d' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:408d:3c1c:d560::530a:e114, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH1823; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 6ec9f7f08cdbb60d',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:408d:3c1c:d560::530a:e114',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f11f95bdad91b3-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:408d:3c1c:d560::530a:e114, ::1',
+  connection: 'close',
+  'content-length': '175',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH1823; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 6ec9f7f08cdbb60d',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:408d:3c1c:d560::530a:e114',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f11fa3bb1591b3-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'eInaqmoJQhaD8dUS0BrkEK:APA91bGHBjxWFugZfOdnXGx6N4Y5OtLiQMgYRKcHpH4JkO2tl9uDpUd5jenAGFG76VDj4fb1vsdI0thUruLurRoxXotSj2YX0PqkQ95EjqMlv11v6Arr7Ad-EkrdV6xKjK_S-PIY0PM1'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:408d:3c1c:d560::530a:e114, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH1823; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 6ec9f7f08cdbb60d',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:408d:3c1c:d560::530a:e114',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f1210f8a7d3e53-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698810160, deviceId: '6ec9f7f08cdbb60d' }
+6ec9f7f08cdbb60d
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:408d:3c1c:d560::530a:e114, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (CPH1823; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 6ec9f7f08cdbb60d',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:408d:3c1c:d560::530a:e114',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f12114e8c93e53-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40e3:48:6c69:5076:f081:3723:13c5, ::1',
+  connection: 'close',
+  'content-length': '81',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.3.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40e3:48:6c69:5076:f081:3723:13c5',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f141d418043ff9-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  localTime: 1698811501.070966,
+  deviceId: '60F59E29-6DB7-484F-A847-6E142DC5E060'
+}
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40e3:48:6c69:5076:f081:3723:13c5, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.3.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 60F59E29-6DB7-484F-A847-6E142DC5E060',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40e3:48:6c69:5076:f081:3723:13c5',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f141d75bba3ff9-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40f2:3d:eeea:8000::, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-E146B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40f2:3d:eeea:8000::',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f16c77384c44a7-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698813248, deviceId: '05ff1c056e53896d' }
+Токен не найден в заголовке Authorization.
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40f2:3d:eeea:8000::, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-E146B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 05ff1c056e53896d',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40f2:3d:eeea:8000::',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f16c7a2bdb44a7-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40f2:3d:eeea:8000::, ::1',
+  connection: 'close',
+  'content-length': '175',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (SM-E146B; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 05ff1c056e53896d',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40f2:3d:eeea:8000::',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f16c83cf9844a7-SIN',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'fxsuxZ5LQPO8S-tCKRhz9G:APA91bHlzIGz33yRTRXLJtWkxCwW26ro7v13kXK982THEnrPGZaayJpHNAvdhp8O_uLVHPcy2t36Fg8Px648rEwAmPNdFaSRd7Xn8Jh3a-G1FXNBtaDUV84lXkZtAjte-sCtwWvUVelU'
+}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2607:fb90:fe84:4657:cc97:5257:4d07:d34f, ::1',
+  connection: 'close',
+  'content-length': '82',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.6.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 09d5ad3fcb804b22b432c1701f7eda2a',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2607:fb90:fe84:4657:cc97:5257:4d07:d34f',
+  'cf-ipcountry': 'US',
+  'cf-ray': '81f1c7789da6426a-EWR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  deviceId: 'B7E8C2D2-3033-4A90-BF9B-5443F215887D',
+  localTime: 1698816976.293621
+}
+09d5ad3fcb804b22b432c1701f7eda2a
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2607:fb90:fe84:4657:cc97:5257:4d07:d34f, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.6.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 09d5ad3fcb804b22b432c1701f7eda2a',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2607:fb90:fe84:4657:cc97:5257:4d07:d34f',
+  'cf-ipcountry': 'US',
+  'cf-ray': '81f1c778f9d043ed-EWR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '49.195.115.149, ::1',
+  connection: 'close',
+  'content-length': '82',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.6.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata A37005AB-414D-476D-BE95-CEBEBAF97AD8',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '49.195.115.149',
+  'cf-ipcountry': 'AU',
+  'cf-ray': '81f1f65eeb071fcd-HKG',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  localTime: 1698818896.803533,
+  deviceId: 'A37005AB-414D-476D-BE95-CEBEBAF97AD8'
+}
+A37005AB
+eceived a request Endpoint: /api/Auth/UpdatePushToken
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '49.195.115.149, ::1',
+  connection: 'close',
+  'content-length': '76',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.6.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata A37005AB',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '49.195.115.149',
+  'cf-ipcountry': 'AU',
+  'cf-ray': '81f1f6648c3f1fcd-HKG',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  token: 'c804b7cd46b51ad9a2f27375bb9827b5fc261b12e07871c320e6b60a7479fcdb'
+}
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '49.195.115.149, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 16.6.1)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata A37005AB-414D-476D-BE95-CEBEBAF97AD8',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '49.195.115.149',
+  'cf-ipcountry': 'AU',
+  'cf-ray': '81f1f66429408b27-HKG',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40c0:1077:5fb:ffcc:eb22:ea31:2433, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (IN2021; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 9bc86d51a4d445fba2223d28846aa637',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40c0:1077:5fb:ffcc:eb22:ea31:2433',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f1fa681c451854-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698819057, deviceId: 'fc126c8b1c28ccf1' }
+9bc86d51a4d445fba2223d28846aa637
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40c0:1077:5fb:ffcc:eb22:ea31:2433, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (IN2021; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 9bc86d51a4d445fba2223d28846aa637',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40c0:1077:5fb:ffcc:eb22:ea31:2433',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f1fa7259241854-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:79f2:168d:d8c6:9db:2879:f473, ::1',
+  connection: 'close',
+  'content-length': '81',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 17.1.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 80ee225015c14d559dbdd99a7cd409f1',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:79f2:168d:d8c6:9db:2879:f473',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f1faf2ad28f0ab-CDG',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {
+  localTime: 1698819084.623677,
+  deviceId: '690B6E56-FA72-4F2E-8784-08435D121F90'
+}
+80ee225015c14d559dbdd99a7cd409f1
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2401:4900:79f2:168d:d8c6:9db:2879:f473, ::1',
+  connection: 'close',
+  'content-length': '2',
+  'user-agent': 'com.360art.mahabharata/1.19.0 (Unknown device; iOS 17.1.0)',
+  accept: '*/*',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 80ee225015c14d559dbdd99a7cd409f1',
+  'cache-control': 'no-cache',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2401:4900:79f2:168d:d8c6:9db:2879:f473',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f1faf50d0824f0-LHR',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:40c0:1077:5fb:ffcc:eb22:ea31:2433, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (IN2021; Android 13)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 9bc86d51a4d445fba2223d28846aa637',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:40c0:1077:5fb:ffcc:eb22:ea31:2433',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f206f0f85a11b8-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}
+eceived a request Endpoint: /api/Auth/UpdateDevice
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4085:2d09:1bc8:8f1f:1cc6:af76:8aa2, ::1',
+  connection: 'close',
+  'content-length': '54',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi Note 7 Pro; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 1f11e4850703475fb0040c4ded33e73c',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4085:2d09:1bc8:8f1f:1cc6:af76:8aa2',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f20f53cfae11b1-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: { localTime: 1698819917, deviceId: 'e5ecfd8cf9864ebf' }
+1f11e4850703475fb0040c4ded33e73c
+eceived a request Endpoint: /api/Data/Seasons
+HTTP Method: POST
+Headers: {
+  host: 'app.mbharata.com',
+  'x-forwarded-host': 'app.mbharata.com',
+  'x-real-ip': '::1',
+  'x-forwarded-for': '2409:4085:2d09:1bc8:8f1f:1cc6:af76:8aa2, ::1',
+  connection: 'close',
+  'content-length': '0',
+  'user-agent': 'com.fulldome.mahabharata/1.6.8 (Redmi Note 7 Pro; Android 10)',
+  'accept-encoding': 'gzip',
+  'accept-language': 'en',
+  authorization: 'Mahabharata 1f11e4850703475fb0040c4ded33e73c',
+  'cdn-loop': 'cloudflare',
+  'cf-connecting-ip': '2409:4085:2d09:1bc8:8f1f:1cc6:af76:8aa2',
+  'cf-ipcountry': 'IN',
+  'cf-ray': '81f20f59deec11b1-MRS',
+  'cf-visitor': '{"scheme":"https"}',
+  'cf-warp-tag-id': 'e2bc3fd1-dbc3-4e94-85fb-019e9b8ef57a',
+  'content-type': 'application/json',
+  'x-forwarded-proto': 'https'
+}
+Request Body: {}

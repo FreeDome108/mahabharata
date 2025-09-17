@@ -38,7 +38,7 @@ dependencies:
   chewie: ^1.7.4
   flutter_gl: ^0.0.4
   vector_math: ^2.1.4
-  flutter_3d_controller: ^0.0.5
+  flutter_3d_controller: ^2.3.0
   
   # Audio & Sound
   just_audio: ^0.9.36
@@ -49,9 +49,6 @@ dependencies:
   ffi: ^2.1.0
   
   # Dome & 3D Rendering
-  flutter_gl: ^0.0.4
-  vector_math: ^2.1.4
-  quaternion: ^0.0.1
   
   # Sensors & Interaction
   sensors_plus: ^4.0.2

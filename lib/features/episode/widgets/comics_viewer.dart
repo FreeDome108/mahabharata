@@ -594,4 +594,15 @@ class _ComicsViewerState extends State<ComicsViewer>
       ),
     );
   }
+
+  /// Получение изображения страницы из архива
+  Future<Uint8List?> _getPageImage(String pageName) async {
+    try {
+      final comicsService = Provider.of<ComicsService>(context, listen: false);
+      return await comicsService.getPageImage(widget.comicsFilePath, pageName);
+    } catch (e) {
+      print('Ошибка получения изображения страницы: $e');
+      return null;
+    }
+  }
 }

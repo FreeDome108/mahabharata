@@ -357,6 +357,8 @@ class _SeasonsScreenState extends State<SeasonsScreen> {
   }
 
   Widget _buildEpisodeItem(Map<String, dynamic> episode) {
+    final bool isLocalComics = episode['isLocal'] == true;
+    
     return Container(
       margin: const EdgeInsets.only(bottom: 12),
       child: InkWell(
@@ -382,8 +384,8 @@ class _SeasonsScreenState extends State<SeasonsScreen> {
                   gradient: AppTheme.primaryGradient,
                   shape: BoxShape.circle,
                 ),
-                child: const Icon(
-                  Icons.play_arrow,
+                child: Icon(
+                  isLocalComics ? Icons.book : Icons.play_arrow,
                   color: Colors.white,
                   size: 20,
                 ),
@@ -405,11 +407,33 @@ class _SeasonsScreenState extends State<SeasonsScreen> {
                       overflow: TextOverflow.ellipsis,
                     ),
                     const SizedBox(height: 4),
-                    Text(
-                      'Эпизод ${episode['order'] ?? 1}',
-                      style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                        color: Colors.grey[600],
-                      ),
+                    Row(
+                      children: [
+                        Text(
+                          'Эпизод ${episode['order'] ?? 1}',
+                          style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                            color: Colors.grey[600],
+                          ),
+                        ),
+                        if (isLocalComics) ...[
+                          const SizedBox(width: 8),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: AppTheme.primaryColor.withOpacity(0.2),
+                              borderRadius: BorderRadius.circular(4),
+                            ),
+                            child: Text(
+                              'Локально',
+                              style: Theme.of(context).textTheme.bodySmall?.copyWith(
+                                color: AppTheme.primaryColor,
+                                fontSize: 10,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ],
                     ),
                   ],
                 ),

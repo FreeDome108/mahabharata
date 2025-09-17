@@ -63,6 +63,7 @@ dependencies:
   path_provider: ^2.1.2
   url_launcher: ^6.2.2
   package_info_plus: ^4.2.0
+  archive: ^3.4.10
   
   # Development
   flutter_lints: ^3.0.1

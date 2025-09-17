@@ -1,3 +1,4 @@
+import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:cached_network_image/cached_network_image.dart';
@@ -222,7 +223,7 @@ class _ComicsViewerState extends State<ComicsViewer>
     );
   }
 
-  Widget _buildPage(String pagePath) {
+  Widget _buildPage(String pageName) {
     return Container(
       width: double.infinity,
       height: double.infinity,
@@ -237,10 +238,35 @@ class _ComicsViewerState extends State<ComicsViewer>
           ),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(8),
-            child: Image.asset(
-              pagePath,
-              fit: BoxFit.contain,
-              errorBuilder: (context, error, stackTrace) {
+            child: FutureBuilder<Uint8List?>(
+              future: _getPageImage(pageName),
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return Container(
+                    width: 200,
+                    height: 200,
+                    decoration: BoxDecoration(
+                      gradient: AppTheme.primaryGradient,
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: const Center(
+                      child: CircularProgressIndicator(
+                        valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                      ),
+                    ),
+                  );
+                }
+                
+                if (snapshot.hasData && snapshot.data != null) {
+                  return Image.memory(
+                    snapshot.data!,
+                    fit: BoxFit.contain,
+                    errorBuilder: (context, error, stackTrace) {
+                      return _buildPlaceholderPage();
+                    },
+                  );
+                }
+                
                 return _buildPlaceholderPage();
               },
             ),

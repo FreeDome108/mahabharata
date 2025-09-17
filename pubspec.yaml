@@ -84,6 +84,7 @@ flutter:
     - assets/sounds/
     - assets/models/
     - assets/textures/
+    - files/
   
   fonts:
     - family: Sanskrit

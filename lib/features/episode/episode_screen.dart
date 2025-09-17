@@ -5,6 +5,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import '../../core/providers/app_providers.dart';
 import '../../core/theme/app_theme.dart';
 import '../../core/navigation/app_router.dart';
+import 'widgets/comics_viewer.dart';
 
 /// Экран воспроизведения эпизода
 class EpisodeScreen extends StatefulWidget {
@@ -92,6 +93,19 @@ class _EpisodeScreenState extends State<EpisodeScreen>
   }
 
   Widget _buildEpisodePlayer(Map<String, dynamic> episode) {
+    // Проверяем, является ли эпизод локальным комиксом
+    final bool isLocalComics = episode['isLocal'] == true;
+    final String? comicsFile = episode['file'];
+    
+    if (isLocalComics && comicsFile != null) {
+      // Показываем комикс
+      return ComicsViewer(
+        comicsFilePath: comicsFile,
+        episodeTitle: episode['name'] ?? 'Без названия',
+      );
+    }
+    
+    // Показываем обычный плеер для аудио эпизодов
     return FadeTransition(
       opacity: _fadeAnimation,
       child: Stack(

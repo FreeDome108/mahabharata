@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../services/audio_service.dart';
 import '../services/dome_service.dart';
 import '../services/hive_service.dart';
+import '../services/comics_service.dart';
 import '../config/app_config.dart';
 
 /// Провайдеры приложения Mbharata Client
@@ -14,6 +15,7 @@ class AppProviders {
     Provider<AudioService>(create: (_) => AudioService.instance),
     Provider<DomeService>(create: (_) => DomeService.instance),
     Provider<HiveService>(create: (_) => HiveService()),
+    Provider<ComicsService>(create: (_) => ComicsService()),
     
     // Провайдеры состояния
     ChangeNotifierProvider(create: (_) => AppStateProvider()),
@@ -116,9 +118,8 @@ class ContentProvider extends ChangeNotifier {
         }
       }
       
-      // Загружаем с сервера
-      // TODO: Реализовать загрузку с API
-      _seasons = _getMockSeasons();
+      // Загружаем локальные данные
+      _seasons = _getLocalSeasons();
       
       // Сохраняем в кэш
       await HiveService.saveSeasons(_seasons);
@@ -154,32 +155,24 @@ class ContentProvider extends ChangeNotifier {
     }
   }
   
-  /// Mock данные для тестирования
-  List<Map<String, dynamic>> _getMockSeasons() {
+  /// Загрузка локальных данных из папки files
+  List<Map<String, dynamic>> _getLocalSeasons() {
     return [
       {
         'id': 1,
         'name': 'Проклятие Амбы\nКнига 1',
-        'image': '/Images/a2e12519393f4938aa6a4518f104a827.jpg',
+        'image': 'assets/images/season1_cover.jpg',
         'order': 1,
         'episodes': [
           {
             'id': 1,
-            'name': 'Тлен',
-            'image': '/Images/b732c30bc25b4271afc8aa23a614b112*.jpg',
-            'file': '/Files/d00c610a6f4647dcbd8116014674d255.comics',
-            'version': 9,
-            'date': 1547251200,
+            'name': 'Глава 1 - Книга 1',
+            'image': 'assets/images/ch1_cover.jpg',
+            'file': 'files/Ch1_Book01.comics',
+            'version': 1,
+            'date': DateTime.now().millisecondsSinceEpoch ~/ 1000,
             'order': 1,
-          },
-          {
-            'id': 2,
-            'name': 'Обряд сваямвара',
-            'image': '/Images/dc882acefd174cbabe1df9204a558497*.jpg',
-            'file': '/Files/d94d8557c94e41ebb760347f2ad9d2f1.comics',
-            'version': 9,
-            'date': 1549929600,
-            'order': 2,
+            'isLocal': true,
           },
         ],
       },

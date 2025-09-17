@@ -1,0 +1,19 @@
+This is the Mahabharata.pro Client app featuring FreeDome interactive dome display technology.
+
+KEY TESTING NOTES:
+• The app is designed for both regular mobile use and dome projection systems
+• Dome features can be tested on regular devices - they will show spherical/fisheye projection
+• The app includes spatial audio features that work best with headphones or surround sound
+• Multi-language support is available in Settings
+• No demo account needed - the app works with sample content included
+
+SPECIAL FEATURES TO TEST:
+• Dome projection mode (accessible from main screen)
+• 3D audio positioning during episode playback  
+• Gesture controls for dome navigation
+• Theme switching (light/dark mode)
+• Multi-language interface
+
+The app is educational and cultural in nature, featuring content from the ancient Sanskrit epic Mahabharata. All content is appropriate for all ages and promotes cultural understanding and spiritual wisdom.
+
+For technical support during review, please contact anton.v.dodonov@gmail.com

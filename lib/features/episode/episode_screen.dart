@@ -427,7 +427,7 @@ class _EpisodeScreenState extends State<EpisodeScreen>
               IconButton(
                 onPressed: () => context.goToDome(),
                 icon: const Icon(
-                  Icons.dome,
+                  Icons.threed_rotation,
                   color: Colors.white,
                 ),
               ),
@@ -486,7 +486,7 @@ class _EpisodeScreenState extends State<EpisodeScreen>
                   Expanded(
                     child: ElevatedButton.icon(
                       onPressed: () => context.goToDome(),
-                      icon: const Icon(Icons.dome),
+                      icon: const Icon(Icons.threed_rotation),
                       label: const Text('Купол'),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppTheme.primaryColor,

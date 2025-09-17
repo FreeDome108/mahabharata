@@ -1,0 +1,30 @@
+🎉 Welcome to Mahabharata.pro Client v1.0.0!
+
+✨ NEW FEATURES:
+• Revolutionary FreeDome interactive dome display integration
+• Immersive 3D visualization with spherical projection
+• Spatial audio experience with anAntaSound technology
+• Multi-language support (English, Russian, Hindi, Thai)
+• Beautiful Material Design 3 interface with dark/light themes
+
+🎮 DOME EXPERIENCE:
+• Full planetarium-style viewing capabilities
+• Fisheye correction and spherical mapping
+• Interactive gesture controls and sensor integration
+• Optimized performance for dome theaters
+
+🎵 AUDIO FEATURES:
+• 3D positioned spatial audio
+• Multi-channel professional audio processing
+• Adaptive quality optimization
+• Seamless episode navigation
+
+📱 USER INTERFACE:
+• Smooth animations and micro-interactions
+• Intuitive navigation between seasons and episodes
+• Customizable settings for dome and audio preferences
+• Responsive design for all device sizes
+
+Perfect for educational institutions, cultural centers, meditation spaces, and entertainment venues with dome projection systems.
+
+Experience the ancient epic of Mahabharata like never before!

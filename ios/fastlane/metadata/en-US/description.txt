@@ -1,0 +1,38 @@
+Experience the epic tale of Mahabharata like never before with immersive dome projection technology and spatial audio.
+
+Mahabharata.pro Client is a revolutionary Flutter application that brings the ancient wisdom of Mahabharata to life through cutting-edge FreeDome interactive dome display technology. Combining storytelling with advanced 3D visualization and spatial audio, this app offers an unprecedented immersive experience.
+
+KEY FEATURES:
+
+🎮 INTERACTIVE DOME DISPLAY
+• Full FreeDome integration for planetarium-style viewing
+• Advanced 3D graphics with Three.js rendering
+• Spherical projection with fisheye correction
+• Interactive gesture controls and sensor integration
+
+🎵 SPATIAL AUDIO EXPERIENCE  
+• 3D positioned audio for immersive storytelling
+• anAntaSound professional audio processing
+• Multi-channel playback support
+• Adaptive quality optimization
+
+📱 MODERN USER INTERFACE
+• Material Design 3 with adaptive theming
+• Light and dark theme support
+• Multi-language support (EN, RU, HI, TH)
+• Smooth animations and micro-interactions
+
+🎨 VISUAL EFFECTS
+• Beautiful gradients and shadows
+• Interactive 3D objects and animations
+• Atmospheric particle effects
+• Dome-optimized visual elements
+
+PERFECT FOR:
+• Educational institutions with dome theaters
+• Cultural centers and museums
+• Meditation and spiritual practice spaces
+• Entertainment venues and planetariums
+• Personal immersive storytelling experiences
+
+Transform your space into an immersive dome theater and journey through the timeless epic of Mahabharata with state-of-the-art technology that bridges ancient wisdom with modern innovation.

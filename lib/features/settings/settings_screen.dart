@@ -72,7 +72,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             // Купольное отображение
             _buildSection(
               title: 'Купольное отображение',
-              icon: Icons.dome,
+              icon: Icons.threed_rotation,
               children: [
                 _buildDomeSettings(),
               ],
@@ -249,7 +249,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     return ListTile(
       title: const Text('Настройки купола'),
       subtitle: const Text('Радиус, проекция, оптимизация'),
-      leading: const Icon(Icons.dome),
+      leading: const Icon(Icons.threed_rotation),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () => _showDomeSettingsDialog(),
     );

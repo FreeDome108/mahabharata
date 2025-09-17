@@ -405,7 +405,7 @@ class _HomeScreenState extends State<HomeScreen>
     return FloatingActionButton.extended(
       onPressed: () => context.goToDome(),
       backgroundColor: AppTheme.primaryColor,
-      icon: const Icon(Icons.dome, color: Colors.white),
+      icon: const Icon(Icons.threed_rotation, color: Colors.white),
       label: const Text(
         'Купол',
         style: TextStyle(color: Colors.white),

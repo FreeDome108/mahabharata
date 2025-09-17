@@ -1,0 +1,37 @@
+# The Deliverfile allows you to store various App Store Connect metadata
+# For more information, check out the docs
+# https://docs.fastlane.tools/actions/deliver/
+
+# App Store Connect configuration
+app_identifier("com.example.mbharataClient")
+
+# Submission options
+submit_for_review(false)
+automatic_release(false)
+force(true)
+
+# Metadata options
+skip_metadata(false)
+skip_screenshots(false)
+skip_binary_upload(false)
+
+# App review information
+app_review_information({
+  first_name: "Anton",
+  last_name: "Dodonov", 
+  phone_number: "+1-555-0123",
+  email_address: "anton.v.dodonov@gmail.com",
+  demo_user: "",
+  demo_password: "",
+  notes: "This is the Mahabharata.pro Client app featuring FreeDome interactive dome display technology. Please test dome projection mode and spatial audio features. No demo account required."
+})
+
+# App information
+copyright("2024 NativeMindNONC. All rights reserved.")
+
+# Pricing and availability
+price_tier(0) # Free app
+
+# App Store release options
+phased_release(false)
+reset_ratings(false)

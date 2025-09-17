@@ -1,1 +1,0 @@
-sudo journalctl -xeu cloudflared.service

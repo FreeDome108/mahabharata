@@ -1,1 +1,0 @@
-cloudflared tunnel create main-th

@@ -1,1 +1,0 @@
-cloudflared tunnel route dns 9704339c-55b2-403a-a512-ad5dcf4a5255 tun.holyspotsapp.com

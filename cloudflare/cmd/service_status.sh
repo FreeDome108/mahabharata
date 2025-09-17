@@ -1,1 +1,0 @@
-systemctl status cloudflared

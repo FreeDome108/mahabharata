@@ -229,7 +229,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       'Купол',
                       '8',
                       'сессий',
-                      Icons.dome,
+                      Icons.threed_rotation,
                       AppTheme.accentColor,
                     ),
                   ),
@@ -349,7 +349,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               _buildAchievementItem(
                 'Купольный исследователь',
                 'Использовали купольное отображение',
-                Icons.dome,
+                Icons.threed_rotation,
                 true,
               ),
               _buildAchievementItem(

@@ -261,7 +261,7 @@ class _EpisodeScreenState extends State<EpisodeScreen>
               ),
             ),
             Text(
-              _formatDuration(playerProvider.duration),
+              _formatDuration(playerProvider.duration ?? Duration.zero),
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                 color: Colors.white70,
               ),

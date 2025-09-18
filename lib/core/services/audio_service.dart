@@ -354,9 +354,9 @@ class AudioService {
       );
 
       final quantumField = createQuantumSoundField(
-        frequency: 440.0, // Базовая частота
-        position: position,
-        state: quantumState,
+        440.0, // Базовая частота
+        position,
+        quantumState,
       );
 
       // Обработка через AnantaSound

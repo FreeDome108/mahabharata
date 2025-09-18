@@ -367,7 +367,7 @@ class _AnantaSoundSettingsScreenState extends State<AnantaSoundSettingsScreen>
                 _buildStatItem(
                   'Купольный резонанс',
                   '${(_currentStats!.domeResonance * 100).toStringAsFixed(1)}%',
-                  Icons.dome,
+                  Icons.threed_rotation,
                   Colors.indigo,
                 ),
               ] else ...[
@@ -571,7 +571,7 @@ class _AnantaSoundSettingsScreenState extends State<AnantaSoundSettingsScreen>
               Row(
                 children: [
                   Icon(
-                    Icons.dome,
+                    Icons.threed_rotation,
                     color: Colors.indigo,
                     size: 24,
                   ),
@@ -844,7 +844,7 @@ class _AnantaSoundSettingsScreenState extends State<AnantaSoundSettingsScreen>
                 width: double.infinity,
                 child: OutlinedButton.icon(
                   onPressed: () => _showExperimentalDialog(),
-                  icon: const Icon(Icons.experiment),
+                  icon: const Icon(Icons.science),
                   label: const Text('Экспериментальные настройки'),
                   style: OutlinedButton.styleFrom(
                     foregroundColor: Colors.orange,

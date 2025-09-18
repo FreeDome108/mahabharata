@@ -3,7 +3,7 @@
 # https://docs.fastlane.tools/actions/deliver/
 
 # App Store Connect configuration
-app_identifier("com.example.mbharataClient")
+app_identifier("net.nativemind.mahabharata")
 
 # Submission options
 submit_for_review(false)

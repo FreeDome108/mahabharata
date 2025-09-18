@@ -21,7 +21,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   void _loadSettings() {
-    final settingsProvider = Provider.of<SettingsProvider>(context, listen: false);
+    final settingsProvider =
+        Provider.of<SettingsProvider>(context, listen: false);
     settingsProvider.loadSettings();
   }
 
@@ -53,9 +54,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 _buildLanguageSelector(),
               ],
             ),
-            
+
             const SizedBox(height: 24),
-            
+
             // Аудио
             _buildSection(
               title: 'Аудио',
@@ -66,9 +67,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 _buildAnantaSoundSettings(),
               ],
             ),
-            
+
             const SizedBox(height: 24),
-            
+
             // Купольное отображение
             _buildSection(
               title: 'Купольное отображение',
@@ -77,9 +78,23 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 _buildDomeSettings(),
               ],
             ),
-            
+
             const SizedBox(height: 24),
-            
+
+            // Облачные функции
+            _buildSection(
+              title: 'Облачные функции',
+              icon: Icons.cloud,
+              children: [
+                _buildCloudToggle(),
+                _buildCloudStatus(),
+                _buildCloudSync(),
+                _buildCloudLogin(),
+              ],
+            ),
+
+            const SizedBox(height: 24),
+
             // Интерактивность
             _buildSection(
               title: 'Интерактивность',
@@ -89,9 +104,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 _buildTouchSensitivitySlider(),
               ],
             ),
-            
+
             const SizedBox(height: 24),
-            
+
             // О приложении
             _buildSection(
               title: 'О приложении',
@@ -147,14 +162,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   Text(
                     title,
                     style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                      fontWeight: FontWeight.bold,
-                    ),
+                          fontWeight: FontWeight.bold,
+                        ),
                   ),
                 ],
               ),
-              
+
               const SizedBox(height: 16),
-              
+
               // Содержимое секции
               ...children,
             ],
@@ -203,7 +218,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
           children: [
             ListTile(
               title: const Text('Громкость'),
-              subtitle: Text('${(settingsProvider.audioVolume * 100).round()}%'),
+              subtitle:
+                  Text('${(settingsProvider.audioVolume * 100).round()}%'),
               leading: const Icon(Icons.volume_up),
             ),
             Slider(
@@ -264,7 +280,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
           leading: const Icon(Icons.vibration),
           trailing: Switch(
             value: settingsProvider.enableHapticFeedback,
-            onChanged: (value) => settingsProvider.setEnableHapticFeedback(value),
+            onChanged: (value) =>
+                settingsProvider.setEnableHapticFeedback(value),
             activeColor: AppTheme.primaryColor,
           ),
         );
@@ -278,7 +295,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
       children: [
         const ListTile(
           title: Text('Чувствительность касаний'),
-          subtitle: Text('Настройка чувствительности для купольного управления'),
+          subtitle:
+              Text('Настройка чувствительности для купольного управления'),
           leading: Icon(Icons.touch_app),
         ),
         Slider(
@@ -372,7 +390,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
     );
   }
 
-  Widget _buildLanguageOption(String code, String name, SettingsProvider settingsProvider) {
+  Widget _buildLanguageOption(
+      String code, String name, SettingsProvider settingsProvider) {
     return ListTile(
       title: Text(
         name,
@@ -537,6 +556,395 @@ class _SettingsScreenState extends State<SettingsScreen> {
             },
             child: const Text(
               'Очистить',
+              style: TextStyle(color: AppTheme.errorColor),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildCloudToggle() {
+    return Consumer<CloudProvider>(
+      builder: (context, cloudProvider, child) {
+        return ListTile(
+          title: const Text('Облачные функции'),
+          subtitle: Text(cloudProvider.isCloudEnabled
+              ? 'Синхронизация с облаком включена'
+              : 'Работа в автономном режиме'),
+          leading: Icon(
+            cloudProvider.isCloudEnabled ? Icons.cloud : Icons.cloud_off,
+            color: cloudProvider.isCloudEnabled ? Colors.green : Colors.grey,
+          ),
+          trailing: Switch(
+            value: cloudProvider.isCloudEnabled,
+            onChanged: (value) => _toggleCloudFeatures(value, cloudProvider),
+            activeColor: AppTheme.primaryColor,
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildCloudStatus() {
+    return Consumer<CloudProvider>(
+      builder: (context, cloudProvider, child) {
+        if (!cloudProvider.isCloudEnabled) {
+          return const SizedBox.shrink();
+        }
+
+        return ListTile(
+          title: const Text('Статус подключения'),
+          subtitle: Text(_getConnectionStatus(cloudProvider)),
+          leading: Icon(
+            cloudProvider.isConnected ? Icons.wifi : Icons.wifi_off,
+            color: cloudProvider.isConnected ? Colors.green : Colors.red,
+          ),
+          trailing: cloudProvider.isSyncing
+              ? const SizedBox(
+                  width: 20,
+                  height: 20,
+                  child: CircularProgressIndicator(strokeWidth: 2),
+                )
+              : Icon(
+                  cloudProvider.isConnected ? Icons.check_circle : Icons.error,
+                  color: cloudProvider.isConnected ? Colors.green : Colors.red,
+                ),
+        );
+      },
+    );
+  }
+
+  Widget _buildCloudSync() {
+    return Consumer<CloudProvider>(
+      builder: (context, cloudProvider, child) {
+        if (!cloudProvider.isCloudEnabled) {
+          return const SizedBox.shrink();
+        }
+
+        return ListTile(
+          title: const Text('Синхронизация'),
+          subtitle: Text(_getLastSyncInfo(cloudProvider)),
+          leading: const Icon(Icons.sync),
+          trailing: const Icon(Icons.arrow_forward_ios),
+          onTap: cloudProvider.isSyncing
+              ? null
+              : () => _performSync(cloudProvider),
+        );
+      },
+    );
+  }
+
+  Widget _buildCloudLogin() {
+    return Consumer<CloudProvider>(
+      builder: (context, cloudProvider, child) {
+        if (!cloudProvider.isCloudEnabled) {
+          return const SizedBox.shrink();
+        }
+
+        return ListTile(
+          title: Text(cloudProvider.isAuthenticated ? 'Аккаунт' : 'Войти'),
+          subtitle: Text(cloudProvider.isAuthenticated
+              ? cloudProvider.userEmail ?? 'Пользователь'
+              : 'Войдите для синхронизации данных'),
+          leading: Icon(
+            cloudProvider.isAuthenticated ? Icons.account_circle : Icons.login,
+            color: cloudProvider.isAuthenticated ? Colors.green : Colors.grey,
+          ),
+          trailing: const Icon(Icons.arrow_forward_ios),
+          onTap: () => cloudProvider.isAuthenticated
+              ? _showAccountDialog(cloudProvider)
+              : _showLoginDialog(cloudProvider),
+        );
+      },
+    );
+  }
+
+  String _getConnectionStatus(CloudProvider cloudProvider) {
+    if (cloudProvider.isSyncing) {
+      return 'Синхронизация...';
+    }
+    if (cloudProvider.error != null) {
+      return 'Ошибка: ${cloudProvider.error}';
+    }
+    if (cloudProvider.isConnected) {
+      return 'Подключено к облаку';
+    }
+    return 'Нет подключения';
+  }
+
+  String _getLastSyncInfo(CloudProvider cloudProvider) {
+    if (cloudProvider.lastSync == null) {
+      return 'Синхронизация не выполнялась';
+    }
+
+    final now = DateTime.now();
+    final diff = now.difference(cloudProvider.lastSync!);
+
+    if (diff.inMinutes < 1) {
+      return 'Синхронизировано только что';
+    } else if (diff.inMinutes < 60) {
+      return 'Синхронизировано ${diff.inMinutes} мин. назад';
+    } else if (diff.inHours < 24) {
+      return 'Синхронизировано ${diff.inHours} ч. назад';
+    } else {
+      return 'Синхронизировано ${diff.inDays} дн. назад';
+    }
+  }
+
+  void _toggleCloudFeatures(bool enabled, CloudProvider cloudProvider) async {
+    if (enabled) {
+      _showCloudSetupDialog(cloudProvider);
+    } else {
+      await cloudProvider.disableCloudFeatures();
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text('Облачные функции отключены'),
+            backgroundColor: Colors.orange,
+          ),
+        );
+      }
+    }
+  }
+
+  void _showCloudSetupDialog(CloudProvider cloudProvider) {
+    final baseUrlController = TextEditingController();
+    final consumerKeyController = TextEditingController();
+    final consumerSecretController = TextEditingController();
+
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: Colors.grey[900],
+        title: const Text(
+          'Настройка облачных функций',
+          style: TextStyle(color: Colors.white),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Text(
+              'Введите параметры подключения к Magento:',
+              style: TextStyle(color: Colors.white70),
+            ),
+            const SizedBox(height: 16),
+            TextField(
+              controller: baseUrlController,
+              decoration: const InputDecoration(
+                labelText: 'URL сервера',
+                labelStyle: TextStyle(color: Colors.white70),
+                hintText: 'https://your-magento-server.com',
+                hintStyle: TextStyle(color: Colors.white38),
+              ),
+              style: const TextStyle(color: Colors.white),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: consumerKeyController,
+              decoration: const InputDecoration(
+                labelText: 'Consumer Key',
+                labelStyle: TextStyle(color: Colors.white70),
+              ),
+              style: const TextStyle(color: Colors.white),
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: consumerSecretController,
+              decoration: const InputDecoration(
+                labelText: 'Consumer Secret',
+                labelStyle: TextStyle(color: Colors.white70),
+              ),
+              style: const TextStyle(color: Colors.white),
+              obscureText: true,
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text(
+              'Отмена',
+              style: TextStyle(color: Colors.white70),
+            ),
+          ),
+          TextButton(
+            onPressed: () async {
+              if (baseUrlController.text.isNotEmpty &&
+                  consumerKeyController.text.isNotEmpty &&
+                  consumerSecretController.text.isNotEmpty) {
+                Navigator.of(context).pop();
+
+                final success = await cloudProvider.enableCloudFeatures(
+                  baseUrl: baseUrlController.text,
+                  consumerKey: consumerKeyController.text,
+                  consumerSecret: consumerSecretController.text,
+                );
+
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(success
+                          ? 'Облачные функции включены'
+                          : 'Ошибка подключения к облаку'),
+                      backgroundColor: success ? Colors.green : Colors.red,
+                    ),
+                  );
+                }
+              }
+            },
+            child: const Text(
+              'Подключить',
+              style: TextStyle(color: AppTheme.primaryColor),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _performSync(CloudProvider cloudProvider) async {
+    final success = await cloudProvider.syncData();
+
+    if (mounted) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(
+              success ? 'Синхронизация завершена' : 'Ошибка синхронизации'),
+          backgroundColor: success ? Colors.green : Colors.red,
+        ),
+      );
+    }
+  }
+
+  void _showLoginDialog(CloudProvider cloudProvider) {
+    final emailController = TextEditingController();
+    final passwordController = TextEditingController();
+
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: Colors.grey[900],
+        title: const Text(
+          'Вход в аккаунт',
+          style: TextStyle(color: Colors.white),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Text(
+              'Войдите в свой аккаунт для синхронизации данных:',
+              style: TextStyle(color: Colors.white70),
+            ),
+            const SizedBox(height: 16),
+            TextField(
+              controller: emailController,
+              decoration: const InputDecoration(
+                labelText: 'Email',
+                labelStyle: TextStyle(color: Colors.white70),
+              ),
+              style: const TextStyle(color: Colors.white),
+              keyboardType: TextInputType.emailAddress,
+            ),
+            const SizedBox(height: 12),
+            TextField(
+              controller: passwordController,
+              decoration: const InputDecoration(
+                labelText: 'Пароль',
+                labelStyle: TextStyle(color: Colors.white70),
+              ),
+              style: const TextStyle(color: Colors.white),
+              obscureText: true,
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text(
+              'Отмена',
+              style: TextStyle(color: Colors.white70),
+            ),
+          ),
+          TextButton(
+            onPressed: () async {
+              if (emailController.text.isNotEmpty &&
+                  passwordController.text.isNotEmpty) {
+                Navigator.of(context).pop();
+
+                final success = await cloudProvider.authenticateUser(
+                  email: emailController.text,
+                  password: passwordController.text,
+                );
+
+                if (mounted) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text(
+                          success ? 'Вход выполнен успешно' : 'Ошибка входа'),
+                      backgroundColor: success ? Colors.green : Colors.red,
+                    ),
+                  );
+                }
+              }
+            },
+            child: const Text(
+              'Войти',
+              style: TextStyle(color: AppTheme.primaryColor),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  void _showAccountDialog(CloudProvider cloudProvider) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: Colors.grey[900],
+        title: const Text(
+          'Аккаунт',
+          style: TextStyle(color: Colors.white),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              'Email: ${cloudProvider.userEmail}',
+              style: const TextStyle(color: Colors.white),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              'Последняя синхронизация: ${_getLastSyncInfo(cloudProvider)}',
+              style: const TextStyle(color: Colors.white70),
+            ),
+          ],
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(),
+            child: const Text(
+              'Закрыть',
+              style: TextStyle(color: Colors.white70),
+            ),
+          ),
+          TextButton(
+            onPressed: () async {
+              Navigator.of(context).pop();
+              await cloudProvider.logout();
+              if (mounted) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                    content: Text('Выход выполнен'),
+                    backgroundColor: Colors.orange,
+                  ),
+                );
+              }
+            },
+            child: const Text(
+              'Выйти',
               style: TextStyle(color: AppTheme.errorColor),
             ),
           ),

@@ -91,7 +91,7 @@ class AppRouter {
             ),
             const SizedBox(height: 8),
             Text(
-              'Путь: ${state.location}',
+              'Путь: ${state.uri.toString()}',
               style: Theme.of(context).textTheme.bodyMedium,
             ),
             const SizedBox(height: 24),

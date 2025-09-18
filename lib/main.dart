@@ -59,7 +59,7 @@ class MbharataApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final router = ref.watch(appRouterProvider);
+    final router = AppRouter.router;
     final themeMode = ref.watch(themeModeProvider);
     
     return MaterialApp.router(
@@ -82,9 +82,7 @@ class MbharataApp extends ConsumerWidget {
 }
 
 /// Провайдер для роутера приложения
-final appRouterProvider = Provider<GoRouter>((ref) {
-  return AppRouter.router;
-});
+// Removed Riverpod provider - using direct router access
 
 /// Провайдер для темы приложения
 final themeModeProvider = StateProvider<ThemeMode>((ref) {

@@ -26,6 +26,7 @@ dependencies:
   http: ^1.1.2
   dio: ^5.4.0
   connectivity_plus: ^5.0.2
+  flutter_magento: ^2.1.2
   
   # Local Storage
   shared_preferences: ^2.2.2

@@ -17,6 +17,10 @@ PODS:
   - flutter_inappwebview_ios/Core (0.0.1):
     - Flutter
     - OrderedSet (~> 6.0.3)
+  - flutter_magento (0.0.1):
+    - Flutter
+  - flutter_secure_storage (6.0.0):
+    - Flutter
   - flutter_tts (0.0.1):
     - Flutter
   - just_audio (0.0.1):
@@ -55,6 +59,8 @@ DEPENDENCIES:
   - Flutter (from `Flutter`)
   - flutter_gl (from `.symlinks/plugins/flutter_gl/ios`)
   - flutter_inappwebview_ios (from `.symlinks/plugins/flutter_inappwebview_ios/ios`)
+  - flutter_magento (from `.symlinks/plugins/flutter_magento/ios`)
+  - flutter_secure_storage (from `.symlinks/plugins/flutter_secure_storage/ios`)
   - flutter_tts (from `.symlinks/plugins/flutter_tts/ios`)
   - just_audio (from `.symlinks/plugins/just_audio/darwin`)
   - package_info_plus (from `.symlinks/plugins/package_info_plus/ios`)
@@ -86,6 +92,10 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_gl/ios"
   flutter_inappwebview_ios:
     :path: ".symlinks/plugins/flutter_inappwebview_ios/ios"
+  flutter_magento:
+    :path: ".symlinks/plugins/flutter_magento/ios"
+  flutter_secure_storage:
+    :path: ".symlinks/plugins/flutter_secure_storage/ios"
   flutter_tts:
     :path: ".symlinks/plugins/flutter_tts/ios"
   just_audio:
@@ -116,6 +126,8 @@ SPEC CHECKSUMS:
   Flutter: cabc95a1d2626b1b06e7179b784ebcf0c0cde467
   flutter_gl: 2b3f2ac6912db5bb833f66ad4ff4daf9aa6ba341
   flutter_inappwebview_ios: b89ba3482b96fb25e00c967aae065701b66e9b99
+  flutter_magento: d803db393d20b6d50658a07965c193b976ad81f9
+  flutter_secure_storage: 1ed9476fba7e7a782b22888f956cce43e2c62f13
   flutter_tts: b88dbc8655d3dc961bc4a796e4e16a4cc1795833
   just_audio: 4e391f57b79cad2b0674030a00453ca5ce817eed
   OrderedSet: e539b66b644ff081c73a262d24ad552a69be3a94

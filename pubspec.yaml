@@ -23,11 +23,12 @@ dependencies:
   flutter_riverpod: ^2.4.9
   
   # Network & API
-  http: ^1.1.2
-  dio: ^5.4.0
-  connectivity_plus: ^5.0.2
-  flutter_magento: ^2.1.2
-  
+
+  flutter_magento: ^2.5.1
+  flutter_freedome: ^1.0.0
+  flutter_nft: ^1.0.0
+  flutter_icp: ^1.0.0
+
   # Local Storage
   shared_preferences: ^2.2.2
   sqflite: ^2.3.0

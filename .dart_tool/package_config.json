@@ -363,7 +363,7 @@
     },
     {
       "name": "flutter_magento",
-      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_magento-2.1.2",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_magento-2.3.4",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -870,6 +870,18 @@
       "rootUri": "file:///Users/anton/development/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "3.8"
+    },
+    {
+      "name": "socket_io_client",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/socket_io_client-2.0.3+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "socket_io_common",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/socket_io_common-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "source_gen",

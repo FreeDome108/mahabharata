@@ -368,7 +368,7 @@
     },
     {
       "name": "flutter_magento",
-      "version": "2.1.2",
+      "version": "2.3.4",
       "dependencies": [
         "connectivity_plus",
         "crypto",
@@ -377,14 +377,20 @@
         "flutter_localizations",
         "flutter_secure_storage",
         "freezed_annotation",
+        "hive",
+        "hive_flutter",
+        "http",
         "intl",
         "json_annotation",
         "logger",
+        "path_provider",
         "plugin_platform_interface",
         "provider",
         "retrofit",
         "riverpod",
-        "shared_preferences"
+        "shared_preferences",
+        "socket_io_client",
+        "sqflite"
       ]
     },
     {
@@ -1393,6 +1399,15 @@
       ]
     },
     {
+      "name": "socket_io_client",
+      "version": "2.0.3+1",
+      "dependencies": [
+        "js",
+        "logging",
+        "socket_io_common"
+      ]
+    },
+    {
       "name": "flutter_localizations",
       "version": "0.0.0",
       "dependencies": [
@@ -1788,6 +1803,13 @@
       "version": "1.0.2",
       "dependencies": [
         "source_span"
+      ]
+    },
+    {
+      "name": "socket_io_common",
+      "version": "2.0.3",
+      "dependencies": [
+        "logging"
       ]
     },
     {

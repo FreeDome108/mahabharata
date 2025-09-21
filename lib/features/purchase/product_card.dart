@@ -16,14 +16,15 @@ class ProductCard extends StatelessWidget {
     this.episode,
     this.onTap,
     this.showPurchaseButton = true,
-  }) : assert(season != null || episode != null, 'Either season or episode must be provided'),
-       super(key: key);
+  })  : assert(season != null || episode != null,
+            'Either season or episode must be provided'),
+        super(key: key);
 
   @override
   Widget build(BuildContext context) {
     final product = season ?? episode!;
     final isSeason = season != null;
-    
+
     return GestureDetector(
       onTap: onTap,
       child: Container(
@@ -45,7 +46,8 @@ class ProductCard extends StatelessWidget {
           children: [
             _buildImageSection(context, product),
             _buildContentSection(context, product, isSeason),
-            if (showPurchaseButton) _buildPurchaseSection(context, product, isSeason),
+            if (showPurchaseButton)
+              _buildPurchaseSection(context, product, isSeason),
           ],
         ),
       ),
@@ -72,7 +74,8 @@ class ProductCard extends StatelessWidget {
           // Фоновое изображение
           if (product.image.isNotEmpty)
             ClipRRect(
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(15)),
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(15)),
               child: Image.network(
                 product.image,
                 width: double.infinity,
@@ -85,11 +88,12 @@ class ProductCard extends StatelessWidget {
             )
           else
             _buildPlaceholderImage(product),
-          
+
           // Overlay
           Container(
             decoration: BoxDecoration(
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(15)),
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(15)),
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
@@ -100,14 +104,14 @@ class ProductCard extends StatelessWidget {
               ),
             ),
           ),
-          
+
           // Статус покупки
           Positioned(
             top: 15,
             right: 15,
             child: _buildPurchaseStatus(product.isPurchased),
           ),
-          
+
           // Play button для купленных эпизодов
           if (product.isPurchased && episode != null)
             Center(
@@ -185,7 +189,8 @@ class ProductCard extends StatelessWidget {
     );
   }
 
-  Widget _buildContentSection(BuildContext context, dynamic product, bool isSeason) {
+  Widget _buildContentSection(
+      BuildContext context, dynamic product, bool isSeason) {
     return Padding(
       padding: const EdgeInsets.all(16),
       child: Column(
@@ -202,9 +207,9 @@ class ProductCard extends StatelessWidget {
             maxLines: 2,
             overflow: TextOverflow.ellipsis,
           ),
-          
+
           const SizedBox(height: 8),
-          
+
           // Описание
           Text(
             product.description,
@@ -216,9 +221,9 @@ class ProductCard extends StatelessWidget {
             maxLines: 3,
             overflow: TextOverflow.ellipsis,
           ),
-          
+
           const SizedBox(height: 12),
-          
+
           // Дополнительная информация
           Row(
             children: [
@@ -247,7 +252,7 @@ class ProductCard extends StatelessWidget {
                 ),
             ],
           ),
-          
+
           // Информация об эпизодах для сезона
           if (isSeason && season != null && season!.episodes.isNotEmpty) ...[
             const SizedBox(height: 8),
@@ -264,7 +269,8 @@ class ProductCard extends StatelessWidget {
     );
   }
 
-  Widget _buildPurchaseSection(BuildContext context, dynamic product, bool isSeason) {
+  Widget _buildPurchaseSection(
+      BuildContext context, dynamic product, bool isSeason) {
     if (product.isPurchased) {
       return Container(
         margin: const EdgeInsets.all(16),
@@ -345,7 +351,8 @@ class ProductCard extends StatelessWidget {
     );
   }
 
-  void _showPurchaseDialog(BuildContext context, dynamic product, bool isSeason) {
+  void _showPurchaseDialog(
+      BuildContext context, dynamic product, bool isSeason) {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -397,7 +404,8 @@ class ProductCard extends StatelessWidget {
     );
   }
 
-  void _navigateToPurchase(BuildContext context, dynamic product, bool isSeason) {
+  void _navigateToPurchase(
+      BuildContext context, dynamic product, bool isSeason) {
     Navigator.push(
       context,
       MaterialPageRoute(
@@ -415,7 +423,8 @@ class ProductCard extends StatelessWidget {
     );
   }
 
-  void _showProductDetails(BuildContext context, dynamic product, bool isSeason) {
+  void _showProductDetails(
+      BuildContext context, dynamic product, bool isSeason) {
     showModalBottomSheet(
       context: context,
       backgroundColor: const Color(0xFF1A1A2E),
@@ -438,7 +447,7 @@ class ProductCard extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            
+
             // Заголовок
             Text(
               product.name,
@@ -448,9 +457,9 @@ class ProductCard extends StatelessWidget {
                 color: Colors.white,
               ),
             ),
-            
+
             const SizedBox(height: 16),
-            
+
             // Описание
             Text(
               product.description,
@@ -460,16 +469,17 @@ class ProductCard extends StatelessWidget {
                 height: 1.5,
               ),
             ),
-            
+
             const SizedBox(height: 20),
-            
+
             // Цена
             Container(
               padding: const EdgeInsets.all(16),
               decoration: BoxDecoration(
                 color: AppTheme.primaryColor.withOpacity(0.2),
                 borderRadius: BorderRadius.circular(10),
-                border: Border.all(color: AppTheme.primaryColor.withOpacity(0.3)),
+                border:
+                    Border.all(color: AppTheme.primaryColor.withOpacity(0.3)),
               ),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -492,7 +502,7 @@ class ProductCard extends StatelessWidget {
                 ],
               ),
             ),
-            
+
             // Информация об эпизодах для сезона
             if (isSeason && season != null && season!.episodes.isNotEmpty) ...[
               const SizedBox(height: 20),
@@ -506,21 +516,21 @@ class ProductCard extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               ...season!.episodes.take(5).map((episode) => ListTile(
-                leading: const Icon(Icons.play_arrow, color: Colors.white),
-                title: Text(
-                  episode.name,
-                  style: const TextStyle(color: Colors.white),
-                ),
-                trailing: episode.isPurchased
-                    ? const Icon(Icons.check_circle, color: Colors.green)
-                    : Text(
-                        '${episode.price.toStringAsFixed(2)} ${episode.currency}',
-                        style: const TextStyle(
-                          color: AppTheme.primaryColor,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-              )),
+                    leading: const Icon(Icons.play_arrow, color: Colors.white),
+                    title: Text(
+                      episode.name,
+                      style: const TextStyle(color: Colors.white),
+                    ),
+                    trailing: episode.isPurchased
+                        ? const Icon(Icons.check_circle, color: Colors.green)
+                        : Text(
+                            '${episode.price.toStringAsFixed(2)} ${episode.currency}',
+                            style: const TextStyle(
+                              color: AppTheme.primaryColor,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                  )),
               if (season!.episodes.length > 5)
                 Text(
                   '... и еще ${season!.episodes.length - 5} эпизодов',
@@ -530,9 +540,9 @@ class ProductCard extends StatelessWidget {
                   ),
                 ),
             ],
-            
+
             const SizedBox(height: 20),
-            
+
             // Кнопка покупки
             SizedBox(
               width: double.infinity,
@@ -557,7 +567,7 @@ class ProductCard extends StatelessWidget {
                 ),
               ),
             ),
-            
+
             const SizedBox(height: 20),
           ],
         ),

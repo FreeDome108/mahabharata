@@ -21,7 +21,7 @@ class Episode {
   final String? audioUrl;
   final String? videoUrl;
   final DateTime? releaseDate;
-  
+
   Episode({
     required this.id,
     required this.name,
@@ -36,7 +36,7 @@ class Episode {
     this.videoUrl,
     this.releaseDate,
   });
-  
+
   factory Episode.fromJson(Map<String, dynamic> json) {
     return Episode(
       id: json['id']?.toString() ?? '',
@@ -50,12 +50,12 @@ class Episode {
       order: json['order'] ?? 0,
       audioUrl: json['audio_url'],
       videoUrl: json['video_url'],
-      releaseDate: json['release_date'] != null 
-          ? DateTime.parse(json['release_date']) 
+      releaseDate: json['release_date'] != null
+          ? DateTime.parse(json['release_date'])
           : null,
     );
   }
-  
+
   Map<String, dynamic> toJson() {
     return {
       'id': id,
@@ -85,7 +85,7 @@ class Season {
   final List<Episode> episodes;
   final int order;
   final DateTime? releaseDate;
-  
+
   Season({
     required this.id,
     required this.name,
@@ -98,7 +98,7 @@ class Season {
     required this.order,
     this.releaseDate,
   });
-  
+
   factory Season.fromJson(Map<String, dynamic> json) {
     return Season(
       id: json['id']?.toString() ?? '',
@@ -109,15 +109,16 @@ class Season {
       currency: json['currency'] ?? 'USD',
       isPurchased: json['is_purchased'] ?? false,
       episodes: (json['episodes'] as List<dynamic>?)
-          ?.map((e) => Episode.fromJson(e as Map<String, dynamic>))
-          .toList() ?? [],
+              ?.map((e) => Episode.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          [],
       order: json['order'] ?? 0,
-      releaseDate: json['release_date'] != null 
-          ? DateTime.parse(json['release_date']) 
+      releaseDate: json['release_date'] != null
+          ? DateTime.parse(json['release_date'])
           : null,
     );
   }
-  
+
   Map<String, dynamic> toJson() {
     return {
       'id': id,
@@ -140,7 +141,7 @@ class PurchaseResult {
   final String? paymentUrl;
   final String? error;
   final Map<String, dynamic>? data;
-  
+
   PurchaseResult({
     required this.success,
     this.orderId,
@@ -148,7 +149,7 @@ class PurchaseResult {
     this.error,
     this.data,
   });
-  
+
   factory PurchaseResult.fromJson(Map<String, dynamic> json) {
     return PurchaseResult(
       success: json['success'] ?? false,
@@ -163,37 +164,40 @@ class PurchaseResult {
 /// Нативный сервис Magento с полной интеграцией покупок
 class MagentoNativeService {
   static MagentoNativeService? _instance;
-  static MagentoNativeService get instance => _instance ??= MagentoNativeService._();
-  
+  static MagentoNativeService get instance =>
+      _instance ??= MagentoNativeService._();
+
   MagentoNativeService._();
-  
+
   // Flutter Magento провайдеры
   MagentoProvider? _magentoProvider;
   AuthProvider? _authProvider;
-  
+
   // Нативные каналы
-  static const MethodChannel _anantaSoundChannel = MethodChannel('anantasound_service');
-  static const MethodChannel _magentoNativeChannel = MethodChannel('magento_native_service');
-  
+  static const MethodChannel _anantaSoundChannel =
+      MethodChannel('anantasound_service');
+  static const MethodChannel _magentoNativeChannel =
+      MethodChannel('magento_native_service');
+
   // Состояние
   bool _isInitialized = false;
   bool _isCloudEnabled = false;
   String? _baseUrl;
   DeviceInfoPlugin _deviceInfo = DeviceInfoPlugin();
-  
+
   // Кэш данных
   List<Season> _seasons = [];
   List<Episode> _episodes = [];
   Map<String, bool> _purchaseStatus = {};
-  
+
   // Стримы
-  final StreamController<List<Season>> _seasonsController = 
+  final StreamController<List<Season>> _seasonsController =
       StreamController<List<Season>>.broadcast();
-  final StreamController<List<Episode>> _episodesController = 
+  final StreamController<List<Episode>> _episodesController =
       StreamController<List<Episode>>.broadcast();
-  final StreamController<Map<String, dynamic>> _purchaseController = 
+  final StreamController<Map<String, dynamic>> _purchaseController =
       StreamController<Map<String, dynamic>>.broadcast();
-  
+
   // Getters
   bool get isInitialized => _isInitialized;
   bool get isCloudEnabled => _isCloudEnabled;
@@ -201,11 +205,11 @@ class MagentoNativeService {
   bool get isAuthenticated => _authProvider?.isAuthenticated ?? false;
   List<Season> get seasons => _seasons;
   List<Episode> get episodes => _episodes;
-  
+
   Stream<List<Season>> get seasonsStream => _seasonsController.stream;
   Stream<List<Episode>> get episodesStream => _episodesController.stream;
   Stream<Map<String, dynamic>> get purchaseStream => _purchaseController.stream;
-  
+
   /// Инициализация нативного сервиса
   Future<void> initialize({
     String? baseUrl,
@@ -213,52 +217,51 @@ class MagentoNativeService {
   }) async {
     try {
       debugPrint('🚀 Инициализация MagentoNativeService с системой покупок...');
-      
+
       final prefs = await SharedPreferences.getInstance();
       _isCloudEnabled = prefs.getBool('cloud_enabled') ?? false;
       _baseUrl = baseUrl ?? prefs.getString('magento_base_url');
-      
+
       // Инициализация нативных каналов
       await _initializeNativeChannels();
-      
+
       // Инициализация AnantaSound
       await _initializeAnantaSound();
-      
+
       // Инициализация Magento
       if (_isCloudEnabled && _baseUrl != null) {
         await _initializeMagentoProvider(
           baseUrl: _baseUrl!,
           supportedLanguages: supportedLanguages,
         );
-        
+
         // Загрузка данных о покупках
         await _loadPurchaseStatus();
       }
-      
+
       // Получение информации об устройстве
       await _initializeDeviceInfo();
-      
+
       _isInitialized = true;
       debugPrint('✅ MagentoNativeService с системой покупок инициализирован');
-      
     } catch (e) {
       debugPrint('❌ Ошибка инициализации MagentoNativeService: $e');
       _isInitialized = true; // Продолжаем работу без облачных функций
     }
   }
-  
+
   /// Инициализация нативных каналов
   Future<void> _initializeNativeChannels() async {
     try {
       _anantaSoundChannel.setMethodCallHandler(_handleAnantaSoundCall);
       _magentoNativeChannel.setMethodCallHandler(_handleMagentoNativeCall);
-      
+
       debugPrint('📱 Нативные каналы инициализированы');
     } catch (e) {
       debugPrint('❌ Ошибка инициализации нативных каналов: $e');
     }
   }
-  
+
   /// Инициализация AnantaSound через нативный канал
   Future<void> _initializeAnantaSound() async {
     try {
@@ -267,7 +270,7 @@ class MagentoNativeService {
         'domeHeight': 5.0,
         'quantumUncertainty': 0.1,
       });
-      
+
       if (result['success'] == true) {
         debugPrint('🎵 AnantaSound инициализирован через нативный канал');
         _startAnantaSoundMonitoring();
@@ -276,7 +279,7 @@ class MagentoNativeService {
       debugPrint('❌ Ошибка инициализации AnantaSound: $e');
     }
   }
-  
+
   /// Инициализация MagentoProvider
   Future<void> _initializeMagentoProvider({
     required String baseUrl,
@@ -284,7 +287,7 @@ class MagentoNativeService {
   }) async {
     try {
       _magentoProvider = MagentoProvider();
-      
+
       await _magentoProvider!.initialize(
         baseUrl: baseUrl,
         supportedLanguages: supportedLanguages,
@@ -296,9 +299,9 @@ class MagentoNativeService {
           'X-Device-Info': await _getDeviceInfo(),
         },
       );
-      
+
       _authProvider = AuthProvider(_magentoProvider!.auth);
-      
+
       debugPrint('🛍️ MagentoProvider с системой покупок инициализирован');
     } catch (e) {
       debugPrint('❌ Ошибка инициализации MagentoProvider: $e');
@@ -306,22 +309,24 @@ class MagentoNativeService {
       rethrow;
     }
   }
-  
+
   /// Инициализация информации об устройстве
   Future<void> _initializeDeviceInfo() async {
     try {
       if (defaultTargetPlatform == TargetPlatform.android) {
         final androidInfo = await _deviceInfo.androidInfo;
-        debugPrint('📱 Android Device: ${androidInfo.model} (${androidInfo.version.release})');
+        debugPrint(
+            '📱 Android Device: ${androidInfo.model} (${androidInfo.version.release})');
       } else if (defaultTargetPlatform == TargetPlatform.iOS) {
         final iosInfo = await _deviceInfo.iosInfo;
-        debugPrint('📱 iOS Device: ${iosInfo.model} (${iosInfo.systemVersion})');
+        debugPrint(
+            '📱 iOS Device: ${iosInfo.model} (${iosInfo.systemVersion})');
       }
     } catch (e) {
       debugPrint('❌ Ошибка получения информации об устройстве: $e');
     }
   }
-  
+
   /// Получение информации об устройстве для API
   Future<String> _getDeviceInfo() async {
     try {
@@ -352,23 +357,24 @@ class MagentoNativeService {
       return jsonEncode({'platform': 'error'});
     }
   }
-  
+
   /// Загрузка статуса покупок
   Future<void> _loadPurchaseStatus() async {
     try {
       final prefs = await SharedPreferences.getInstance();
       final purchaseData = prefs.getString('purchase_status');
-      
+
       if (purchaseData != null) {
         final Map<String, dynamic> data = jsonDecode(purchaseData);
         _purchaseStatus = Map<String, bool>.from(data);
-        debugPrint('💰 Статус покупок загружен: ${_purchaseStatus.length} записей');
+        debugPrint(
+            '💰 Статус покупок загружен: ${_purchaseStatus.length} записей');
       }
     } catch (e) {
       debugPrint('❌ Ошибка загрузки статуса покупок: $e');
     }
   }
-  
+
   /// Сохранение статуса покупок
   Future<void> _savePurchaseStatus() async {
     try {
@@ -379,7 +385,7 @@ class MagentoNativeService {
       debugPrint('❌ Ошибка сохранения статуса покупок: $e');
     }
   }
-  
+
   /// Обработчик вызовов AnantaSound
   Future<dynamic> _handleAnantaSoundCall(MethodCall call) async {
     switch (call.method) {
@@ -387,17 +393,17 @@ class MagentoNativeService {
         final stats = Map<String, dynamic>.from(call.arguments);
         _purchaseController.add({'type': 'ananta_stats', 'data': stats});
         return {'success': true};
-        
+
       case 'onFieldsUpdate':
         final fields = List<Map<String, dynamic>>.from(call.arguments);
         _purchaseController.add({'type': 'fields_update', 'data': fields});
         return {'success': true};
-        
+
       case 'onQuantumEvent':
         final event = Map<String, dynamic>.from(call.arguments);
         _purchaseController.add({'type': 'quantum_event', 'data': event});
         return {'success': true};
-        
+
       default:
         throw PlatformException(
           code: 'UNIMPLEMENTED',
@@ -405,24 +411,24 @@ class MagentoNativeService {
         );
     }
   }
-  
+
   /// Обработчик вызовов Magento Native
   Future<dynamic> _handleMagentoNativeCall(MethodCall call) async {
     switch (call.method) {
       case 'processPayment':
         final paymentData = Map<String, dynamic>.from(call.arguments);
         return await _processPaymentNative(paymentData);
-        
+
       case 'downloadEpisode':
         final episodeData = Map<String, dynamic>.from(call.arguments);
         return await _downloadEpisodeNative(episodeData);
-        
+
       case 'getDeviceCapabilities':
         return await _getDeviceCapabilities();
-        
+
       case 'performQuantumSync':
         return await _performQuantumSync();
-        
+
       default:
         throw PlatformException(
           code: 'UNIMPLEMENTED',
@@ -430,7 +436,7 @@ class MagentoNativeService {
         );
     }
   }
-  
+
   /// Запуск мониторинга AnantaSound
   void _startAnantaSoundMonitoring() {
     Timer.periodic(const Duration(seconds: 2), (timer) async {
@@ -445,15 +451,17 @@ class MagentoNativeService {
       }
     });
   }
-  
+
   /// Обработка платежа через нативный канал
-  Future<Map<String, dynamic>> _processPaymentNative(Map<String, dynamic> paymentData) async {
+  Future<Map<String, dynamic>> _processPaymentNative(
+      Map<String, dynamic> paymentData) async {
     try {
       final productId = paymentData['product_id'] as String;
-      final productType = paymentData['product_type'] as String; // 'season' или 'episode'
+      final productType =
+          paymentData['product_type'] as String; // 'season' или 'episode'
       final amount = paymentData['amount'] as double;
       final currency = paymentData['currency'] as String;
-      
+
       // Добавляем информацию об устройстве и AnantaSound
       final enhancedData = {
         ...paymentData,
@@ -461,18 +469,18 @@ class MagentoNativeService {
         'ananta_sound_stats': await _getAnantaSoundStats(),
         'timestamp': DateTime.now().millisecondsSinceEpoch,
       };
-      
+
       if (_magentoProvider != null && isAuthenticated) {
         // Создаем заказ в Magento
         final orderResponse = await _magentoProvider!.dio.post(
           '/rest/V1/mahabharata/orders/create',
           data: enhancedData,
         );
-        
+
         if (orderResponse.statusCode == 200) {
           final orderData = orderResponse.data;
           final orderId = orderData['order_id'];
-          
+
           // Обрабатываем платеж
           final paymentResponse = await _magentoProvider!.dio.post(
             '/rest/V1/mahabharata/payments/process',
@@ -483,14 +491,14 @@ class MagentoNativeService {
               'currency': currency,
             },
           );
-          
+
           if (paymentResponse.statusCode == 200) {
             final paymentResult = paymentResponse.data;
-            
+
             // Обновляем статус покупки
             _purchaseStatus[productId] = true;
             await _savePurchaseStatus();
-            
+
             debugPrint('💳 Платеж обработан через нативный канал: $productId');
             return {
               'success': true,
@@ -500,42 +508,47 @@ class MagentoNativeService {
           }
         }
       }
-      
+
       return {'success': false, 'error': 'Не удалось обработать платеж'};
     } catch (e) {
       debugPrint('❌ Ошибка обработки платежа: $e');
       return {'success': false, 'error': e.toString()};
     }
   }
-  
+
   /// Загрузка эпизода через нативный канал
-  Future<Map<String, dynamic>> _downloadEpisodeNative(Map<String, dynamic> episodeData) async {
+  Future<Map<String, dynamic>> _downloadEpisodeNative(
+      Map<String, dynamic> episodeData) async {
     try {
       final cloudId = episodeData['cloud_id'] as String;
       final localPath = episodeData['local_path'] as String;
-      
+
       // Получаем URL для загрузки
       final downloadUrl = await _getDownloadUrl(cloudId);
-      
+
       if (downloadUrl != null) {
         // Используем нативный канал для загрузки
-        final result = await _magentoNativeChannel.invokeMethod('downloadFile', {
+        final result =
+            await _magentoNativeChannel.invokeMethod('downloadFile', {
           'url': downloadUrl,
           'localPath': localPath,
           'cloudId': cloudId,
         });
-        
+
         debugPrint('📥 Эпизод загружен через нативный канал: $cloudId');
         return result;
       }
-      
-      return {'success': false, 'error': 'Не удалось получить URL для загрузки'};
+
+      return {
+        'success': false,
+        'error': 'Не удалось получить URL для загрузки'
+      };
     } catch (e) {
       debugPrint('❌ Ошибка загрузки эпизода: $e');
       return {'success': false, 'error': e.toString()};
     }
   }
-  
+
   /// Получение возможностей устройства
   Future<Map<String, dynamic>> _getDeviceCapabilities() async {
     try {
@@ -548,19 +561,20 @@ class MagentoNativeService {
         'spatial_audio': await _checkSpatialAudioSupport(),
         'payment_support': await _checkPaymentSupport(),
       };
-      
+
       return {'success': true, 'capabilities': capabilities};
     } catch (e) {
       debugPrint('❌ Ошибка получения возможностей устройства: $e');
       return {'success': false, 'error': e.toString()};
     }
   }
-  
+
   /// Выполнение квантовой синхронизации
   Future<Map<String, dynamic>> _performQuantumSync() async {
     try {
       // Создаем квантовое звуковое поле для синхронизации
-      final quantumField = await _anantaSoundChannel.invokeMethod('createQuantumSoundField', {
+      final quantumField =
+          await _anantaSoundChannel.invokeMethod('createQuantumSoundField', {
         'frequency': 440.0,
         'position': {
           'r': 5.0,
@@ -570,10 +584,10 @@ class MagentoNativeService {
         },
         'state': 'entangled',
       });
-      
+
       // Получаем статистику квантового состояния
       final quantumStats = await _getAnantaSoundStats();
-      
+
       // Синхронизируем с Magento
       if (_magentoProvider != null) {
         final response = await _magentoProvider!.dio.post(
@@ -584,20 +598,23 @@ class MagentoNativeService {
             'sync_timestamp': DateTime.now().millisecondsSinceEpoch,
           },
         );
-        
+
         if (response.statusCode == 200) {
           debugPrint('🌌 Квантовая синхронизация выполнена');
           return {'success': true, 'data': response.data};
         }
       }
-      
-      return {'success': false, 'error': 'Не удалось выполнить квантовую синхронизацию'};
+
+      return {
+        'success': false,
+        'error': 'Не удалось выполнить квантовую синхронизацию'
+      };
     } catch (e) {
       debugPrint('❌ Ошибка квантовой синхронизации: $e');
       return {'success': false, 'error': e.toString()};
     }
   }
-  
+
   /// Получение статистики AnantaSound
   Future<Map<String, dynamic>> _getAnantaSoundStats() async {
     try {
@@ -608,7 +625,7 @@ class MagentoNativeService {
       return {};
     }
   }
-  
+
   /// Проверка доступности AnantaSound
   Future<bool> _checkAnantaSoundAvailability() async {
     try {
@@ -618,66 +635,71 @@ class MagentoNativeService {
       return false;
     }
   }
-  
+
   /// Проверка поддержки квантовых вычислений
   Future<bool> _checkQuantumComputingSupport() async {
     try {
-      final result = await _magentoNativeChannel.invokeMethod('checkQuantumSupport');
+      final result =
+          await _magentoNativeChannel.invokeMethod('checkQuantumSupport');
       return result == true;
     } catch (e) {
       return false;
     }
   }
-  
+
   /// Проверка поддержки купольного рендеринга
   Future<bool> _checkDomeRenderingSupport() async {
     try {
-      final result = await _magentoNativeChannel.invokeMethod('checkDomeSupport');
+      final result =
+          await _magentoNativeChannel.invokeMethod('checkDomeSupport');
       return result == true;
     } catch (e) {
       return false;
     }
   }
-  
+
   /// Проверка поддержки пространственного аудио
   Future<bool> _checkSpatialAudioSupport() async {
     try {
-      final result = await _magentoNativeChannel.invokeMethod('checkSpatialAudio');
+      final result =
+          await _magentoNativeChannel.invokeMethod('checkSpatialAudio');
       return result == true;
     } catch (e) {
       return false;
     }
   }
-  
+
   /// Проверка поддержки платежей
   Future<bool> _checkPaymentSupport() async {
     try {
-      final result = await _magentoNativeChannel.invokeMethod('checkPaymentSupport');
+      final result =
+          await _magentoNativeChannel.invokeMethod('checkPaymentSupport');
       return result == true;
     } catch (e) {
       return false;
     }
   }
-  
+
   /// Получение URL для загрузки
   Future<String?> _getDownloadUrl(String cloudId) async {
     if (_magentoProvider == null) return null;
-    
+
     try {
-      final response = await _magentoProvider!.dio.get('/rest/V1/mahabharata/episode/$cloudId/download');
-      
+      final response = await _magentoProvider!.dio
+          .get('/rest/V1/mahabharata/episode/$cloudId/download');
+
       if (response.statusCode == 200 && response.data != null) {
         return response.data['download_url'] as String?;
       }
     } catch (e) {
       debugPrint('❌ Ошибка получения URL для загрузки: $e');
     }
-    
+
     return null;
   }
-  
+
   /// Публичные методы для интеграции с UI
-  
+
   /// Авторизация пользователя
   Future<bool> authenticateUser({
     required String email,
@@ -687,37 +709,37 @@ class MagentoNativeService {
     if (!_isCloudEnabled || _authProvider == null) {
       return false;
     }
-    
+
     try {
       final success = await _authProvider!.authenticate(
         email: email,
         password: password,
         rememberMe: rememberMe,
       );
-      
+
       if (success) {
         debugPrint('👤 Пользователь авторизован через нативный сервис');
         // Загружаем данные после авторизации
         await loadSeasons();
       }
-      
+
       return success;
     } catch (e) {
       debugPrint('❌ Ошибка авторизации: $e');
       return false;
     }
   }
-  
+
   /// Загрузка сезонов с информацией о покупках
   Future<List<Season>?> loadSeasons() async {
     if (!_isCloudEnabled || _magentoProvider == null) {
       return null;
     }
-    
+
     try {
       // Получаем квантовую статистику
       final quantumStats = await _getAnantaSoundStats();
-      
+
       // Используем новый API для поиска сезонов
       final products = await _magentoProvider!.searchProducts(
         query: '',
@@ -727,16 +749,16 @@ class MagentoNativeService {
         sortBy: 'order',
         sortOrder: 'asc',
       );
-      
+
       final seasons = <Season>[];
-      
+
       for (final product in products.items) {
         final seasonId = product.id.toString();
         final isPurchased = _purchaseStatus[seasonId] ?? false;
-        
+
         // Загружаем эпизоды для сезона
         final episodes = await _loadEpisodesForSeason(seasonId);
-        
+
         final season = Season(
           id: seasonId,
           name: product.name,
@@ -749,21 +771,22 @@ class MagentoNativeService {
           order: _getCustomAttribute(product, 'order') ?? 0,
           releaseDate: DateTime.tryParse(product.createdAt ?? ''),
         );
-        
+
         seasons.add(season);
       }
-      
+
       _seasons = seasons;
       _seasonsController.add(seasons);
-      
-      debugPrint('📚 Загружено ${seasons.length} сезонов с информацией о покупках');
+
+      debugPrint(
+          '📚 Загружено ${seasons.length} сезонов с информацией о покупках');
       return seasons;
     } catch (e) {
       debugPrint('❌ Ошибка загрузки сезонов: $e');
       return null;
     }
   }
-  
+
   /// Загрузка эпизодов для сезона
   Future<List<Episode>> _loadEpisodesForSeason(String seasonId) async {
     try {
@@ -778,13 +801,13 @@ class MagentoNativeService {
         sortBy: 'order',
         sortOrder: 'asc',
       );
-      
+
       final episodes = <Episode>[];
-      
+
       for (final product in products.items) {
         final episodeId = product.id.toString();
         final isPurchased = _purchaseStatus[episodeId] ?? false;
-        
+
         final episode = Episode(
           id: episodeId,
           name: product.name,
@@ -799,29 +822,29 @@ class MagentoNativeService {
           videoUrl: _getCustomAttribute(product, 'video_url'),
           releaseDate: DateTime.tryParse(product.createdAt ?? ''),
         );
-        
+
         episodes.add(episode);
       }
-      
+
       return episodes;
     } catch (e) {
       debugPrint('❌ Ошибка загрузки эпизодов для сезона $seasonId: $e');
       return [];
     }
   }
-  
+
   /// Покупка сезона
   Future<PurchaseResult> purchaseSeason(String seasonId) async {
     try {
       final season = _seasons.firstWhere((s) => s.id == seasonId);
-      
+
       if (season.isPurchased) {
         return PurchaseResult(
           success: true,
           error: 'Сезон уже куплен',
         );
       }
-      
+
       final paymentData = {
         'product_id': seasonId,
         'product_type': 'season',
@@ -830,26 +853,27 @@ class MagentoNativeService {
         'payment_method': 'card',
         'product_name': season.name,
       };
-      
-      final result = await _magentoNativeChannel.invokeMethod('processPayment', paymentData);
-      
+
+      final result = await _magentoNativeChannel.invokeMethod(
+          'processPayment', paymentData);
+
       if (result['success'] == true) {
         // Обновляем статус покупки
         _purchaseStatus[seasonId] = true;
         await _savePurchaseStatus();
-        
+
         // Обновляем данные
         await loadSeasons();
-        
+
         _purchaseController.add({
           'type': 'purchase_success',
           'product_type': 'season',
           'product_id': seasonId,
           'data': result,
         });
-        
+
         debugPrint('💰 Сезон куплен: ${season.name}');
-        
+
         return PurchaseResult.fromJson(result);
       } else {
         return PurchaseResult(
@@ -865,7 +889,7 @@ class MagentoNativeService {
       );
     }
   }
-  
+
   /// Покупка эпизода
   Future<PurchaseResult> purchaseEpisode(String episodeId) async {
     try {
@@ -877,21 +901,21 @@ class MagentoNativeService {
         );
         if (episode != null) break;
       }
-      
+
       if (episode == null) {
         return PurchaseResult(
           success: false,
           error: 'Эпизод не найден',
         );
       }
-      
+
       if (episode.isPurchased) {
         return PurchaseResult(
           success: true,
           error: 'Эпизод уже куплен',
         );
       }
-      
+
       final paymentData = {
         'product_id': episodeId,
         'product_type': 'episode',
@@ -901,26 +925,27 @@ class MagentoNativeService {
         'product_name': episode.name,
         'season_id': episode.seasonId,
       };
-      
-      final result = await _magentoNativeChannel.invokeMethod('processPayment', paymentData);
-      
+
+      final result = await _magentoNativeChannel.invokeMethod(
+          'processPayment', paymentData);
+
       if (result['success'] == true) {
         // Обновляем статус покупки
         _purchaseStatus[episodeId] = true;
         await _savePurchaseStatus();
-        
+
         // Обновляем данные
         await loadSeasons();
-        
+
         _purchaseController.add({
           'type': 'purchase_success',
           'product_type': 'episode',
           'product_id': episodeId,
           'data': result,
         });
-        
+
         debugPrint('💰 Эпизод куплен: ${episode.name}');
-        
+
         return PurchaseResult.fromJson(result);
       } else {
         return PurchaseResult(
@@ -936,16 +961,17 @@ class MagentoNativeService {
       );
     }
   }
-  
+
   /// Проверка статуса покупки
   bool isPurchased(String productId) {
     return _purchaseStatus[productId] ?? false;
   }
-  
+
   /// Получение изображения продукта
   String? _getProductImage(dynamic product) {
     try {
-      if (product.mediaGalleryEntries != null && product.mediaGalleryEntries.isNotEmpty) {
+      if (product.mediaGalleryEntries != null &&
+          product.mediaGalleryEntries.isNotEmpty) {
         return product.mediaGalleryEntries.first.file;
       }
       return null;
@@ -953,7 +979,7 @@ class MagentoNativeService {
       return null;
     }
   }
-  
+
   /// Получение кастомного атрибута продукта
   dynamic _getCustomAttribute(dynamic product, String attributeCode) {
     try {
@@ -969,17 +995,17 @@ class MagentoNativeService {
       return null;
     }
   }
-  
+
   /// Освобождение ресурсов
   Future<void> dispose() async {
     await _seasonsController.close();
     await _episodesController.close();
     await _purchaseController.close();
-    
+
     _magentoProvider = null;
     _authProvider = null;
     _isInitialized = false;
-    
+
     debugPrint('🛑 MagentoNativeService остановлен');
   }
 }

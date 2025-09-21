@@ -18,25 +18,25 @@ import 'features/splash/splash_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  
+
   // Инициализация Hive для локального хранения
   await Hive.initFlutter();
   await HiveService.initialize();
-  
+
   // Инициализация аудио сервиса
   await AudioService.initialize();
-  
+
   // Инициализация купольного сервиса
   await DomeService.initialize();
-  
+
   // Инициализация AnantaSound
   await AnantaSoundService.initialize();
-  
+
   // Инициализация нативного Magento сервиса
   await MagentoNativeService.instance.initialize(
     supportedLanguages: ['en', 'ru', 'hi', 'sa'],
   );
-  
+
   // Настройка ориентации экрана
   await SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
@@ -44,7 +44,7 @@ void main() async {
     DeviceOrientation.landscapeLeft,
     DeviceOrientation.landscapeRight,
   ]);
-  
+
   // Настройка системного UI
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
@@ -54,7 +54,7 @@ void main() async {
       systemNavigationBarIconBrightness: Brightness.light,
     ),
   );
-  
+
   runApp(
     ProviderScope(
       child: MultiProvider(
@@ -83,7 +83,7 @@ class MbharataApp extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     final router = AppRouter.router;
     final themeMode = ref.watch(themeModeProvider);
-    
+
     return MaterialApp.router(
       title: 'Mahabharata Client',
       debugShowCheckedModeBanner: false,
@@ -94,7 +94,8 @@ class MbharataApp extends ConsumerWidget {
       builder: (context, child) {
         return MediaQuery(
           data: MediaQuery.of(context).copyWith(
-            textScaler: TextScaler.linear(1.0), // Отключение масштабирования текста
+            textScaler:
+                TextScaler.linear(1.0), // Отключение масштабирования текста
           ),
           child: child!,
         );

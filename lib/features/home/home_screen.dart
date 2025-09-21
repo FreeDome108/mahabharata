@@ -37,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
       // Загружаем сезоны
       final seasons = await MagentoNativeService.instance.loadSeasons();
-      
+
       if (seasons != null) {
         setState(() {
           _seasons = seasons;
@@ -194,7 +194,8 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget _buildStatsRow() {
     final totalSeasons = _seasons.length;
     final purchasedSeasons = _seasons.where((s) => s.isPurchased).length;
-    final totalEpisodes = _seasons.fold(0, (sum, season) => sum + season.episodes.length);
+    final totalEpisodes =
+        _seasons.fold(0, (sum, season) => sum + season.episodes.length);
     final purchasedEpisodes = _seasons
         .expand((season) => season.episodes)
         .where((episode) => episode.isPurchased)
@@ -202,9 +203,11 @@ class _HomeScreenState extends State<HomeScreen> {
 
     return Row(
       children: [
-        _buildStatCard('Сезоны', '$purchasedSeasons/$totalSeasons', Icons.playlist_play),
+        _buildStatCard(
+            'Сезоны', '$purchasedSeasons/$totalSeasons', Icons.playlist_play),
         const SizedBox(width: 12),
-        _buildStatCard('Эпизоды', '$purchasedEpisodes/$totalEpisodes', Icons.play_arrow),
+        _buildStatCard(
+            'Эпизоды', '$purchasedEpisodes/$totalEpisodes', Icons.play_arrow),
       ],
     );
   }
@@ -379,7 +382,8 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             // Изображение
             ClipRRect(
-              borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(12)),
               child: Container(
                 height: 100,
                 width: double.infinity,
@@ -403,7 +407,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
               ),
             ),
-            
+
             // Контент
             Expanded(
               child: Padding(
@@ -471,7 +475,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 TextButton(
                   onPressed: () => Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const SeasonsScreen()),
+                    MaterialPageRoute(
+                        builder: (context) => const SeasonsScreen()),
                   ),
                   child: const Text(
                     'Все сезоны',
@@ -483,9 +488,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           const SizedBox(height: 16),
           ..._seasons.take(3).map((season) => ProductCard(
-            season: season,
-            onTap: () => _playSeason(season),
-          )),
+                season: season,
+                onTap: () => _playSeason(season),
+              )),
         ],
       ),
     );
@@ -544,7 +549,9 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
         decoration: BoxDecoration(
-          color: isSelected ? AppTheme.primaryColor.withOpacity(0.2) : Colors.transparent,
+          color: isSelected
+              ? AppTheme.primaryColor.withOpacity(0.2)
+              : Colors.transparent,
           borderRadius: BorderRadius.circular(20),
         ),
         child: Column(
@@ -552,14 +559,18 @@ class _HomeScreenState extends State<HomeScreen> {
           children: [
             Icon(
               icon,
-              color: isSelected ? AppTheme.primaryColor : Colors.white.withOpacity(0.6),
+              color: isSelected
+                  ? AppTheme.primaryColor
+                  : Colors.white.withOpacity(0.6),
               size: 24,
             ),
             const SizedBox(height: 4),
             Text(
               label,
               style: TextStyle(
-                color: isSelected ? AppTheme.primaryColor : Colors.white.withOpacity(0.6),
+                color: isSelected
+                    ? AppTheme.primaryColor
+                    : Colors.white.withOpacity(0.6),
                 fontSize: 12,
                 fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
               ),

@@ -40,7 +40,8 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Покупка ${widget.productType == 'season' ? 'Сезона' : 'Эпизода'}'),
+        title: Text(
+            'Покупка ${widget.productType == 'season' ? 'Сезона' : 'Эпизода'}'),
         backgroundColor: Colors.transparent,
         elevation: 0,
         leading: IconButton(
@@ -110,8 +111,8 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
                           fit: BoxFit.cover,
                           errorBuilder: (context, error, stackTrace) {
                             return Icon(
-                              widget.productType == 'season' 
-                                  ? Icons.playlist_play 
+                              widget.productType == 'season'
+                                  ? Icons.playlist_play
                                   : Icons.play_arrow,
                               size: 40,
                               color: Colors.white,
@@ -119,8 +120,8 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
                           },
                         )
                       : Icon(
-                          widget.productType == 'season' 
-                              ? Icons.playlist_play 
+                          widget.productType == 'season'
+                              ? Icons.playlist_play
                               : Icons.play_arrow,
                           size: 40,
                           color: Colors.white,
@@ -212,9 +213,10 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
     );
   }
 
-  Widget _buildPaymentOption(String value, String title, IconData icon, String description) {
+  Widget _buildPaymentOption(
+      String value, String title, IconData icon, String description) {
     final isSelected = _selectedPaymentMethod == value;
-    
+
     return GestureDetector(
       onTap: () {
         setState(() {
@@ -224,12 +226,12 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
       child: Container(
         padding: const EdgeInsets.all(15),
         decoration: BoxDecoration(
-          color: isSelected 
+          color: isSelected
               ? AppTheme.primaryColor.withOpacity(0.3)
               : Colors.transparent,
           borderRadius: BorderRadius.circular(10),
           border: Border.all(
-            color: isSelected 
+            color: isSelected
                 ? AppTheme.primaryColor
                 : Colors.white.withOpacity(0.2),
             width: isSelected ? 2 : 1,
@@ -241,7 +243,7 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
               width: 40,
               height: 40,
               decoration: BoxDecoration(
-                color: isSelected 
+                color: isSelected
                     ? AppTheme.primaryColor
                     : Colors.white.withOpacity(0.1),
                 borderRadius: BorderRadius.circular(8),
@@ -355,13 +357,10 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
       width: double.infinity,
       height: 56,
       child: ElevatedButton(
-        onPressed: widget.isPurchased || _isProcessing 
-            ? null 
-            : _handlePurchase,
+        onPressed: widget.isPurchased || _isProcessing ? null : _handlePurchase,
         style: ElevatedButton.styleFrom(
-          backgroundColor: widget.isPurchased 
-              ? Colors.green 
-              : AppTheme.primaryColor,
+          backgroundColor:
+              widget.isPurchased ? Colors.green : AppTheme.primaryColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
           ),
@@ -377,9 +376,7 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
                 ),
               )
             : Text(
-                widget.isPurchased 
-                    ? 'Уже куплено'
-                    : 'Купить сейчас',
+                widget.isPurchased ? 'Уже куплено' : 'Купить сейчас',
                 style: const TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -428,23 +425,26 @@ class _PurchaseScreenState extends State<PurchaseScreen> {
 
     try {
       PurchaseResult result;
-      
+
       if (widget.productType == 'season') {
-        result = await MagentoNativeService.instance.purchaseSeason(widget.productId);
+        result = await MagentoNativeService.instance
+            .purchaseSeason(widget.productId);
       } else {
-        result = await MagentoNativeService.instance.purchaseEpisode(widget.productId);
+        result = await MagentoNativeService.instance
+            .purchaseEpisode(widget.productId);
       }
 
       if (result.success) {
         // Показываем успешное сообщение
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text('${widget.productType == 'season' ? 'Сезон' : 'Эпизод'} успешно куплен!'),
+            content: Text(
+                '${widget.productType == 'season' ? 'Сезон' : 'Эпизод'} успешно куплен!'),
             backgroundColor: Colors.green,
             duration: const Duration(seconds: 3),
           ),
         );
-        
+
         // Возвращаемся назад
         Navigator.pop(context, true);
       } else {

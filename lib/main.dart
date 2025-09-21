@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_magento/flutter_magento.dart';
 
 import 'core/config/app_config.dart';
 import 'core/theme/app_theme.dart';
@@ -10,6 +11,8 @@ import 'core/navigation/app_router.dart';
 import 'core/services/hive_service.dart';
 import 'core/services/audio_service.dart';
 import 'core/services/dome_service.dart';
+import 'core/services/magento_native_service.dart';
+import 'core/services/anantasound_service.dart';
 import 'core/providers/app_providers.dart';
 import 'features/splash/splash_screen.dart';
 
@@ -25,6 +28,14 @@ void main() async {
   
   // Инициализация купольного сервиса
   await DomeService.initialize();
+  
+  // Инициализация AnantaSound
+  await AnantaSoundService.initialize();
+  
+  // Инициализация нативного Magento сервиса
+  await MagentoNativeService.instance.initialize(
+    supportedLanguages: ['en', 'ru', 'hi', 'sa'],
+  );
   
   // Настройка ориентации экрана
   await SystemChrome.setPreferredOrientations([
@@ -47,7 +58,18 @@ void main() async {
   runApp(
     ProviderScope(
       child: MultiProvider(
-        providers: AppProviders.providers,
+        providers: [
+          ...AppProviders.providers,
+          // Добавляем провайдеры flutter_magento
+          if (MagentoNativeService.instance.magentoProvider != null)
+            ChangeNotifierProvider<MagentoProvider>.value(
+              value: MagentoNativeService.instance.magentoProvider!,
+            ),
+          if (MagentoNativeService.instance.authProvider != null)
+            ChangeNotifierProvider<AuthProvider>.value(
+              value: MagentoNativeService.instance.authProvider!,
+            ),
+        ],
         child: const MbharataApp(),
       ),
     ),

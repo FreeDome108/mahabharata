@@ -24,6 +24,12 @@
 @import device_info_plus;
 #endif
 
+#if __has_include(<flutter_freedome/FlutterFreedomePlugin.h>)
+#import <flutter_freedome/FlutterFreedomePlugin.h>
+#else
+@import flutter_freedome;
+#endif
+
 #if __has_include(<flutter_gl/FlutterGlPlugin.h>)
 #import <flutter_gl/FlutterGlPlugin.h>
 #else
@@ -120,6 +126,7 @@
   [AudioSessionPlugin registerWithRegistrar:[registry registrarForPlugin:@"AudioSessionPlugin"]];
   [ConnectivityPlusPlugin registerWithRegistrar:[registry registrarForPlugin:@"ConnectivityPlusPlugin"]];
   [FPPDeviceInfoPlusPlugin registerWithRegistrar:[registry registrarForPlugin:@"FPPDeviceInfoPlusPlugin"]];
+  [FlutterFreedomePlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterFreedomePlugin"]];
   [FlutterGlPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterGlPlugin"]];
   [InAppWebViewFlutterPlugin registerWithRegistrar:[registry registrarForPlugin:@"InAppWebViewFlutterPlugin"]];
   [FlutterMagentoPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterMagentoPlugin"]];

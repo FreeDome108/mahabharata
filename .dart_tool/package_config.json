@@ -201,9 +201,9 @@
     },
     {
       "name": "device_info_plus",
-      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/device_info_plus-9.1.2",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/device_info_plus-10.1.2",
       "packageUri": "lib/",
-      "languageVersion": "2.18"
+      "languageVersion": "3.3"
     },
     {
       "name": "device_info_plus_platform_interface",
@@ -222,6 +222,12 @@
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/dio_web_adapter-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "3.3"
+    },
+    {
+      "name": "equatable",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/equatable-2.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "fake_async",
@@ -266,6 +272,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "flutter_freedome",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_freedome-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "flutter_gl",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_gl-0.0.21",
       "packageUri": "lib/",
@@ -294,6 +306,12 @@
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_gl_windows-0.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_icp",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_icp-1.2.0+3",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "flutter_inappwebview",
@@ -364,6 +382,12 @@
     {
       "name": "flutter_magento",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_magento-2.3.4",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "flutter_nft",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_nft-1.2.0+3",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -1136,16 +1160,10 @@
       "languageVersion": "3.4"
     },
     {
-      "name": "web_socket",
-      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/web_socket-1.0.1",
-      "packageUri": "lib/",
-      "languageVersion": "3.4"
-    },
-    {
       "name": "web_socket_channel",
-      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/web_socket_channel-3.0.3",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0",
       "packageUri": "lib/",
-      "languageVersion": "3.3"
+      "languageVersion": "2.15"
     },
     {
       "name": "win32",

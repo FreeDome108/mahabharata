@@ -31,6 +31,11 @@ public final class GeneratedPluginRegistrant {
       Log.e(TAG, "Error registering plugin device_info_plus, dev.fluttercommunity.plus.device_info.DeviceInfoPlusPlugin", e);
     }
     try {
+      flutterEngine.getPlugins().add(new ru.nativemind.flutter.freedome.flutter_freedome.FlutterFreedomePlugin());
+    } catch (Exception e) {
+      Log.e(TAG, "Error registering plugin flutter_freedome, ru.nativemind.flutter.freedome.flutter_freedome.FlutterFreedomePlugin", e);
+    }
+    try {
       flutterEngine.getPlugins().add(new com.futouapp.flutter_gl.flutter_gl.FlutterGlPlugin());
     } catch (Exception e) {
       Log.e(TAG, "Error registering plugin flutter_gl, com.futouapp.flutter_gl.flutter_gl.FlutterGlPlugin", e);

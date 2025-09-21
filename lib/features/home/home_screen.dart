@@ -1,251 +1,141 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:cached_network_image/cached_network_image.dart';
-
-import '../../core/providers/app_providers.dart';
+import 'package:flutter_magento/flutter_magento.dart';
 import '../../core/theme/app_theme.dart';
-import '../../core/navigation/app_router.dart';
+import '../../core/services/magento_native_service.dart';
+import '../purchase/product_card.dart';
+import '../seasons/seasons_screen.dart';
+import '../dome/dome_screen.dart';
+import '../settings/settings_screen.dart';
 
-/// Главный экран приложения
+/// Главный экран с интеграцией покупок
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen>
-    with TickerProviderStateMixin {
-  late TabController _tabController;
-  final PageController _pageController = PageController();
+class _HomeScreenState extends State<HomeScreen> {
+  List<Season> _seasons = [];
+  List<Episode> _recentEpisodes = [];
+  bool _isLoading = true;
+  String? _errorMessage;
 
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
-    _loadContent();
+    _loadData();
   }
 
-  void _loadContent() {
-    final contentProvider = Provider.of<ContentProvider>(context, listen: false);
-    contentProvider.loadSeasons();
-  }
+  Future<void> _loadData() async {
+    try {
+      setState(() {
+        _isLoading = true;
+        _errorMessage = null;
+      });
 
-  @override
-  void dispose() {
-    _tabController.dispose();
-    _pageController.dispose();
-    super.dispose();
+      // Загружаем сезоны
+      final seasons = await MagentoNativeService.instance.loadSeasons();
+      
+      if (seasons != null) {
+        setState(() {
+          _seasons = seasons;
+          // Собираем недавние эпизоды из всех сезонов
+          _recentEpisodes = seasons
+              .expand((season) => season.episodes)
+              .where((episode) => episode.isPurchased)
+              .take(6)
+              .toList();
+        });
+      }
+    } catch (e) {
+      setState(() {
+        _errorMessage = 'Ошибка загрузки данных: $e';
+      });
+    } finally {
+      setState(() {
+        _isLoading = false;
+      });
+    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        decoration: BoxDecoration(
-          gradient: AppTheme.backgroundGradient,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              Color(0xFF1A1A2E),
+              Color(0xFF16213E),
+              Color(0xFF0F3460),
+            ],
+          ),
         ),
         child: SafeArea(
-          child: CustomScrollView(
-            slivers: [
-              // Заголовок с анимированным фоном
-              _buildSliverHeader(),
-              
-              // Быстрые действия
-              _buildQuickActions(),
-              
-              // Рекомендуемый контент
-              _buildFeaturedContent(),
-              
-              // Статистика прогресса
-              _buildProgressSection(),
-              
-              // Табы навигации
-              _buildSliverTabBar(),
-              
-              // Контент табов
-              _buildSliverContent(),
-            ],
-          ),
+          child: _isLoading
+              ? _buildLoadingState()
+              : _errorMessage != null
+                  ? _buildErrorState()
+                  : _buildContent(),
         ),
       ),
-      floatingActionButton: _buildEnhancedDomeButton(),
-      bottomNavigationBar: _buildBottomNavigation(),
+      bottomNavigationBar: _buildBottomNavigationBar(),
     );
   }
 
-  // Новый анимированный заголовок
-  Widget _buildSliverHeader() {
-    return SliverAppBar(
-      expandedHeight: 200.0,
-      floating: false,
-      pinned: true,
-      elevation: 0,
-      backgroundColor: Colors.transparent,
-      flexibleSpace: FlexibleSpaceBar(
-        title: const Text(
-          'Mahabharata',
-          style: TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            shadows: [
-              Shadow(
-                offset: Offset(0, 1),
-                blurRadius: 3,
-                color: Colors.black54,
-              ),
-            ],
+  Widget _buildLoadingState() {
+    return const Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          CircularProgressIndicator(
+            valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryColor),
           ),
-        ),
-        background: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [
-                AppTheme.primaryColor.withOpacity(0.8),
-                AppTheme.secondaryColor.withOpacity(0.6),
-                Colors.transparent,
-              ],
+          SizedBox(height: 20),
+          Text(
+            'Загрузка контента...',
+            style: TextStyle(
+              color: Colors.white,
+              fontSize: 16,
             ),
           ),
-          child: Stack(
-            children: [
-              // Фоновый паттерн
-              Positioned.fill(
-                child: Opacity(
-                  opacity: 0.1,
-                  child: Image.asset(
-                    'assets/icons/app_icon.png',
-                    fit: BoxFit.cover,
-                    errorBuilder: (context, error, stackTrace) => Container(),
-                  ),
-                ),
-              ),
-              // Контент заголовка
-              Positioned(
-                bottom: 60,
-                left: 16,
-                right: 16,
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Row(
-                      children: [
-                        Container(
-                          width: 60,
-                          height: 60,
-                          decoration: BoxDecoration(
-                            gradient: AppTheme.primaryGradient,
-                            shape: BoxShape.circle,
-                            boxShadow: [
-                              BoxShadow(
-                                color: AppTheme.primaryColor.withOpacity(0.4),
-                                blurRadius: 12,
-                                offset: const Offset(0, 4),
-                              ),
-                            ],
-                          ),
-                          child: const Icon(
-                            Icons.temple_hindu,
-                            color: Colors.white,
-                            size: 32,
-                          ),
-                        ),
-                        const SizedBox(width: 16),
-                        Expanded(
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Добро пожаловать',
-                                style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                                  color: Colors.white70,
-                                ),
-                              ),
-                              Text(
-                                'в мир Махабхараты',
-                                style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                                  color: Colors.white,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
-        ),
+        ],
       ),
-      actions: [
-        IconButton(
-          onPressed: () => context.goToSettings(),
-          icon: const Icon(
-            Icons.settings,
-            color: Colors.white,
-          ),
-        ),
-        IconButton(
-          onPressed: () => context.goToProfile(),
-          icon: const Icon(
-            Icons.account_circle,
-            color: Colors.white,
-          ),
-        ),
-      ],
     );
   }
 
-  // Быстрые действия
-  Widget _buildQuickActions() {
-    return SliverToBoxAdapter(
-      child: Container(
-        margin: const EdgeInsets.all(16),
+  Widget _buildErrorState() {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(20),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'Быстрые действия',
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                color: Colors.white,
-                fontWeight: FontWeight.bold,
-              ),
+            const Icon(
+              Icons.error_outline,
+              size: 64,
+              color: Colors.red,
             ),
-            const SizedBox(height: 16),
-            Row(
-              children: [
-                Expanded(
-                  child: _buildQuickActionCard(
-                    icon: Icons.play_circle_filled,
-                    title: 'Продолжить',
-                    subtitle: 'Глава 1',
-                    onTap: () => context.goToSeasons(),
-                  ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: _buildQuickActionCard(
-                    icon: Icons.threed_rotation,
-                    title: 'Купол',
-                    subtitle: '3D опыт',
-                    onTap: () => context.goToDome(),
-                  ),
-                ),
-                const SizedBox(width: 12),
-                Expanded(
-                  child: _buildQuickActionCard(
-                    icon: Icons.library_books,
-                    title: 'Библиотека',
-                    subtitle: 'Все сезоны',
-                    onTap: () => context.goToSeasons(),
-                  ),
-                ),
-              ],
+            const SizedBox(height: 20),
+            Text(
+              _errorMessage!,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: _loadData,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: AppTheme.primaryColor,
+              ),
+              child: const Text('Попробовать снова'),
             ),
           ],
         ),
@@ -253,68 +143,426 @@ class _HomeScreenState extends State<HomeScreen>
     );
   }
 
-  Widget _buildQuickActionCard({
-    required IconData icon,
-    required String title,
-    required String subtitle,
-    required VoidCallback onTap,
-  }) {
+  Widget _buildContent() {
+    return RefreshIndicator(
+      onRefresh: _loadData,
+      color: AppTheme.primaryColor,
+      child: SingleChildScrollView(
+        physics: const AlwaysScrollableScrollPhysics(),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            _buildHeader(),
+            _buildQuickActions(),
+            _buildRecentEpisodes(),
+            _buildSeasonsSection(),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildHeader() {
+    return Container(
+      padding: const EdgeInsets.all(20),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Text(
+            'Mahabharata',
+            style: TextStyle(
+              fontSize: 32,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
+          const SizedBox(height: 8),
+          Text(
+            'Древняя мудрость в современном мире',
+            style: TextStyle(
+              fontSize: 16,
+              color: Colors.white.withOpacity(0.8),
+            ),
+          ),
+          const SizedBox(height: 20),
+          _buildStatsRow(),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildStatsRow() {
+    final totalSeasons = _seasons.length;
+    final purchasedSeasons = _seasons.where((s) => s.isPurchased).length;
+    final totalEpisodes = _seasons.fold(0, (sum, season) => sum + season.episodes.length);
+    final purchasedEpisodes = _seasons
+        .expand((season) => season.episodes)
+        .where((episode) => episode.isPurchased)
+        .length;
+
+    return Row(
+      children: [
+        _buildStatCard('Сезоны', '$purchasedSeasons/$totalSeasons', Icons.playlist_play),
+        const SizedBox(width: 12),
+        _buildStatCard('Эпизоды', '$purchasedEpisodes/$totalEpisodes', Icons.play_arrow),
+      ],
+    );
+  }
+
+  Widget _buildStatCard(String title, String value, IconData icon) {
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.1),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.white.withOpacity(0.2)),
+        ),
+        child: Column(
+          children: [
+            Icon(
+              icon,
+              color: AppTheme.primaryColor,
+              size: 24,
+            ),
+            const SizedBox(height: 8),
+            Text(
+              value,
+              style: const TextStyle(
+                fontSize: 18,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+            Text(
+              title,
+              style: TextStyle(
+                fontSize: 12,
+                color: Colors.white.withOpacity(0.7),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildQuickActions() {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 20),
+      child: Row(
+        children: [
+          Expanded(
+            child: _buildActionButton(
+              'Купол',
+              Icons.architecture,
+              () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const DomeScreen()),
+              ),
+            ),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: _buildActionButton(
+              'Сезоны',
+              Icons.playlist_play,
+              () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SeasonsScreen()),
+              ),
+            ),
+          ),
+          const SizedBox(width: 12),
+          Expanded(
+            child: _buildActionButton(
+              'Настройки',
+              Icons.settings,
+              () => Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const SettingsScreen()),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildActionButton(String title, IconData icon, VoidCallback onTap) {
     return GestureDetector(
       onTap: onTap,
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              AppTheme.surfaceColor.withOpacity(0.8),
-              AppTheme.surfaceColor.withOpacity(0.4),
-            ],
-          ),
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(
-            color: AppTheme.primaryColor.withOpacity(0.2),
-            width: 1,
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.1),
-              blurRadius: 8,
-              offset: const Offset(0, 4),
-            ),
-          ],
+          color: Colors.white.withOpacity(0.1),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.white.withOpacity(0.2)),
         ),
         child: Column(
           children: [
-            Container(
-              padding: const EdgeInsets.all(12),
-              decoration: BoxDecoration(
-                gradient: AppTheme.primaryGradient,
-                shape: BoxShape.circle,
-              ),
-              child: Icon(
-                icon,
-                color: Colors.white,
-                size: 24,
-              ),
+            Icon(
+              icon,
+              color: AppTheme.primaryColor,
+              size: 24,
             ),
-            const SizedBox(height: 12),
+            const SizedBox(height: 8),
             Text(
               title,
-              style: Theme.of(context).textTheme.titleMedium?.copyWith(
+              style: const TextStyle(
                 color: Colors.white,
-                fontWeight: FontWeight.w600,
+                fontSize: 12,
+                fontWeight: FontWeight.w500,
               ),
-              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildRecentEpisodes() {
+    if (_recentEpisodes.isEmpty) return const SizedBox.shrink();
+
+    return Container(
+      margin: const EdgeInsets.only(top: 30),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20),
+            child: Text(
+              'Недавние эпизоды',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
+              ),
+            ),
+          ),
+          const SizedBox(height: 16),
+          SizedBox(
+            height: 200,
+            child: ListView.builder(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              itemCount: _recentEpisodes.length,
+              itemBuilder: (context, index) {
+                final episode = _recentEpisodes[index];
+                return Container(
+                  width: 160,
+                  margin: const EdgeInsets.only(right: 12),
+                  child: _buildEpisodeCard(episode),
+                );
+              },
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildEpisodeCard(Episode episode) {
+    return GestureDetector(
+      onTap: () {
+        // Навигация к воспроизведению эпизода
+        _playEpisode(episode);
+      },
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white.withOpacity(0.1),
+          borderRadius: BorderRadius.circular(12),
+          border: Border.all(color: Colors.white.withOpacity(0.2)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Изображение
+            ClipRRect(
+              borderRadius: const BorderRadius.vertical(top: Radius.circular(12)),
+              child: Container(
+                height: 100,
+                width: double.infinity,
+                color: AppTheme.primaryColor.withOpacity(0.8),
+                child: episode.image.isNotEmpty
+                    ? Image.network(
+                        episode.image,
+                        fit: BoxFit.cover,
+                        errorBuilder: (context, error, stackTrace) {
+                          return const Icon(
+                            Icons.play_arrow,
+                            color: Colors.white,
+                            size: 40,
+                          );
+                        },
+                      )
+                    : const Icon(
+                        Icons.play_arrow,
+                        color: Colors.white,
+                        size: 40,
+                      ),
+              ),
+            ),
+            
+            // Контент
+            Expanded(
+              child: Padding(
+                padding: const EdgeInsets.all(12),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      episode.name,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 14,
+                        fontWeight: FontWeight.w600,
+                      ),
+                      maxLines: 2,
+                      overflow: TextOverflow.ellipsis,
+                    ),
+                    const Spacer(),
+                    Row(
+                      children: [
+                        const Icon(
+                          Icons.check_circle,
+                          color: Colors.green,
+                          size: 16,
+                        ),
+                        const SizedBox(width: 4),
+                        Text(
+                          'Доступно',
+                          style: TextStyle(
+                            color: Colors.green[300],
+                            fontSize: 12,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildSeasonsSection() {
+    return Container(
+      margin: const EdgeInsets.only(top: 30, bottom: 100),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Text(
+                  'Сезоны',
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white,
+                  ),
+                ),
+                TextButton(
+                  onPressed: () => Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const SeasonsScreen()),
+                  ),
+                  child: const Text(
+                    'Все сезоны',
+                    style: TextStyle(color: AppTheme.primaryColor),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 16),
+          ..._seasons.take(3).map((season) => ProductCard(
+            season: season,
+            onTap: () => _playSeason(season),
+          )),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildBottomNavigationBar() {
+    return Container(
+      decoration: BoxDecoration(
+        color: const Color(0xFF1A1A2E),
+        border: Border(
+          top: BorderSide(color: Colors.white.withOpacity(0.1)),
+        ),
+      ),
+      child: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 8),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              _buildNavItem(Icons.home, 'Главная', true),
+              _buildNavItem(Icons.playlist_play, 'Сезоны', false),
+              _buildNavItem(Icons.architecture, 'Купол', false),
+              _buildNavItem(Icons.person, 'Профиль', false),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildNavItem(IconData icon, String label, bool isSelected) {
+    return GestureDetector(
+      onTap: () {
+        // Навигация к соответствующему экрану
+        switch (label) {
+          case 'Сезоны':
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const SeasonsScreen()),
+            );
+            break;
+          case 'Купол':
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const DomeScreen()),
+            );
+            break;
+          case 'Профиль':
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => const SettingsScreen()),
+            );
+            break;
+        }
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+        decoration: BoxDecoration(
+          color: isSelected ? AppTheme.primaryColor.withOpacity(0.2) : Colors.transparent,
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Icon(
+              icon,
+              color: isSelected ? AppTheme.primaryColor : Colors.white.withOpacity(0.6),
+              size: 24,
             ),
             const SizedBox(height: 4),
             Text(
-              subtitle,
-              style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                color: Colors.white70,
+              label,
+              style: TextStyle(
+                color: isSelected ? AppTheme.primaryColor : Colors.white.withOpacity(0.6),
+                fontSize: 12,
+                fontWeight: isSelected ? FontWeight.w600 : FontWeight.normal,
               ),
-              textAlign: TextAlign.center,
             ),
           ],
         ),
@@ -322,646 +570,100 @@ class _HomeScreenState extends State<HomeScreen>
     );
   }
 
-  // Рекомендуемый контент
-  Widget _buildFeaturedContent() {
-    return SliverToBoxAdapter(
-      child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 16),
-        child: Column(
+  void _playSeason(Season season) {
+    if (season.isPurchased) {
+      // Навигация к воспроизведению сезона
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+          builder: (context) => SeasonsScreen(selectedSeason: season),
+        ),
+      );
+    } else {
+      // Показать информацию о покупке
+      _showPurchaseInfo(season);
+    }
+  }
+
+  void _playEpisode(Episode episode) {
+    if (episode.isPurchased) {
+      // Навигация к воспроизведению эпизода
+      // TODO: Implement episode player
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text('Воспроизведение эпизода: ${episode.name}'),
+          backgroundColor: Colors.green,
+        ),
+      );
+    } else {
+      // Показать информацию о покупке
+      _showPurchaseInfo(episode);
+    }
+  }
+
+  void _showPurchaseInfo(dynamic product) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        backgroundColor: const Color(0xFF1A1A2E),
+        title: Text(
+          'Требуется покупка',
+          style: const TextStyle(color: Colors.white),
+        ),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
-              'Рекомендуемое',
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
+              product.name,
+              style: const TextStyle(
                 color: Colors.white,
+                fontSize: 16,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 16),
-            Container(
-              height: 200,
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [
-                    AppTheme.primaryColor.withOpacity(0.3),
-                    AppTheme.secondaryColor.withOpacity(0.3),
-                  ],
-                ),
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(
-                  color: AppTheme.primaryColor.withOpacity(0.3),
-                  width: 1,
-                ),
-              ),
-              child: Stack(
-                children: [
-                  Positioned.fill(
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(20),
-                      child: Container(
-                        decoration: BoxDecoration(
-                          gradient: LinearGradient(
-                            begin: Alignment.topCenter,
-                            end: Alignment.bottomCenter,
-                            colors: [
-                              Colors.transparent,
-                              Colors.black.withOpacity(0.7),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  Positioned(
-                    bottom: 20,
-                    left: 20,
-                    right: 20,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          'Проклятие Амбы',
-                          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-                        Text(
-                          'Начните свое путешествие с первой книги великого эпоса',
-                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: Colors.white70,
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        ElevatedButton.icon(
-                          onPressed: () => context.goToSeasons(),
-                          icon: const Icon(Icons.play_arrow, color: Colors.white),
-                          label: const Text(
-                            'Начать чтение',
-                            style: TextStyle(color: Colors.white),
-                          ),
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: AppTheme.primaryColor,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Positioned(
-                    top: 20,
-                    right: 20,
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 12,
-                        vertical: 6,
-                      ),
-                      decoration: BoxDecoration(
-                        color: AppTheme.secondaryColor,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: const Text(
-                        'НОВОЕ',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
-      ),
-    );
-  }
-
-  // Статистика прогресса
-  Widget _buildProgressSection() {
-    return SliverToBoxAdapter(
-      child: Container(
-        margin: const EdgeInsets.all(16),
-        padding: const EdgeInsets.all(20),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              AppTheme.surfaceColor.withOpacity(0.8),
-              AppTheme.surfaceColor.withOpacity(0.4),
-            ],
-          ),
-          borderRadius: BorderRadius.circular(20),
-          border: Border.all(
-            color: AppTheme.primaryColor.withOpacity(0.2),
-            width: 1,
-          ),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+            const SizedBox(height: 8),
             Text(
-              'Ваш прогресс',
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                color: Colors.white,
+              'Цена: ${product.price.toStringAsFixed(2)} ${product.currency}',
+              style: const TextStyle(
+                color: AppTheme.primaryColor,
+                fontSize: 18,
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(height: 16),
-            Row(
-              children: [
-                Expanded(
-                  child: _buildProgressItem(
-                    icon: Icons.book_outlined,
-                    title: 'Прочитано',
-                    value: '1',
-                    subtitle: 'глава',
-                  ),
-                ),
-                Expanded(
-                  child: _buildProgressItem(
-                    icon: Icons.schedule,
-                    title: 'Время',
-                    value: '2ч 15м',
-                    subtitle: 'общее',
-                  ),
-                ),
-                Expanded(
-                  child: _buildProgressItem(
-                    icon: Icons.favorite,
-                    title: 'Избранное',
-                    value: '3',
-                    subtitle: 'эпизода',
-                  ),
-                ),
-              ],
-            ),
           ],
         ),
-      ),
-    );
-  }
-
-  Widget _buildProgressItem({
-    required IconData icon,
-    required String title,
-    required String value,
-    required String subtitle,
-  }) {
-    return Column(
-      children: [
-        Icon(
-          icon,
-          color: AppTheme.primaryColor,
-          size: 32,
-        ),
-        const SizedBox(height: 8),
-        Text(
-          value,
-          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Отмена'),
           ),
-        ),
-        Text(
-          subtitle,
-          style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: Colors.white70,
-          ),
-        ),
-        const SizedBox(height: 4),
-        Text(
-          title,
-          style: Theme.of(context).textTheme.bodySmall?.copyWith(
-            color: Colors.white54,
-          ),
-        ),
-      ],
-    );
-  }
-
-  // Новый Sliver TabBar
-  Widget _buildSliverTabBar() {
-    return SliverToBoxAdapter(
-      child: Container(
-        margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              AppTheme.surfaceColor.withOpacity(0.6),
-              AppTheme.surfaceColor.withOpacity(0.3),
-            ],
-          ),
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(
-            color: AppTheme.primaryColor.withOpacity(0.2),
-            width: 1,
-          ),
-        ),
-        child: TabBar(
-          controller: _tabController,
-          indicator: BoxDecoration(
-            gradient: AppTheme.primaryGradient,
-            borderRadius: BorderRadius.circular(16),
-            boxShadow: [
-              BoxShadow(
-                color: AppTheme.primaryColor.withOpacity(0.3),
-                blurRadius: 8,
-                offset: const Offset(0, 2),
-              ),
-            ],
-          ),
-          labelColor: Colors.white,
-          unselectedLabelColor: Colors.white60,
-          labelStyle: const TextStyle(
-            fontWeight: FontWeight.w600,
-            fontSize: 14,
-          ),
-          unselectedLabelStyle: const TextStyle(
-            fontWeight: FontWeight.normal,
-            fontSize: 14,
-          ),
-          tabs: const [
-            Tab(text: 'Сезоны'),
-            Tab(text: 'Недавние'),
-            Tab(text: 'Избранное'),
-          ],
-        ),
-      ),
-    );
-  }
-
-  // Контент для Sliver
-  Widget _buildSliverContent() {
-    return SliverFillRemaining(
-      child: TabBarView(
-        controller: _tabController,
-        children: [
-          _buildSeasonsTab(),
-          _buildRecentTab(),
-          _buildFavoritesTab(),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildSeasonsTab() {
-    return Consumer<ContentProvider>(
-      builder: (context, contentProvider, child) {
-        if (contentProvider.isLoading) {
-          return const Center(
-            child: CircularProgressIndicator(
-              valueColor: AlwaysStoppedAnimation<Color>(AppTheme.primaryColor),
-            ),
-          );
-        }
-
-        if (contentProvider.error != null) {
-          return Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Icon(
-                  Icons.error_outline,
-                  size: 64,
-                  color: AppTheme.errorColor,
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  'Ошибка загрузки',
-                  style: Theme.of(context).textTheme.headlineSmall,
-                ),
-                const SizedBox(height: 8),
-                Text(
-                  contentProvider.error!,
-                  style: Theme.of(context).textTheme.bodyMedium,
-                  textAlign: TextAlign.center,
-                ),
-                const SizedBox(height: 16),
-                ElevatedButton(
-                  onPressed: () => contentProvider.loadSeasons(),
-                  child: const Text('Повторить'),
-                ),
-              ],
-            ),
-          );
-        }
-
-        if (contentProvider.seasons.isEmpty) {
-          return Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Icon(
-                  Icons.library_books_outlined,
-                  size: 64,
-                  color: Colors.white54,
-                ),
-                const SizedBox(height: 16),
-                Text(
-                  'Нет доступных сезонов',
-                  style: Theme.of(context).textTheme.headlineSmall,
-                ),
-              ],
-            ),
-          );
-        }
-
-        return ListView.builder(
-          padding: const EdgeInsets.all(16),
-          itemCount: contentProvider.seasons.length,
-          itemBuilder: (context, index) {
-            final season = contentProvider.seasons[index];
-            return _buildSeasonCard(season);
-          },
-        );
-      },
-    );
-  }
-
-  Widget _buildSeasonCard(Map<String, dynamic> season) {
-    return Container(
-      margin: const EdgeInsets.only(bottom: 16),
-      child: Card(
-        elevation: 8,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(16),
-        ),
-        child: InkWell(
-          onTap: () => context.goToSeasons(),
-          borderRadius: BorderRadius.circular(16),
-          child: Container(
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(16),
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  AppTheme.primaryColor.withOpacity(0.1),
-                  AppTheme.secondaryColor.withOpacity(0.1),
-                ],
-              ),
-            ),
-            child: Padding(
-              padding: const EdgeInsets.all(16),
-              child: Row(
-                children: [
-                  // Обложка сезона
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(12),
-                    child: CachedNetworkImage(
-                      imageUrl: season['image'] ?? '',
-                      width: 80,
-                      height: 80,
-                      fit: BoxFit.cover,
-                      placeholder: (context, url) => Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          color: Colors.grey[300],
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: const Icon(
-                          Icons.image,
-                          color: Colors.grey,
-                        ),
-                      ),
-                      errorWidget: (context, url, error) => Container(
-                        width: 80,
-                        height: 80,
-                        decoration: BoxDecoration(
-                          gradient: AppTheme.primaryGradient,
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: const Icon(
-                          Icons.library_books,
-                          color: Colors.white,
-                        ),
-                      ),
-                    ),
+          ElevatedButton(
+            onPressed: () {
+              Navigator.pop(context);
+              // Навигация к экрану покупки
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => PurchaseScreen(
+                    productId: product.id,
+                    productType: product is Season ? 'season' : 'episode',
+                    productName: product.name,
+                    productDescription: product.description,
+                    productImage: product.image,
+                    price: product.price,
+                    currency: product.currency,
+                    isPurchased: product.isPurchased,
                   ),
-                  
-                  const SizedBox(width: 16),
-                  
-                  // Информация о сезоне
-                  Expanded(
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text(
-                          season['name'] ?? 'Без названия',
-                          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ),
-                          maxLines: 2,
-                          overflow: TextOverflow.ellipsis,
-                        ),
-                        const SizedBox(height: 4),
-                        Text(
-                          '${season['episodes']?.length ?? 0} эпизодов',
-                          style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: Colors.grey[600],
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-                        Row(
-                          children: [
-                            Icon(
-                              Icons.play_circle_outline,
-                              size: 20,
-                              color: AppTheme.primaryColor,
-                            ),
-                            const SizedBox(width: 4),
-                            Text(
-                              'Начать просмотр',
-                              style: Theme.of(context).textTheme.bodySmall?.copyWith(
-                                color: AppTheme.primaryColor,
-                                fontWeight: FontWeight.w500,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                  
-                  // Стрелка
-                  Icon(
-                    Icons.arrow_forward_ios,
-                    color: Colors.grey[400],
-                    size: 16,
-                  ),
-                ],
-              ),
+                ),
+              );
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: AppTheme.primaryColor,
             ),
-          ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildRecentTab() {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Icon(
-            Icons.history,
-            size: 64,
-            color: Colors.white54,
-          ),
-          const SizedBox(height: 16),
-          Text(
-            'Недавно просмотренные',
-            style: Theme.of(context).textTheme.headlineSmall,
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Здесь будут отображаться недавно просмотренные эпизоды',
-            style: Theme.of(context).textTheme.bodyMedium,
-            textAlign: TextAlign.center,
+            child: const Text('Купить'),
           ),
         ],
-      ),
-    );
-  }
-
-  Widget _buildFavoritesTab() {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Icon(
-            Icons.favorite_outline,
-            size: 64,
-            color: Colors.white54,
-          ),
-          const SizedBox(height: 16),
-          Text(
-            'Избранное',
-            style: Theme.of(context).textTheme.headlineSmall,
-          ),
-          const SizedBox(height: 8),
-          Text(
-            'Здесь будут отображаться избранные эпизоды',
-            style: Theme.of(context).textTheme.bodyMedium,
-            textAlign: TextAlign.center,
-          ),
-        ],
-      ),
-    );
-  }
-
-  // Улучшенная кнопка купола
-  Widget _buildEnhancedDomeButton() {
-    return FloatingActionButton.extended(
-      onPressed: () => context.goToDome(),
-      backgroundColor: AppTheme.primaryColor,
-      elevation: 8,
-      icon: Container(
-        padding: const EdgeInsets.all(4),
-        decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.2),
-          shape: BoxShape.circle,
-        ),
-        child: const Icon(
-          Icons.threed_rotation,
-          color: Colors.white,
-          size: 20,
-        ),
-      ),
-      label: const Text(
-        'Купол 3D',
-        style: TextStyle(
-          color: Colors.white,
-          fontWeight: FontWeight.w600,
-        ),
-      ),
-    );
-  }
-
-  // Нижняя навигация
-  Widget _buildBottomNavigation() {
-    return Container(
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [
-            AppTheme.surfaceColor.withOpacity(0.8),
-            AppTheme.surfaceColor,
-          ],
-        ),
-        border: Border(
-          top: BorderSide(
-            color: AppTheme.primaryColor.withOpacity(0.2),
-            width: 1,
-          ),
-        ),
-      ),
-      child: BottomNavigationBar(
-        backgroundColor: Colors.transparent,
-        elevation: 0,
-        type: BottomNavigationBarType.fixed,
-        selectedItemColor: AppTheme.primaryColor,
-        unselectedItemColor: Colors.white60,
-        selectedLabelStyle: const TextStyle(
-          fontWeight: FontWeight.w600,
-          fontSize: 12,
-        ),
-        unselectedLabelStyle: const TextStyle(
-          fontWeight: FontWeight.normal,
-          fontSize: 12,
-        ),
-        items: const [
-          BottomNavigationBarItem(
-            icon: Icon(Icons.home),
-            activeIcon: Icon(Icons.home_filled),
-            label: 'Главная',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.library_books_outlined),
-            activeIcon: Icon(Icons.library_books),
-            label: 'Библиотека',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite_outline),
-            activeIcon: Icon(Icons.favorite),
-            label: 'Избранное',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle_outlined),
-            activeIcon: Icon(Icons.account_circle),
-            label: 'Профиль',
-          ),
-        ],
-        onTap: (index) {
-          switch (index) {
-            case 0:
-              // Уже на главной
-              break;
-            case 1:
-              context.goToSeasons();
-              break;
-            case 2:
-              // Переключаемся на таб избранного
-              _tabController.animateTo(2);
-              break;
-            case 3:
-              context.goToProfile();
-              break;
-          }
-        },
       ),
     );
   }

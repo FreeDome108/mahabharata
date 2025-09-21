@@ -11,23 +11,23 @@
         "audio_session",
         "cached_network_image",
         "chewie",
-        "connectivity_plus",
         "cupertino_icons",
         "device_info_plus",
-        "dio",
         "ffi",
         "flutter",
         "flutter_3d_controller",
+        "flutter_freedome",
         "flutter_gl",
+        "flutter_icp",
         "flutter_lints",
         "flutter_magento",
+        "flutter_nft",
         "flutter_riverpod",
         "flutter_svg",
         "flutter_tts",
         "go_router",
         "hive",
         "hive_flutter",
-        "http",
         "intl",
         "just_audio",
         "package_info_plus",
@@ -211,7 +211,7 @@
     },
     {
       "name": "device_info_plus",
-      "version": "9.1.2",
+      "version": "10.1.2",
       "dependencies": [
         "device_info_plus_platform_interface",
         "ffi",
@@ -219,6 +219,7 @@
         "flutter",
         "flutter_web_plugins",
         "meta",
+        "web",
         "win32",
         "win32_registry"
       ]
@@ -367,6 +368,64 @@
       ]
     },
     {
+      "name": "flutter_icp",
+      "version": "1.2.0+3",
+      "dependencies": [
+        "convert",
+        "crypto",
+        "equatable",
+        "flutter",
+        "flutter_nft",
+        "http",
+        "json_annotation",
+        "shared_preferences"
+      ]
+    },
+    {
+      "name": "flutter_nft",
+      "version": "1.2.0+3",
+      "dependencies": [
+        "convert",
+        "crypto",
+        "equatable",
+        "flutter",
+        "http",
+        "json_annotation"
+      ]
+    },
+    {
+      "name": "flutter_freedome",
+      "version": "1.0.0",
+      "dependencies": [
+        "audio_session",
+        "connectivity_plus",
+        "crypto",
+        "device_info_plus",
+        "dio",
+        "flutter",
+        "flutter_localizations",
+        "flutter_secure_storage",
+        "flutter_web_plugins",
+        "freezed_annotation",
+        "hive",
+        "hive_flutter",
+        "http",
+        "intl",
+        "json_annotation",
+        "just_audio",
+        "logger",
+        "path_provider",
+        "permission_handler",
+        "plugin_platform_interface",
+        "provider",
+        "sensors_plus",
+        "shared_preferences",
+        "socket_io_client",
+        "vector_math",
+        "web_socket_channel"
+      ]
+    },
+    {
       "name": "flutter_magento",
       "version": "2.3.4",
       "dependencies": [
@@ -391,41 +450,6 @@
         "shared_preferences",
         "socket_io_client",
         "sqflite"
-      ]
-    },
-    {
-      "name": "connectivity_plus",
-      "version": "5.0.2",
-      "dependencies": [
-        "connectivity_plus_platform_interface",
-        "flutter",
-        "flutter_web_plugins",
-        "js",
-        "meta",
-        "nm"
-      ]
-    },
-    {
-      "name": "dio",
-      "version": "5.9.0",
-      "dependencies": [
-        "async",
-        "collection",
-        "dio_web_adapter",
-        "http_parser",
-        "meta",
-        "mime",
-        "path"
-      ]
-    },
-    {
-      "name": "http",
-      "version": "1.5.0",
-      "dependencies": [
-        "async",
-        "http_parser",
-        "meta",
-        "web"
       ]
     },
     {
@@ -582,13 +606,11 @@
     },
     {
       "name": "web_socket_channel",
-      "version": "3.0.3",
+      "version": "2.4.0",
       "dependencies": [
         "async",
         "crypto",
-        "stream_channel",
-        "web",
-        "web_socket"
+        "stream_channel"
       ]
     },
     {
@@ -974,6 +996,16 @@
       ]
     },
     {
+      "name": "http",
+      "version": "1.5.0",
+      "dependencies": [
+        "async",
+        "http_parser",
+        "meta",
+        "web"
+      ]
+    },
+    {
       "name": "flutter_web_plugins",
       "version": "0.0.0",
       "dependencies": [
@@ -1134,6 +1166,11 @@
         "ffi",
         "win32"
       ]
+    },
+    {
+      "name": "web",
+      "version": "1.1.1",
+      "dependencies": []
     },
     {
       "name": "file",
@@ -1399,12 +1436,18 @@
       ]
     },
     {
-      "name": "socket_io_client",
-      "version": "2.0.3+1",
+      "name": "equatable",
+      "version": "2.0.7",
       "dependencies": [
-        "js",
-        "logging",
-        "socket_io_common"
+        "collection",
+        "meta"
+      ]
+    },
+    {
+      "name": "convert",
+      "version": "3.1.2",
+      "dependencies": [
+        "typed_data"
       ]
     },
     {
@@ -1424,6 +1467,18 @@
       ]
     },
     {
+      "name": "connectivity_plus",
+      "version": "5.0.2",
+      "dependencies": [
+        "connectivity_plus_platform_interface",
+        "flutter",
+        "flutter_web_plugins",
+        "js",
+        "meta",
+        "nm"
+      ]
+    },
+    {
       "name": "flutter_secure_storage",
       "version": "9.2.4",
       "dependencies": [
@@ -1437,20 +1492,34 @@
       ]
     },
     {
-      "name": "retrofit",
-      "version": "4.7.2",
-      "dependencies": [
-        "dio",
-        "meta"
-      ]
-    },
-    {
       "name": "freezed_annotation",
       "version": "2.4.4",
       "dependencies": [
         "collection",
         "json_annotation",
         "meta"
+      ]
+    },
+    {
+      "name": "socket_io_client",
+      "version": "2.0.3+1",
+      "dependencies": [
+        "js",
+        "logging",
+        "socket_io_common"
+      ]
+    },
+    {
+      "name": "dio",
+      "version": "5.9.0",
+      "dependencies": [
+        "async",
+        "collection",
+        "dio_web_adapter",
+        "http_parser",
+        "meta",
+        "mime",
+        "path"
       ]
     },
     {
@@ -1461,45 +1530,12 @@
       ]
     },
     {
-      "name": "nm",
-      "version": "0.5.0",
-      "dependencies": [
-        "dbus"
-      ]
-    },
-    {
-      "name": "connectivity_plus_platform_interface",
-      "version": "1.2.4",
-      "dependencies": [
-        "flutter",
-        "meta",
-        "plugin_platform_interface"
-      ]
-    },
-    {
-      "name": "dio_web_adapter",
-      "version": "2.1.1",
+      "name": "retrofit",
+      "version": "4.7.2",
       "dependencies": [
         "dio",
-        "http_parser",
-        "meta",
-        "web"
+        "meta"
       ]
-    },
-    {
-      "name": "http_parser",
-      "version": "4.1.2",
-      "dependencies": [
-        "collection",
-        "source_span",
-        "string_scanner",
-        "typed_data"
-      ]
-    },
-    {
-      "name": "web",
-      "version": "1.1.1",
-      "dependencies": []
     },
     {
       "name": "state_notifier",
@@ -1609,13 +1645,6 @@
       ]
     },
     {
-      "name": "convert",
-      "version": "3.1.2",
-      "dependencies": [
-        "typed_data"
-      ]
-    },
-    {
       "name": "_fe_analyzer_shared",
       "version": "67.0.0",
       "dependencies": [
@@ -1630,10 +1659,13 @@
       ]
     },
     {
-      "name": "web_socket",
-      "version": "1.0.1",
+      "name": "http_parser",
+      "version": "4.1.2",
       "dependencies": [
-        "web"
+        "collection",
+        "source_span",
+        "string_scanner",
+        "typed_data"
       ]
     },
     {
@@ -1806,10 +1838,19 @@
       ]
     },
     {
-      "name": "socket_io_common",
-      "version": "2.0.3",
+      "name": "nm",
+      "version": "0.5.0",
       "dependencies": [
-        "logging"
+        "dbus"
+      ]
+    },
+    {
+      "name": "connectivity_plus_platform_interface",
+      "version": "1.2.4",
+      "dependencies": [
+        "flutter",
+        "meta",
+        "plugin_platform_interface"
       ]
     },
     {
@@ -1856,6 +1897,23 @@
       "dependencies": [
         "flutter",
         "flutter_secure_storage_platform_interface"
+      ]
+    },
+    {
+      "name": "socket_io_common",
+      "version": "2.0.3",
+      "dependencies": [
+        "logging"
+      ]
+    },
+    {
+      "name": "dio_web_adapter",
+      "version": "2.1.1",
+      "dependencies": [
+        "dio",
+        "http_parser",
+        "meta",
+        "web"
       ]
     },
     {

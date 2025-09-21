@@ -9,6 +9,9 @@ class MainActivity: FlutterActivity() {
         
         // Регистрация AnantaSound плагина
         flutterEngine.plugins.add(AnantaSoundPlugin())
+        
+        // Регистрация MagentoNative плагина
+        flutterEngine.plugins.add(MagentoNativePlugin())
     }
 }
 

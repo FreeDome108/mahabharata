@@ -24,7 +24,7 @@ dependencies:
   
   # Network & API
 
-  flutter_magento: ^2.5.1
+  flutter_magento: ^2.8.0+108
   flutter_freedome: ^1.0.0
   flutter_nft: ^1.0.0
   flutter_icp: ^1.0.0
@@ -54,7 +54,7 @@ dependencies:
   
   # Sensors & Interaction
   sensors_plus: ^4.0.2
-  device_info_plus: ^9.1.1
+  device_info_plus: ^10.1.0
   permission_handler: ^11.1.0
   
   # Utilities

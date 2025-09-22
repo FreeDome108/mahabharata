@@ -14,6 +14,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "android_intent_plus",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/android_intent_plus-5.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.1"
+    },
+    {
       "name": "archive",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/archive-3.6.1",
       "packageUri": "lib/",
@@ -128,6 +134,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "cli_config",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/cli_config-0.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "cli_util",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/cli_util-0.4.2",
       "packageUri": "lib/",
@@ -152,8 +164,26 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "connectivity_plus",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/connectivity_plus-7.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.2"
+    },
+    {
+      "name": "connectivity_plus_platform_interface",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/connectivity_plus_platform_interface-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
       "name": "convert",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/convert-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "coverage",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/coverage-1.15.0",
       "packageUri": "lib/",
       "languageVersion": "3.4"
     },
@@ -200,6 +230,30 @@
       "languageVersion": "3.7"
     },
     {
+      "name": "dio",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/dio-5.9.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
+    },
+    {
+      "name": "dio_web_adapter",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/dio_web_adapter-2.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "drift",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/drift-2.28.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "equatable",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/equatable-2.0.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "fake_async",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/fake_async-1.3.3",
       "packageUri": "lib/",
@@ -242,6 +296,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "flutter_freedome_player",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_freedome_player-1.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
       "name": "flutter_gl",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_gl-0.0.21",
       "packageUri": "lib/",
@@ -270,6 +330,12 @@
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_gl_windows-0.0.4",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_icp",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_icp-1.2.0+3",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "flutter_inappwebview",
@@ -332,10 +398,64 @@
       "languageVersion": "3.1"
     },
     {
-      "name": "flutter_riverpod",
-      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_riverpod-2.6.1",
+      "name": "flutter_localizations",
+      "rootUri": "file:///Users/anton/development/flutter/packages/flutter_localizations",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "flutter_magento",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_magento-2.9.0+110",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "flutter_nft",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_nft-1.2.0+3",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "flutter_riverpod",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_riverpod-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "flutter_secure_storage",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_secure_storage-9.2.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_secure_storage_linux",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_secure_storage_linux-1.2.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_secure_storage_macos",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_secure_storage_macos-3.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_secure_storage_platform_interface",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_secure_storage_platform_interface-1.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_secure_storage_web",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_secure_storage_web-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "flutter_secure_storage_windows",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/flutter_secure_storage_windows-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "flutter_svg",
@@ -360,6 +480,12 @@
       "rootUri": "file:///Users/anton/development/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "3.8"
+    },
+    {
+      "name": "freezed_annotation",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/freezed_annotation-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
     },
     {
       "name": "frontend_server_client",
@@ -500,6 +626,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "logger",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/logger-2.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "logging",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/logging-1.3.0",
       "packageUri": "lib/",
@@ -530,8 +662,26 @@
       "languageVersion": "3.2"
     },
     {
+      "name": "model_viewer_plus",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/model_viewer_plus-1.9.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
       "name": "nested",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/nested-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "nm",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/nm-0.5.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "node_preamble",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/node_preamble-2.0.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -686,10 +836,16 @@
       "languageVersion": "3.6"
     },
     {
-      "name": "riverpod",
-      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/riverpod-2.6.1",
+      "name": "retrofit",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/retrofit-4.7.2",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "3.8"
+    },
+    {
+      "name": "riverpod",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/riverpod-3.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.8"
     },
     {
       "name": "rxdart",
@@ -758,6 +914,18 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "shelf_packages_handler",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/shelf_packages_handler-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "shelf_static",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/shelf_static-1.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
       "name": "shelf_web_socket",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/shelf_web_socket-2.0.1",
       "packageUri": "lib/",
@@ -776,6 +944,18 @@
       "languageVersion": "3.8"
     },
     {
+      "name": "socket_io_client",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/socket_io_client-3.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "socket_io_common",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/socket_io_common-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
       "name": "source_gen",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/source_gen-1.5.0",
       "packageUri": "lib/",
@@ -786,6 +966,18 @@
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/source_helper-1.3.5",
       "packageUri": "lib/",
       "languageVersion": "3.4"
+    },
+    {
+      "name": "source_map_stack_trace",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/source_map_stack_trace-2.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
+      "name": "source_maps",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/source_maps-0.10.13",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
     },
     {
       "name": "source_span",
@@ -830,6 +1022,18 @@
       "languageVersion": "3.5"
     },
     {
+      "name": "sqlite3",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/sqlite3-2.9.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "sqlite3_flutter_libs",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/sqlite3_flutter_libs-0.5.39",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "stack_trace",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/stack_trace-1.12.1",
       "packageUri": "lib/",
@@ -872,8 +1076,20 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "test",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/test-1.26.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
       "name": "test_api",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/test_api-0.7.6",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
+    },
+    {
+      "name": "test_core",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/test_core-0.6.11",
       "packageUri": "lib/",
       "languageVersion": "3.5"
     },
@@ -998,6 +1214,12 @@
       "languageVersion": "3.6"
     },
     {
+      "name": "visibility_detector",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/visibility_detector-0.4.0+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "vm_service",
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/vm_service-15.0.2",
       "packageUri": "lib/",
@@ -1032,6 +1254,36 @@
       "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/web_socket_channel-2.4.0",
       "packageUri": "lib/",
       "languageVersion": "2.15"
+    },
+    {
+      "name": "webkit_inspection_protocol",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/webkit_inspection_protocol-1.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "webview_flutter",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/webview_flutter-4.13.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "webview_flutter_android",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/webview_flutter_android-4.10.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
+    },
+    {
+      "name": "webview_flutter_platform_interface",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/webview_flutter_platform_interface-2.14.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.6"
+    },
+    {
+      "name": "webview_flutter_wkwebview",
+      "rootUri": "file:///Users/anton/.pub-cache/hosted/pub.dev/webview_flutter_wkwebview-3.23.1",
+      "packageUri": "lib/",
+      "languageVersion": "3.9"
     },
     {
       "name": "win32",

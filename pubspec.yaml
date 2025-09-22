@@ -19,13 +19,13 @@ dependencies:
   
   # State Management
   provider: ^6.1.1
-  riverpod: ^2.4.9
-  flutter_riverpod: ^2.4.9
+  riverpod: ^3.0.0
+  flutter_riverpod: ^3.0.0
   
   # Network & API
 
-  flutter_magento: ^2.8.0+108
-  flutter_freedome: ^1.0.0
+  flutter_magento: ^2.3.4
+  flutter_freedome: ^2.0.0+1
   flutter_nft: ^1.0.0
   flutter_icp: ^1.0.0
 
@@ -41,6 +41,7 @@ dependencies:
   flutter_gl: ^0.0.4
   vector_math: ^2.1.4
   flutter_3d_controller: ^2.3.0
+  flutter_freedome_player: ^1.0.1
   
   # Audio & Sound
   just_audio: ^0.9.36

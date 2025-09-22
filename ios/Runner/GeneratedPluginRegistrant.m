@@ -12,22 +12,10 @@
 @import audio_session;
 #endif
 
-#if __has_include(<connectivity_plus/ConnectivityPlusPlugin.h>)
-#import <connectivity_plus/ConnectivityPlusPlugin.h>
-#else
-@import connectivity_plus;
-#endif
-
 #if __has_include(<device_info_plus/FPPDeviceInfoPlusPlugin.h>)
 #import <device_info_plus/FPPDeviceInfoPlusPlugin.h>
 #else
 @import device_info_plus;
-#endif
-
-#if __has_include(<flutter_freedome/FlutterFreedomePlugin.h>)
-#import <flutter_freedome/FlutterFreedomePlugin.h>
-#else
-@import flutter_freedome;
 #endif
 
 #if __has_include(<flutter_gl/FlutterGlPlugin.h>)
@@ -40,18 +28,6 @@
 #import <flutter_inappwebview_ios/InAppWebViewFlutterPlugin.h>
 #else
 @import flutter_inappwebview_ios;
-#endif
-
-#if __has_include(<flutter_magento/FlutterMagentoPlugin.h>)
-#import <flutter_magento/FlutterMagentoPlugin.h>
-#else
-@import flutter_magento;
-#endif
-
-#if __has_include(<flutter_secure_storage/FlutterSecureStoragePlugin.h>)
-#import <flutter_secure_storage/FlutterSecureStoragePlugin.h>
-#else
-@import flutter_secure_storage;
 #endif
 
 #if __has_include(<flutter_tts/FlutterTtsPlugin.h>)
@@ -124,13 +100,9 @@
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
   [AudioSessionPlugin registerWithRegistrar:[registry registrarForPlugin:@"AudioSessionPlugin"]];
-  [ConnectivityPlusPlugin registerWithRegistrar:[registry registrarForPlugin:@"ConnectivityPlusPlugin"]];
   [FPPDeviceInfoPlusPlugin registerWithRegistrar:[registry registrarForPlugin:@"FPPDeviceInfoPlusPlugin"]];
-  [FlutterFreedomePlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterFreedomePlugin"]];
   [FlutterGlPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterGlPlugin"]];
   [InAppWebViewFlutterPlugin registerWithRegistrar:[registry registrarForPlugin:@"InAppWebViewFlutterPlugin"]];
-  [FlutterMagentoPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterMagentoPlugin"]];
-  [FlutterSecureStoragePlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterSecureStoragePlugin"]];
   [FlutterTtsPlugin registerWithRegistrar:[registry registrarForPlugin:@"FlutterTtsPlugin"]];
   [JustAudioPlugin registerWithRegistrar:[registry registrarForPlugin:@"JustAudioPlugin"]];
   [FPPPackageInfoPlusPlugin registerWithRegistrar:[registry registrarForPlugin:@"FPPPackageInfoPlusPlugin"]];

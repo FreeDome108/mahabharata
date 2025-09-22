@@ -21,19 +21,9 @@ public final class GeneratedPluginRegistrant {
       Log.e(TAG, "Error registering plugin audio_session, com.ryanheise.audio_session.AudioSessionPlugin", e);
     }
     try {
-      flutterEngine.getPlugins().add(new dev.fluttercommunity.plus.connectivity.ConnectivityPlugin());
-    } catch (Exception e) {
-      Log.e(TAG, "Error registering plugin connectivity_plus, dev.fluttercommunity.plus.connectivity.ConnectivityPlugin", e);
-    }
-    try {
       flutterEngine.getPlugins().add(new dev.fluttercommunity.plus.device_info.DeviceInfoPlusPlugin());
     } catch (Exception e) {
       Log.e(TAG, "Error registering plugin device_info_plus, dev.fluttercommunity.plus.device_info.DeviceInfoPlusPlugin", e);
-    }
-    try {
-      flutterEngine.getPlugins().add(new ru.nativemind.flutter.freedome.flutter_freedome.FlutterFreedomePlugin());
-    } catch (Exception e) {
-      Log.e(TAG, "Error registering plugin flutter_freedome, ru.nativemind.flutter.freedome.flutter_freedome.FlutterFreedomePlugin", e);
     }
     try {
       flutterEngine.getPlugins().add(new com.futouapp.flutter_gl.flutter_gl.FlutterGlPlugin());
@@ -44,16 +34,6 @@ public final class GeneratedPluginRegistrant {
       flutterEngine.getPlugins().add(new com.pichillilorenzo.flutter_inappwebview_android.InAppWebViewFlutterPlugin());
     } catch (Exception e) {
       Log.e(TAG, "Error registering plugin flutter_inappwebview_android, com.pichillilorenzo.flutter_inappwebview_android.InAppWebViewFlutterPlugin", e);
-    }
-    try {
-      flutterEngine.getPlugins().add(new ru.nativemind.flutter.magento.flutter_magento.FlutterMagentoPlugin());
-    } catch (Exception e) {
-      Log.e(TAG, "Error registering plugin flutter_magento, ru.nativemind.flutter.magento.flutter_magento.FlutterMagentoPlugin", e);
-    }
-    try {
-      flutterEngine.getPlugins().add(new com.it_nomads.fluttersecurestorage.FlutterSecureStoragePlugin());
-    } catch (Exception e) {
-      Log.e(TAG, "Error registering plugin flutter_secure_storage, com.it_nomads.fluttersecurestorage.FlutterSecureStoragePlugin", e);
     }
     try {
       flutterEngine.getPlugins().add(new com.tundralabs.fluttertts.FlutterTtsPlugin());
